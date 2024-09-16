@@ -1,0 +1,547 @@
+{
+  "applysnapshot": "Belirlenen koşulları Mobiye uygula",
+  "badgereceived": {
+    "body": "Az önce bir rozet aldın. Envanterine göz at!",
+    "title": "Rozet alındı!"
+  },
+  "chatmsgtoolong": "Mesaj yalnızca 100 karakter içerebilir.",
+  "conflictingactions": {
+    "caption": "Uyarı: Uyumsuz Efektler",
+    "text": "Bu Tetikleyici bir kullanıcıyı belirtmiyor. Bu Tetikleyiciye ({{actions}}) bir kullanıcının etkinleştirmesi gereken Efektler kattınız."
+  },
+  "conflictingtriggers": {
+    "caption": "Uyarı: Uyumsuz Tetikleyiciler",
+    "text": "Bu Efektin bir kullanıcı tarafından etkinleştirilmesi gerekir. Bu efekte ({{triggers}}) bir kullanıcın etkinleştirmesini gerektirmeyen Tetikleyiciler kattınız."
+  },
+  "danger": {
+    "1": {
+      "change": {
+        "confirm": {
+          "body": "Filtrelemeden \"Ters Çevir\"i seçtin. Bu, gereksinime UYMAYAN tüm mobileri/kullanıcıları seçecektir, tüm odayı da SEÇİYOR OLABİLİR. Emin misin? (TEHLİKE!)",
+          "title": "Emin misin?"
+        }
+      }
+    }
+  },
+  "enter_code": "kodu girin",
+  "enter_id": "ID girin",
+  "enter_name": "sim giriniz",
+  "enter_text": "Metin girin",
+  "error": {
+    "capturer": {
+      "duplicate": "Aynı değişkeni bir ifadede iki kez yakalayamazsınız"
+    },
+    "condition_evaluation_furni": "Yalnızca DÜZENEKLİ Koşul ve Eklentiler seçilebilir!",
+    "invalid_freeze_effect": "Geçersiz bir efekt seçildi!",
+    "invalid_handitem_type": "El eşyası türüne izin verilmiyor!",
+    "invalid_reward_products": "Bu ürünler/rozetler mevcut değil: {{products}}",
+    "placeholder": {
+      "delimiter_empty": "Sınırlayıcı boş olamaz",
+      "name_length": "Yer tutucu uzunluğu 1 ile 40 karakter arasında olmalıdır.",
+      "name_syntax": "Yer tutucu adı yalnızca harf, sayı veya \"_\" karakterlerinden oluşabilir."
+    },
+    "require_antenna_furni": "Yalnızca anten mobisi seçilebilir.",
+    "require_click_tiles": "Yalnızca görünmez tıklamalı mobiler seçilebilir.",
+    "require_counter_furni": "Yalnızca sayaç mobisi seçilebilir.",
+    "title": "Güncelleme başarısız",
+    "too_much_text": "Düzenekli metinler en fazla {{limit}} karakterden oluşabilir.",
+    "username_length": "Kullanıcı adı {{max_username_length}} karakterden uzun olamaz!",
+    "usernames_count": "En fazla {{max_usernames}} kullanıcı adı olabilir!",
+    "variables": {
+      "invalid_availability": "Geçersiz kullanılabilirlik",
+      "name_length": "Değişken adı uzunluğu 1 ila 40 karakter arasında olmalıdır.",
+      "name_syntax": "Değişken adı yalnızca harf, sayı veya \"_\" karakterlerinden oluşabilir.",
+      "name_uniq": "Bu değişken adı odada zaten kullanılıyor, lütfen başka bir tane seç!",
+      "permanent_limit": "Bu oda, bu değişken türü için kalıcı değişken sayısı sınırına ulaştı.",
+      "permissions": {
+        "1": "Yalnızca düzenekli değişkenin sahibi bu değişikliği yapabilir.",
+        "2": "Yalnızca düzenekli değişkenin sahibi veya oda sahibi bu değişikliği yapabilir."
+      },
+      "reference": {
+        "already_exists": "Bu odada bu değişkene bir referans zaten var.",
+        "must_own": "Yalnızca sizin tarafınızdan oluşturulan değişkenlere referans olabilir",
+        "same_room": "Aynı odadaki bir değişkene referansta bulunulmasına izin verilmez.",
+        "valid": "Lütfen geçerli bir referans değişkeni seçin."
+      },
+      "shared_var_own_room": "Paylaşılan değişkenleri yalnızca kendi odanızda ayarlayabilirsiniz."
+    }
+  },
+  "help": "Düzenekli Mobi yardımı",
+  "kickaction": {
+    "exception": {
+      "message": {
+        "to": {
+          "owner": "Birini atmak odanı yutan bir paradoksa neden olur."
+        }
+      }
+    }
+  },
+  "muteaction": {
+    "exception": {
+      "message": {
+        "to": {
+          "owner": "Düzenekli Mobi sessizlik: Oda sahibi Hariç"
+        }
+      }
+    }
+  },
+  "nonowner": {
+    "change": {
+      "confirm": {
+        "body": "Bu Mobi'nin ayarlarını değiştirmek istediğine emin misin? (Eşyanın sahibi olmadığın için bu onay mesajı görünmektedir.)",
+        "title": "Please confirm non-owner change!"
+      }
+    }
+  },
+  "params": {
+    "action": {
+      "0": "${widget.memenu.wave}",
+      "1": "${widget.memenu.blow}",
+      "2": "${widget.memenu.laugh}",
+      "3": "${widget.memenu.thumb}",
+      "4": "Canlı",
+      "5": "${widget.memenu.idle}",
+      "6": "${widget.memenu.sit}",
+      "7": "${widget.memenu.stand}",
+      "8": "Uzan",
+      "9": "Yüz",
+      "10": "${widget.memenu.sign}",
+      "11": "${widget.memenu.dance}",
+      "dance": {
+        "1": "${widget.memenu.dance1}",
+        "2": "${widget.memenu.dance2}",
+        "3": "${widget.memenu.dance3}",
+        "4": "${widget.memenu.dance4}"
+      },
+      "sign": {
+        "0": "0",
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "10",
+        "11": "|",
+        "12": "ª",
+        "13": "!",
+        "14": "Futbol",
+        "15": ":)",
+        "16": "Kırmızı kart",
+        "17": "Sarı kart"
+      }
+    },
+    "action_selection": "Eylem:",
+    "allmatch": "Tüm metni eşleştir",
+    "allowafter2": "Şundan sonra aktif:",
+    "allowafter": "Tetikleyici {{seconds}} saniye içinde etkinleşecek",
+    "allowbefore2": "Şundan önce aktif:",
+    "allowbefore": "Tetikleme: {{seconds}} saniye",
+    "anyavatar": "Herhangi bir kullanıcı",
+    "area_selection": "Alan Seçimi",
+    "bot": {
+      "name": "Bot Adı",
+      "usage": "Bot kullanarak el eşyası ver"
+    },
+    "capture": {
+      "figure": "Görünüşümü kopyala",
+      "handitem": "El eşyamı kopyala"
+    },
+    "carry_mode": "Kullanıcılar şu durumlarda taşınır:",
+    "certainavatar": "Belirli bir kullanıcı",
+    "chat": {
+      "hide": "Tetikleyicinin mesajını gizle",
+      "onlyowner": "Yalnızca oda sahibi tetikleyebilir"
+    },
+    "chatcontains": "Anahtar kelime içerir",
+    "chattriggertype": "Tür seç:",
+    "choose_type": "Tür seç:",
+    "clock_control": "Seçenekler",
+    "clock_minutes": "{{minutes}} dakika",
+    "clock_minutes_elapsed": "{{minutes}} dakika geçti",
+    "clock_seconds": "{{seconds}} saniye",
+    "clock_seconds_elapsed": "{{seconds}} saniye geçti",
+    "comparison": {
+      "0": "Daha az",
+      "1": "Eşit",
+      "2": "Daha yüksek"
+    },
+    "comparison_selection": "Türü seç:",
+    "cond_eval": {
+      "note": "Bu eklentinin içerdiği DÜZENEKLİ Koşulları seçebilirsin. Seçim boşsa, mevcut tüm koşullara uygulanacaktır."
+    },
+    "condition": {
+      "altitude": "Mevcut yükseklik",
+      "direction": "Geçerli yön",
+      "position": "Odadaki mevcut konum",
+      "state": "Mevcut mobi durumu"
+    },
+    "conditions": "Sağlanması gereken Mobi kriterini seç:",
+    "dance_filter": "Dansa göre filtrele",
+    "dance_selection": "Dans:",
+    "delay": "{{seconds}} saniyeliğine Gecikme Efekti",
+    "direction_selection": "Yön seç:",
+    "emptytiles": "Alana dağınık Mobiler {{tiles}} karo ayrı yerleştirildi",
+    "enddate": "Bitiş tarihi:",
+    "enter_names": "Kullanıcı adlarını gir:",
+    "enteravatarname": "Kullanıcı adını gir",
+    "enterawordorphrase": "Bir sözcük veya sözcük grubu gir",
+    "entermessage": "Bir mesaj gir",
+    "eval_mode": "Eşleşmesi gereken koşullar:",
+    "exactmatch": "Tam eşleşme",
+    "formation": "Bilgi al",
+    "freeze": {
+      "cancel_on_teleport": "Işınlanırken donmayı çöz",
+      "effect": {
+        "0": "${fx_218}",
+        "1": "${fx_12}",
+        "2": "${fx_11}",
+        "3": "${fx_53}",
+        "4": "${fx_163}"
+      },
+      "effect_selection": "Bir efekt seç:"
+    },
+    "groupselection": "Grup seç:",
+    "grouptype": {
+      "0": "Mevcut grup",
+      "1": "Listeden seç"
+    },
+    "handitem": "El Malzemesi",
+    "length": {
+      "minutes": "Süre: {{dk}} dk"
+    },
+    "level_selection": "Set level: {{level}}",
+    "message": "Mesaj:",
+    "movefurni": "Mobi taşı:",
+    "movement": {
+      "horizontal": {
+        "distance": "Yönde {{distance}} karo hareket ettir",
+        "selection": "X ekseni"
+      },
+      "vertical": {
+        "distance": "Yönde {{distance}} karo hareket ettir",
+        "selection": "Y ekseni"
+      }
+    },
+    "movephysics": {
+      "block_by_furni": "Mobi tarafından engelleniyor",
+      "keep_altitude": "Mobi yüksekliğini koru",
+      "move_through_furni": "Mobiden geç",
+      "move_through_users": "Kullanıcıdan geç"
+    },
+    "moveuser": "Kullanıcıyı taşı:",
+    "neighborhood_selection": "Komşu Zeminleri Seç",
+    "not_requireall": "Düzenekli Tetikleyici koşullu:",
+    "onfurni": {
+      "0": "Mobi üstündeki mobiler",
+      "1": "Mobi altındaki mobiler",
+      "2": "Aynı yükseklikte mobiler",
+      "3": "Zemin üzerindeki tüm mobiler"
+    },
+    "operator": {
+      "0": "Arttır",
+      "1": "Azalt",
+      "2": "Değeri ayarla"
+    },
+    "pickamount": "{{picks}} etkilerini seç",
+    "picktriggerer": "Tetikleyicinin adını seç:",
+    "placement": {
+      "1": "1inci",
+      "2": "2nci",
+      "3": "3üncü",
+      "4": "4üncü"
+    },
+    "placement_selection": "Yerleştirme:",
+    "placetodirection": "Mobileri bu yöne yerleştir",
+    "points_operation": "Etki türü:",
+    "prizelimit": "Toplam ödül sınırı: {{amount}}",
+    "quantifier": {
+      "furni": {
+        "0": "Tüm mobiler eşleşiyor",
+        "1": "Herhangi bir mobi eşleşiyor",
+        "neg": {
+          "0": "Mobilerin hiçbiri eşleşmiyor",
+          "1": "Hiçbir mobi eşleşmiyor"
+        }
+      },
+      "users": {
+        "0": "Tüm kullanıcılar eşleşiyor",
+        "1": "Herhangi bir kullanıcı eşleşiyor",
+        "neg": {
+          "0": "Herhangi bir kullanıcı eşleşmiyor",
+          "1": "Hiçbir kullanıcı eşleşmiyor"
+        }
+      },
+      "variables": {
+        "0": "Hepsi eşleşiyor",
+        "1": "Herhangi biri eşleşiyor",
+        "neg": {
+          "0": "Hiçbiri eşleşmiyor",
+          "1": "Eşleşme yok"
+        }
+      }
+    },
+    "quantifier_selection": "Koşulu eşleştir, eğer:",
+    "remote_selection": {
+      "filter": "Yığınları filtrele",
+      "type": "Seçim türü:"
+    },
+    "requireall": "Şu durumda tetiklemeye izin ver:",
+    "requiredformationsize": "En az {{furnis}} Mobinin durumu / konumu uygunsa",
+    "rotatefurni": "Mobiyi döndür",
+    "rotateuser": "Kullanıcıyı döndür:",
+    "seconds": "{{seconds}} saniye",
+    "select_options": "Seçenekleri belirle:",
+    "selection_type": "Mobi seçimi seçenekleri:",
+    "selector_option": {
+      "0": "Mevcut seçimi filtrele",
+      "1": "Ters çevir"
+    },
+    "selector_options_selector": "Seçici seçenekleri:",
+    "setaltitude": "Yüksekliği seç:",
+    "setamount": "Şununla karşılaştır: {{amount}}",
+    "setanimationtime": "Animasyon süresi: {{ms}} milisaniye",
+    "setexecutions": "Düzenleme miktarı: {{amount}}",
+    "setfilter": "Filtre miktarı:",
+    "setfurnifilter": "{{amount}} mobiye filtrele",
+    "setlongtime": "Set time: {{time}}",
+    "setpoints2": "Ayarlanan puan:",
+    "setpoints": "Puan belirle: {{points}} puan",
+    "setscore2": "Takımın alması gereken puan:",
+    "setscore": "Takım şu puana ulaşmalı: {{points}} puan",
+    "setshorttime": "Süre ayarla: {{ms}} milisaniye",
+    "settime2": "Ayarlanan zaman:",
+    "settime": "Süre belirle: {{seconds}} saniye",
+    "settimesingame": "Oyun başına süre: {{times}}",
+    "settimewindow": "Süre penceresi: {{timewindow}} saniye",
+    "setusersfilter": "{{amount}} kullanıcıya filtrele",
+    "shout": "Bağır",
+    "sign_filter": "İşarete göre filtrele",
+    "sign_selection": "İşaret:",
+    "signal": {
+      "send_options": "Sinyal seçenekleri:",
+      "split_furni": "Her mobi için sinyal gönder",
+      "split_users": "Herbir kullanıcıya sinyal gönder"
+    },
+    "skipactions": "Son {{skips}} uygulamalarından kaynaklanan etkilerden kaçın",
+    "sources": {
+      "collapse": "Gelişmiş ayarları gizle",
+      "context": "Bağlam değişkenleri",
+      "expand": "Gelişmiş ayarları göster",
+      "furni": {
+        "0": "Tetikleyici öğeyi kullan",
+        "100": "Seçilmiş mobileri kullan",
+        "101": "Anlık görüntüyü kullan",
+        "200": "Seçiciden mobi kullan",
+        "201": "Sinyalden mobi kullan",
+        "900": "Odadaki tüm mobiler",
+        "title": "Mobi kaynağını seç:"
+      },
+      "global": "Küresel değişkenleri",
+      "merged": {
+        "title": "Kaynak seç:"
+      },
+      "users": {
+        "0": "Tetikleyen kullanıcıyı kullan",
+        "100": "Adı belirtilen botu kullan",
+        "101": "Adı belirtilen kullanıcıyı kullan",
+        "200": "Seçicideki kullanıcıları kullan",
+        "201": "Sinyaldeki kullanıcıları kullan",
+        "900": "Odadaki tüm kullanıcılar",
+        "title": "Kullanıcı kaynağını seç:"
+      }
+    },
+    "sourcetype": {
+      "context": "Bağlam",
+      "furni": "Mobi",
+      "global": "Küresel",
+      "users": "Kullanıcı"
+    },
+    "start": {
+      "following": "Takip etmeye başla"
+    },
+    "startdate": "Başlama tarihi:",
+    "startdir": "Başlangıç yönü",
+    "state_match": "Yalnızca durum eşleşiyorsa mobi seç",
+    "state_trigger": {
+      "0": "Tüm durumlar için tetikleyici",
+      "1": "Mevcut durum tetikleyici"
+    },
+    "stop": {
+      "following": "Takip etmeyi bırak"
+    },
+    "talk": "Konuş",
+    "team": "Takım seç",
+    "team_type": {
+      "0": "Düzenekli",
+      "1": "Battle Banzai",
+      "2": "Freeze"
+    },
+    "teleport": {
+      "options": "Işınlayıcı seçenekleri:"
+    },
+    "texts": {
+      "capturer_name": "Yakalama adı:",
+      "placeholder_name": "Yer tutucu adı:",
+      "placeholder_preview": "Düzenekli metinlere <font color",
+      "placeholder_type": "Yer tutucu türü:",
+      "select_delimiter": "Sınırlayıcıyı seçin:",
+      "variable_display_type": "Değişken gösterme tipi:",
+      "variable_input_type": "Değişken giriş türü:",
+      "variable_output": "Değişken çıkış:"
+    },
+    "time": {
+      "day_selection": "Gün:",
+      "exact": "Tam",
+      "hour_selection": "Saat:",
+      "minute_selection": "Dakika",
+      "month": {
+        "1": "Oca.",
+        "2": "Şub.",
+        "3": "Mar.",
+        "4": "Nis.",
+        "5": "May.",
+        "6": "Haz.",
+        "7": "Tem.",
+        "8": "Ağu.",
+        "9": "Eyl.",
+        "10": "Eki.",
+        "11": "Kas.",
+        "12": "Aral."
+      },
+      "month_selection": "Ay:",
+      "nofilter": "Filtresiz",
+      "range": "Aralık",
+      "second_selection": "Saniye:",
+      "skip": "Filtre kullanma",
+      "timezone_selection": "Saat dilimini seç:",
+      "weekday": {
+        "1": "Pazartesi",
+        "2": "Salı",
+        "3": "Çarşamba",
+        "4": "Perşembe",
+        "5": "Cuma",
+        "6": "Cumartesi",
+        "7": "Pazar"
+      },
+      "weekday_selection": "Haftanın günü:",
+      "year_selection": "Yıl:"
+    },
+    "toggletype": {
+      "0": "Sonraki duruma geç",
+      "1": "Önceki duruma geç"
+    },
+    "toggletype_selection": "Geçiş türünü seçin:",
+    "triggerer": {
+      "bot": "Bot",
+      "user": "Kullanıcı"
+    },
+    "triggerer_choice": "DÜZENEKLİ Efektlerini uygula:",
+    "turn": "Hareket engellendiğinde",
+    "user_collide": "Kullanıcı ile çarpışırken",
+    "user_move": {
+      "walkmode": "Eğer kullanıcı yürüyorsa:"
+    },
+    "usercountmax": "En fazla {{value}} kullanıcı",
+    "usercountmin": "En az {{value}} kullanıcı",
+    "usertype": "Kullanıcı tipi:",
+    "variables": {
+      "availability": "Kullanılabilirlik seçenekleri:",
+      "compare_value": "Değişkeni karşılaştır:",
+      "connect_text": {
+        "caption": "0",
+        "title": "Metni değişkene bağla:"
+      },
+      "duration": "Süre:",
+      "inspection": "Değişken kontrol",
+      "operation": "Operasyon:",
+      "quest_chain_name": "Görev zinciri kodu:",
+      "quest_name": "Görev kodu:",
+      "reference_value": "Referans değeri",
+      "room_selection": "Oda seç:",
+      "settings": "Değişken seçenekleri:",
+      "show_internal": "... dahili değişkenleri göster",
+      "sort_by": "Sıralama:",
+      "time_selection": "Zaman seç",
+      "trigger_options": "Değişken bu olduğunda tetikle:",
+      "value_settings": "Değer seçenekleri",
+      "variable_name": "Değişken ismi:",
+      "variable_output": "Değişken çıkış:",
+      "variable_ref_selection": "Referans değişkeni:",
+      "variable_selection": "Değişken seç:"
+    },
+    "whatissaid": "Ne söylendi:",
+    "whisper": "Fısılda"
+  },
+  "pickFurni": {
+    "furnitypematches": "Aynı türden tüm Mobiler bir Tetikleyici görevi yapar"
+  },
+  "pickfurnis": {
+    "caption": "Mobi Seç [{{count}}/{{limit}}]",
+    "desc": "Bu giriş için bir veya daha fazla mobilya seçmelisiniz. Tıklayarak / dokunarak odanızdaki bir mobilyayı seçebilir veya seçimi kaldırabilirsiniz.",
+    "furnitypematches": "Tetikleyici Mobi türü, seçilen mobilerden biriyle eşleşir",
+    "select": "Mobi Seç",
+    "stuffselectiontype": {
+      "0": "Seçilen Mobilerde Efekti gerçekleştir",
+      "1": "Türü seçilen Mobilerden biriyle eşleşen bir rastgele Mobi üstünde Efekti gerçekleştir",
+      "2": "Tetikleyici veya Koşul tarafından tanımlanan bir Mobi üstünde Efekti gerçekleştir"
+    }
+  },
+  "ready": "Hazır",
+  "rewardfailed": {
+    "reason": {
+      "0": "Özür dileriz! Yalnızca sınırlı sayıda ödül var. Tüm ödüller verildi.",
+      "1": "Bu ödül zaten sana verildi. Her kullanıcı yalnızca bir ödül alır.",
+      "2": "Bugün sana zaten ödül verildi. Yarın tekrar dene!",
+      "3": "Bu saatte zaten sana bir ödül verildi. Bir saat sonra tekrar dene!",
+      "4": "Çok kötü! Şansın yaver gitmedi ve bu kez hiç ödül almadın. Tekrar dene!",
+      "5": "Zaten toplayabileceğin tüm ödülleri topladın.",
+      "8": "You have already been given a reward this minute. Try again in an minute!"
+    },
+    "title": "Uww, ödül yok :("
+  },
+  "rewardsuccess": {
+    "body": "Az önce bir ödül aldın. Ne olduğunu görmek için envanterine bak!",
+    "title": "Az önce bir ödül aldın."
+  },
+  "settings": {
+    "saved": "Ayarlar kaydedildi"
+  },
+  "title": "Düzenekli Mobi",
+  "tooltip": {
+    "action": "Eylem seç",
+    "avatarname": "Kullanıcı adını gir",
+    "badgecode": "Rozet Kodu",
+    "bot": {
+      "chatmessage": "Bot ne söylemeli",
+      "handitem": "Bot'un vereceği el malzemesini seç",
+      "name": "Bot'un adı kontrol edildi"
+    },
+    "botname": "Bot'un adı kontrol edildi",
+    "chatinput": "Anahtar sözcük gir",
+    "chatmessage": "Mesaj nedir:",
+    "dance": "Dans seç",
+    "effectid": "Efekt ID:",
+    "enter_names_info": "Kullanıcı adlarını yeni satırlarla ayır",
+    "freeze": {
+      "effect": "Efekt seç"
+    },
+    "group": "Grup seç",
+    "handitem": "El malzemesi seç",
+    "sign": "İşaret seç"
+  },
+  "variables": {
+    "availability_change": {
+      "body": "Bu düzenekli değişkenin kullanılabilirliğini değiştirmek istediğinizden emin misiniz? Bu işlem depolanan verileri kaldıracaktır ve geri alınamaz!",
+      "title": "Değişken verileri temizleme"
+    },
+    "pickup": {
+      "body": "Bu değişkeni almak istediğinizden emin misiniz? Yapılan tüm referanslar ve depoladığı tüm veriler silinecektir.",
+      "title": "Bir değişkeni kaldırma"
+    }
+  },
+  "view_in_menu": "Kablolu Menüde Görüntüle"
+}

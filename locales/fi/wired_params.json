@@ -1,0 +1,544 @@
+{
+  "applysnapshot": "Aseta tallennettu tila.",
+  "badgereceived": {
+    "body": "Sait juuri merkin. Tsekkaa tavaravalikostasi mikä se on!",
+    "title": "Merkki ansaittu!"
+  },
+  "chatmsgtoolong": "Viesti voi sisältää maksimissaan 100 merkkiä.",
+  "conflictingactions": {
+    "caption": "Varoitus: toiminnot eivät toimi yhdessä.",
+    "text": "Tämä laukaisin ei määrittele laukaisimen aktivoijaa. Olet pinonnut tämän laukaisimen sellaisien toimintojen ({{actions}}) kanssa, jotka vaativat laukaisimelle aktivoijan."
+  },
+  "conflictingtriggers": {
+    "caption": "Varoitus: laukaisimet eivät toimi yhdessä.",
+    "text": "Tämä tapahtuma tarvitsee laukaisimen aktivoituakseen. Olet pinonnut tämän tapahtumat sellaisten laukaisimien kanssa, jotka eivät toimi tämän tapahtuman kanssa."
+  },
+  "danger": {
+    "1": {
+      "change": {
+        "confirm": {
+          "body": "Olet valinnut käänteisen valinnan käyttämisen ilman suodatusta. Olet valitsemassa kaikkia tavaroita/hahmoja jotka EIVÄT täytä vaatimuksia, joka voi tarkoittaa koko huonetta. Oletko varma? (VAARALLISTA!)",
+          "title": "Oletko varma?"
+        }
+      }
+    }
+  },
+  "enter_code": "syötä koodi",
+  "enter_id": "syötä ID",
+  "enter_name": "syötä nimi",
+  "enter_text": "syötä teksti",
+  "error": {
+    "capturer": {
+      "duplicate": "Et voi lukea samaa muuttujaa kahdesti samassa lauseessa"
+    },
+    "condition_evaluation_furni": "Voit valita vain Wired-ehtoja ja lisiä!",
+    "invalid_freeze_effect": "Valitsit sopimattoman efektin!",
+    "invalid_handitem_type": "Käsitavaran tyyppi ei ole sallittu!",
+    "invalid_reward_products": "Seuraavia tuotteita/merkkejä ei ole: {{products}}",
+    "placeholder": {
+      "delimiter_empty": "Erotin ei voi olla tyhjä",
+      "name_length": "Paikan tulee olla 1-40 merkkiä pitkä.",
+      "name_syntax": "Paikka saa sisältää vain kirjaimia, numeroita ja \"_\"-merkkejä."
+    },
+    "require_antenna_furni": "Voit valita vain Wired-antenneja.",
+    "require_click_tiles": "Voit valita vain näkymättömiä klikkaustavaroita.",
+    "require_counter_furni": "Voit valita vain ajastintavaroita.",
+    "title": "Päivitys epäonnistui",
+    "too_much_text": "Wiredien tekstien maksimipituus on {{limit}} merkkiä.",
+    "username_length": "Hahmon nimi ei voi olla pidempi kuin {{max_username_length}} merkkiä!",
+    "usernames_count": "Voi olla vain {{max_usernames}} hahmon nimeä!",
+    "variables": {
+      "invalid_availability": "Virheellinen saatavuus",
+      "name_length": "Muuttujan nimen tulee olla 1-40 merkkiä pitkä.",
+      "name_syntax": "Muuttujan nimi saa sisältää vain kirjaimia, numeroita ja \"_\"-merkkejä.",
+      "name_uniq": "Muuttujan nimi on jo käytössä tässä huoneessa, valitse toinen nimi!",
+      "permanent_limit": "Huone saavutti tämän tyypin pysyvien muuttujien rajan.",
+      "permissions": {
+        "1": "Vain tämän Wired-muuttujan omistaja voi tehdä tämän muutoksen.",
+        "2": "Vain tämän Wired-muuttujan omistaja tai huoneen omistaja voi tehdä tämän muutoksen."
+      },
+      "reference": {
+        "already_exists": "Huoneessa on jo viite tähän muuttujaan.",
+        "must_own": "Voit viitata vain omistamiisi muuttujiin.",
+        "same_room": "Viittaaminen muuttujaan samassa huoneessa ei ole sallittua.",
+        "valid": "Valitse kelvollinen viitemuuttuja."
+      },
+      "shared_var_own_room": "Voit luoda jaettuja muuttujia vain omassa huoneessasi."
+    }
+  },
+  "help": "Tarvitsetko apua?",
+  "kickaction": {
+    "exception": {
+      "message": {
+        "to": {
+          "owner": "Itsensä potkiminen aiheuttaa huoneesi nielaisevan paradoksin."
+        }
+      }
+    }
+  },
+  "muteaction": {
+    "exception": {
+      "message": {
+        "to": {
+          "owner": "Poikkeus wired-tavaroiden hiljennys efektille: Huoneen omistaja"
+        }
+      }
+    }
+  },
+  "nonowner": {
+    "change": {
+      "confirm": {
+        "body": "Oletko varma, että haluat muuttaa tämän Wired-tavaran asetuksia? (Tämä ilmoitus näkyy, koska et ole Wiredin omistaja)",
+        "title": "Vahvista muutos"
+      }
+    }
+  },
+  "params": {
+    "action": {
+      "0": "${widget.memenu.wave}",
+      "1": "${widget.memenu.blow}",
+      "2": "${widget.memenu.laugh}",
+      "3": "${widget.memenu.thumb}",
+      "4": "Hereillä",
+      "5": "${widget.memenu.idle}",
+      "6": "${widget.memenu.sit}",
+      "7": "${widget.memenu.stand}",
+      "8": "Makaa",
+      "9": "Ui",
+      "10": "${widget.memenu.sign}",
+      "11": "${widget.memenu.dance}",
+      "dance": {
+        "1": "${widget.memenu.dance1}",
+        "2": "${widget.memenu.dance2}",
+        "3": "${widget.memenu.dance3}",
+        "4": "${widget.memenu.dance4}"
+      },
+      "sign": {
+        "0": "0",
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "10",
+        "11": "|",
+        "12": "ª",
+        "13": "!",
+        "14": "Jalkapallo",
+        "15": ":)",
+        "16": "Punainen kortti",
+        "17": "Keltainen kortti"
+      }
+    },
+    "action_selection": "Toimenpide:",
+    "allmatch": "Täsmää kaikkeen tekstiin",
+    "allowafter2": "Aktivoi kun on kulunut:",
+    "allowafter": "Salli:  {{seconds}} sekunnin jälkeen",
+    "allowbefore2": "Aktivoi ennen kuin on kulunut:",
+    "allowbefore": "Salli ennen: {{seconds}} sekuntia",
+    "anyavatar": "Kuka tahansa",
+    "area_selection": "Alueen valinta",
+    "bot": {
+      "name": "Botin nimi",
+      "usage": "Anna käsiesineet botin avulla"
+    },
+    "capture": {
+      "figure": "Kopioi tyylini",
+      "handitem": "Kopioi käsiesineeni"
+    },
+    "carry_mode": "Kuljeta hahmoja, kun he:",
+    "certainavatar": "Tietty hahmo",
+    "chat": {
+      "hide": "Piilota laukaisijan teksti",
+      "onlyowner": "Vain huoneen omistaja voi laukaista"
+    },
+    "chatcontains": "Sisältää avainsanan",
+    "chattriggertype": "Valitse tyyppi:",
+    "choose_type": "Valitse tyyppi:",
+    "clock_control": "Valitse seuraavista vaihtoehdoista",
+    "clock_minutes": "{{minutes}} minuuttia",
+    "clock_minutes_elapsed": "{{minutes}} minuuttia kulunut",
+    "clock_seconds": "{{seconds}} sekuntia",
+    "clock_seconds_elapsed": "{{seconds}} sekuntia kulunut",
+    "comparison": {
+      "0": "Alempi kuin",
+      "1": "Yhtä kuin",
+      "2": "Korkeampi kuin"
+    },
+    "comparison_selection": "Valitse tyyppi:",
+    "cond_eval": {
+      "note": "Voit valita WIRED-ehdot, joihin tämä lisäosa pätee. Jos et valitse mitään ehtoa, sitä sovelletaan kaikkiin käytettävissä oleviin ehtoihin."
+    },
+    "condition": {
+      "altitude": "Nykyinen korkeus",
+      "direction": "Nykyinen suunta",
+      "position": "Nykyinen kohta huoneessa",
+      "state": "Nykyinen tavaran tila"
+    },
+    "conditions": "Ehdot, jotka täytyy täyttyä:",
+    "dance_filter": "Suodata tanssityylin mukaan",
+    "dance_selection": "Tanssityyli:",
+    "delay": "Viivästytä toimintoa {{seconds}} sekuntia",
+    "direction_selection": "Valitse suunta:",
+    "emptytiles": "Space placed Furnis {{tiles}} tiles apart",
+    "enddate": "Sammuu:",
+    "enter_names": "Kirjoita hahmojen nimet:",
+    "enteravatarname": "Hahmon nimi:",
+    "enterawordorphrase": "Sana tai lause:",
+    "entermessage": "Kirjoita viesti",
+    "eval_mode": "Ehdot, joiden tulee täsmätä:",
+    "exactmatch": "Täsmävastaavuus",
+    "formation": "Pick formation",
+    "freeze": {
+      "cancel_on_teleport": "Mahdollista liikkuminen teleportatessa",
+      "effect": {
+        "0": "${fx_218}",
+        "1": "${fx_12}",
+        "2": "${fx_11}",
+        "3": "${fx_53}",
+        "4": "${fx_163}"
+      },
+      "effect_selection": "Valitse efekti:"
+    },
+    "groupselection": "Valitse ryhmä:",
+    "grouptype": {
+      "0": "Nykyinen ryhmä:",
+      "1": "Valitse listasta"
+    },
+    "handitem": "Käsitavara",
+    "length": {
+      "minutes": "Kesto: {{minuuttia}} minuuttia"
+    },
+    "level_selection": "Set level: {{level}}",
+    "message": "Viesti:",
+    "movefurni": "Siirrä tavaraa:",
+    "movement": {
+      "horizontal": {
+        "distance": "Siirrä {{distance}} ruutua suuntaan",
+        "selection": "X-akseli"
+      },
+      "vertical": {
+        "distance": "Siirrä {{distance}} ruutua suuntaan",
+        "selection": "Y-akseli"
+      }
+    },
+    "movephysics": {
+      "block_by_furni": "Anna tavaroiden estää liike",
+      "keep_altitude": "Säilytä tavaran korkeus",
+      "move_through_furni": "Kulje tavaroiden läpi",
+      "move_through_users": "Kulje hahmojen läpi"
+    },
+    "moveuser": "Siirrä hahmoa:",
+    "neighborhood_selection": "Valitse läheisyyden koko",
+    "not_requireall": "Laukaisin aktivoituu, jos:",
+    "onfurni": {
+      "0": "Tavara tavaran päällä",
+      "1": "Tavara tavaran alla",
+      "2": "Tavara samassa korkeudessa",
+      "3": "Kaikki tavarat samassa ruudussa"
+    },
+    "operator": {
+      "0": "Lisää",
+      "1": "Vähennä",
+      "2": "Aseta arvo"
+    },
+    "pickamount": "Toimintojen määrä: {{picks}}",
+    "picktriggerer": "Valitse laukaisijan nimi:",
+    "placement": {
+      "1": "1.",
+      "2": "2.",
+      "3": "3.",
+      "4": "4."
+    },
+    "placement_selection": "Sijoitus:",
+    "placetodirection": "Place Furnis in this direction",
+    "points_operation": "Toimintotyyppi:",
+    "prizelimit": "Total rewards limit: {{amount}}",
+    "quantifier": {
+      "furni": {
+        "0": "Kaikki tavarat täsmäävät",
+        "1": "Yksikin tavara täsmää",
+        "neg": {
+          "0": "Yksikin tavara ei täsmää",
+          "1": "Mikään tavara ei täsmää"
+        }
+      },
+      "users": {
+        "0": "Kaikki hahmot täsmäävät",
+        "1": "Yksikin hahmo täsmää",
+        "neg": {
+          "0": "Yksikin hahmo ei täsmää",
+          "1": "Mikään hahmo ei täsmää"
+        }
+      },
+      "variables": {
+        "0": "Kaikki täsmäävät",
+        "1": "Mikä tahansa täsmää",
+        "neg": {
+          "0": "Mikä tahansa ei täsmää",
+          "1": "Mikään ei täsmää"
+        }
+      }
+    },
+    "quantifier_selection": "Ehto on tosi, jos:",
+    "remote_selection": {
+      "filter": "Pinojen suodatus",
+      "type": "Valinnan tyyppi:"
+    },
+    "requireall": "Laukaisimet toimivat vain, jos...",
+    "requiredformationsize": "At least {{furnis}} Furnis match state/ location",
+    "rotatefurni": "Käännä tavaraa:",
+    "rotateuser": "Käännä hahmoa:",
+    "seconds": "{{seconds}} sekuntia",
+    "select_options": "Valitse asetukset:",
+    "selection_type": "Tavaroiden valitsemisen asetukset:",
+    "selector_option": {
+      "0": "Suodata aiempaa valintaa",
+      "1": "Käänteinen valinta"
+    },
+    "selector_options_selector": "Valitsijan asetukset:",
+    "setaltitude": "Valitse korkeus:",
+    "setamount": "Verrattava määrä: {{amount}}",
+    "setanimationtime": "Animaation kesto: {{ms}} millisekuntia",
+    "setexecutions": "Suoritusten määrä: {{amount}}",
+    "setfilter": "Suodata määrä:",
+    "setfurnifilter": "Suodata valinta {{amount}} tavaraan",
+    "setlongtime": "Aseta aika: {{time}}",
+    "setpoints2": "Aseta pisteet:",
+    "setpoints": "Aseta pisteet: {{points}} pistettä",
+    "setscore2": "Joukkueelta vaadittavat pisteet:",
+    "setscore": "Aseta pisteet: {{points}} pistettä",
+    "setshorttime": "Aseta aikaväli: {{ms}} millisekuntia",
+    "settime2": "Aseta aika:",
+    "settime": "Aseta aika: {{seconds}} sekuntia",
+    "settimesingame": "Kuinka monta kertaa pelissä: {{times}}",
+    "settimewindow": "Aikaväli: {{timewindow}} sekuntia",
+    "setusersfilter": "Suodata valinta {{amount}} hahmoon",
+    "shout": "Huuda",
+    "sign_filter": "Suodata kyltin mukaan",
+    "sign_selection": "Kyltti:",
+    "signal": {
+      "send_options": "Signaalin asetukset:",
+      "split_furni": "Lähetä tavarat omissa signaaleissaan",
+      "split_users": "Lähetä hahmot omissa signaaleissaan"
+    },
+    "skipactions": "Vältä {{skips}} viimeisen toiminnon suoritus.",
+    "sources": {
+      "collapse": "Piilota lisäasetukset",
+      "context": "Kontekstimuuttujat",
+      "expand": "Näytä lisäasetukset",
+      "furni": {
+        "0": "Käytä laukaisevaa tavaraa",
+        "100": "Käytä valittuja tavaroita",
+        "101": "Käytä otosta",
+        "200": "Käytä tavaroita Wired-valitsijasta",
+        "201": "Käytä tavaroita signaalista",
+        "900": "Kaikki huoneen tavarat",
+        "title": "Valitse tavaroiden lähde:"
+      },
+      "global": "Yleiset muuttujat",
+      "merged": {
+        "title": "Valitse lähde:"
+      },
+      "users": {
+        "0": "Käytä laukaisevaa hahmoa",
+        "100": "Käytä bottia nimen perusteella",
+        "101": "Käytä hahmoa nimen perusteella",
+        "200": "Käytä hahmoja Wired-valitsijasta",
+        "201": "Käytä hahmoja signaalista",
+        "900": "Kaikki huoneen hahmot",
+        "title": "Valitse hahmojen lähde:"
+      }
+    },
+    "sourcetype": {
+      "context": "Konteksti",
+      "furni": "Tavara",
+      "global": "Yleinen",
+      "users": "Hahmo"
+    },
+    "start": {
+      "following": "Seuraa"
+    },
+    "startdate": "Käynnistyy:",
+    "startdir": "Aloitussuunta",
+    "state_match": "Valitse tavara vain tilan täsmätessä",
+    "state_trigger": {
+      "0": "Laukaise kaikissa tiloissa",
+      "1": "Laukaise nykyisessä tilassa"
+    },
+    "stop": {
+      "following": "Lopeta seuraaminen"
+    },
+    "talk": "Puhu",
+    "team": "Valitse joukkue",
+    "team_type": {
+      "0": "Wired",
+      "1": "Battle Banzai",
+      "2": "Freeze"
+    },
+    "teleport": {
+      "options": "Teleporttivaihtoehdot:"
+    },
+    "texts": {
+      "capturer_name": "Lukijan nimi:",
+      "placeholder_name": "Paikan nimi:",
+      "placeholder_preview": "Käytä tätä kirjoittamalla <font color",
+      "placeholder_type": "Paikan tyyppi:",
+      "select_delimiter": "Valitse erotin:",
+      "variable_display_type": "Muuttujan näyttötyyppi:",
+      "variable_input_type": "Muuttujan syötetyyppi:",
+      "variable_output": "Muuuttuja ulostuloon:"
+    },
+    "time": {
+      "day_selection": "Päivä:",
+      "exact": "Täsmälleen",
+      "hour_selection": "Tunnit:",
+      "minute_selection": "Minuutit:",
+      "month": {
+        "1": "Tammi",
+        "2": "Helmi",
+        "3": "Maalis",
+        "4": "Huhti",
+        "5": "Touko",
+        "6": "Kesä",
+        "7": "Heinä",
+        "8": "Elo",
+        "9": "Syys",
+        "10": "Loka",
+        "11": "Marras",
+        "12": "Joulu"
+      },
+      "month_selection": "Kuukausi:",
+      "nofilter": "Ei suodatinta",
+      "range": "Aikaväli",
+      "second_selection": "Sekunnit:",
+      "skip": "Älä käytä suodatinta",
+      "timezone_selection": "Valitse aikavyöhyke:",
+      "weekday": {
+        "1": "Maanantai",
+        "2": "Tiistai",
+        "3": "Keskiviikko",
+        "4": "Torstai",
+        "5": "Perjantai",
+        "6": "Lauantai",
+        "7": "Sunnuntai"
+      },
+      "weekday_selection": "Viikonpäivä:",
+      "year_selection": "Vuosi:"
+    },
+    "toggletype": {
+      "0": "Vaihda seuraavaan tilaan",
+      "1": "Vaihda edelliseen tilaan"
+    },
+    "toggletype_selection": "Valitse kytkentätyyppi:",
+    "triggerer": {
+      "bot": "Botti",
+      "user": "Käyttäjä"
+    },
+    "triggerer_choice": "Sovella WIRED-efektit seuraaviin:",
+    "turn": "Törmätessä",
+    "user_collide": "Kun osut käyttäjään",
+    "user_move": {
+      "walkmode": "Jos käyttäjä käveli:"
+    },
+    "usercountmax": "Enintään {{value}} käyttäjä(ä)",
+    "usercountmin": "Vähintään {{value}} käyttäjä(ä)",
+    "usertype": "Käyttäjätyyppi:",
+    "variables": {
+      "availability": "Saatavuusasetukset:",
+      "compare_value": "Vertailuarvo:",
+      "connect_text": {
+        "caption": "0",
+        "title": "Liitä teksti muuttujaan:"
+      },
+      "duration": "Kesto:",
+      "inspection": "Muuttujan tarkastus",
+      "operation": "Toimenpide:",
+      "quest_chain_name": "Tehtäväsarjan koodi:",
+      "quest_name": "Tehtävän koodi:",
+      "reference_value": "Viitearvo",
+      "room_selection": "Valitse huone:",
+      "settings": "Muuttujan asetukset:",
+      "show_internal": "... näytä sisäiset muuttujat",
+      "sort_by": "Järjestä:",
+      "time_selection": "Ajan valinta",
+      "trigger_options": "Laukaise, kun muuttuja on:",
+      "value_settings": "Arvon asetukset:",
+      "variable_name": "Muuttujan nimi:",
+      "variable_output": "Muuttuja ulostuloon:",
+      "variable_ref_selection": "Viitemuuttuja:",
+      "variable_selection": "Valitse muuttuja:"
+    },
+    "whatissaid": "Mitä sanotaan?:",
+    "whisper": "Kuiskaa"
+  },
+  "pickfurnis": {
+    "caption": "Valitse tavarat [{{count}}/{{limit}}]",
+    "desc": "Sinun tulee valita ainakin yksi tavara tähän kohtaan. Voit valita tai poistaa valinnan huoneesi kamoista klikkaamalla / nappauttamalla niitä.",
+    "furnitypematches": "The triggering Furni type matches the type of one of the picked furnis",
+    "select": "Valitse tavaroita",
+    "stuffselectiontype": {
+      "0": "Perform the Effect on picked Furnis",
+      "1": "Perform the Effect on one random Furni whose type matches one of the picked Furnis",
+      "2": "Perform the Effect on a Furni defined by the Trigger or Condition"
+    }
+  },
+  "ready": "Valmis",
+  "rewardfailed": {
+    "reason": {
+      "0": "Sori, palkintoja oli vain rajattu määrä jaossa. Kaikki palkinnot on jo jaettu.",
+      "1": "Olet jo saanut tämän palkinnon. Jokainen saa vain yhden.",
+      "2": "Olet jo saanut palkinnon tänään. Kokeile uudelleen huomenna!",
+      "3": "Olet jo saanut tämän tunnin aikana palkinnon. Kokeile tunnin kuluttua uudelleen!",
+      "4": "Höh, et onnistunut saamaan palkintoa tällä kertaa. Yritä ihmeessä uudelleen!",
+      "5": "Olet jo saanut kaikki palkinnot mitä voit saada.",
+      "8": "Olet jo saanut palkinnon tästä minuutista. Yritä uudelleen minuutin kuluttua!"
+    },
+    "title": "Aww, ei voittoa :("
+  },
+  "rewardsuccess": {
+    "body": "Sait juuri palkinnon. Tsekkaa tavaravalikostasi mikä se on!",
+    "title": "Olet ansainnut palkinnon."
+  },
+  "settings": {
+    "saved": "Asetukset tallennettu!"
+  },
+  "title": "Wired-tavarat",
+  "tooltip": {
+    "action": "Valitse toimenpide",
+    "avatarname": "Kirjoita tähän hahmon nimi.",
+    "badgecode": "Merkin koodi:",
+    "bot": {
+      "chatmessage": "Mitä botti sanoisi",
+      "handitem": "Valitse käsitavara, jonka botti antaa",
+      "name": "Botin nimi tarkistetaan"
+    },
+    "botname": "Botin nimi tarkistetaan",
+    "chatinput": "Kirjoita tähän sana tai lause, joka laukaisee toiminnon.",
+    "chatmessage": "Viesti:",
+    "dance": "Valitse tanssityyli",
+    "effectid": "Efektin ID:",
+    "enter_names_info": "Laita hahmojen nimet omille riveilleen",
+    "freeze": {
+      "effect": "Valitse toiminto"
+    },
+    "group": "Valitse ryhmä",
+    "handitem": "Valitse käsitavara",
+    "sign": "Valitse kyltti"
+  },
+  "variables": {
+    "availability_change": {
+      "body": "Haluatko varmasti muuttaa tämän Wired-muuttujan saatavuutta? Tämä toiminto poistaa sen tallentamat tiedot ja on peruuttamaton!",
+      "title": "Muuttujan tietojen tyhjennys"
+    },
+    "pickup": {
+      "body": "Haluatko varmasti poimia tämän Wired-muuttujan? Kaikki viitteet siihen tyhjennetään ja kaikki sen tallentamat tiedot poistetaan.",
+      "title": "Muuttujan poisto"
+    }
+  },
+  "view_in_menu": "Näytä Wired-valikossa"
+}

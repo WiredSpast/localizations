@@ -1,0 +1,544 @@
+{
+  "applysnapshot": "Pas instellingen toe op gekozen Meubi",
+  "badgereceived": {
+    "body": "Je hebt zojuist een Badge gekregen. Check je Inventaris!",
+    "title": "Badge ontvangen!"
+  },
+  "chatmsgtoolong": "Bericht mag maar 100 karakters hebben.",
+  "conflictingactions": {
+    "caption": "Waarschuwing: Reacties niet te combineren",
+    "text": "Deze Actie kan niet door een Habbo uitgevoerd worden en past niet bij de gekoppelde Reactie. Je hebt deze actie gekoppeld aan een Reactie ({{actions}}) die door een Habbo geactiveerd moet worden via een Actie."
+  },
+  "conflictingtriggers": {
+    "caption": "Waarschuwing: Acties niet te combineren",
+    "text": "Deze Reactie heeft een Habbo nodig om te werken, maar je hebt deze Reactie nu gekoppeld aan een Actie ({{triggers}}) waar geen Habbo voor nodig is."
+  },
+  "danger": {
+    "1": {
+      "change": {
+        "confirm": {
+          "body": "Je hebt \"Omkeren\" geselecteerd zonder te filteren. Dit selecteert alle meubi/gebruikers die NIET voldoen aan de vereisten, wat de gehele kamer kan zijn. Weet je het zeker? (GEVAARLIJK!)",
+          "title": "Ben je zeker?"
+        }
+      }
+    }
+  },
+  "enter_code": "Vul code in",
+  "enter_id": "Vul ID in",
+  "enter_name": "Vul naam in",
+  "enter_text": "Vul tekst in",
+  "error": {
+    "capturer": {
+      "duplicate": "Je kunt dezelfde variabele niet twee keer in één zin vastleggen"
+    },
+    "condition_evaluation_furni": "Je kan enkel WIRED Voorwaarden en Add-Ons selecteren!",
+    "invalid_freeze_effect": "Ongeldig effect gekozen!",
+    "invalid_handitem_type": "Hand item type is niet toegestaan!",
+    "invalid_reward_products": "De volgende producten/badges bestaan niet: {{products}}",
+    "placeholder": {
+      "delimiter_empty": "Scheidingsteken mag niet leeg zijn.",
+      "name_length": "De lengte van de placeholder moet tussen de 1 en 40 karakters zijn.",
+      "name_syntax": "Placeholders mogen alleen bestaan uit letters, nummer of \"_\" karakters."
+    },
+    "require_antenna_furni": "Je kan enkel antenna meubi selecteren.",
+    "require_click_tiles": "Je kan enkel onzichtbare kliktegel meubi selecteren.",
+    "require_counter_furni": "Je kan enkel timer meubi selecteren.",
+    "title": "Update mislukt",
+    "too_much_text": "Wired teksten mogen maximaal {{limit}} tekens bevatten.",
+    "username_length": "Een username kan niet langer zijn dan {{max_username_length}} tekens!",
+    "usernames_count": "Er mogen maximaal {{max_usernames}} gebruikersnamen zijn!",
+    "variables": {
+      "invalid_availability": "Ongeldige beschikbaarheid",
+      "name_length": "Variabele naam lengte moet tussen 1 en 40 tekens zijn.",
+      "name_syntax": "Variabele naam mag enkel letters, nummers, of \"_\" tekens bevatten.",
+      "name_uniq": "Variabele naam is reeds gebruikt in deze kamer, gebruik een andere!",
+      "permanent_limit": "Deze kamer heeft het limiet van permanente variabelen van dit type bereikt.",
+      "permissions": {
+        "1": "Enkel de eigenaar van deze wired variabele heeft de toestemming om deze verandering door te voeren.",
+        "2": "Enkel de eigenaar van deze wired variabele of de kamer eigenaar heeft de toestemming om deze verandering door te voeren."
+      },
+      "reference": {
+        "already_exists": "Een referentie naar deze variabele bestaat al in deze kamer.",
+        "must_own": "Je kan enkel refereren naar variabelen die je zelf aangemaakt hebt.",
+        "same_room": "Je kan niet refereren naar een variabele in dezelfde kamer.",
+        "valid": "Kies een geldige referentie variabele."
+      },
+      "shared_var_own_room": "Je kan enkel gedeelde variabelen in je eigen kamer instellen."
+    }
+  },
+  "help": "Wired Meubi Hulp",
+  "kickaction": {
+    "exception": {
+      "message": {
+        "to": {
+          "owner": "Als je jezelf wegstuurt, verdwijnt je kamer in een zwart gat."
+        }
+      }
+    }
+  },
+  "muteaction": {
+    "exception": {
+      "message": {
+        "to": {
+          "owner": "Wired meubi spreekverbod uitzondering: Kamer eigenaar"
+        }
+      }
+    }
+  },
+  "nonowner": {
+    "change": {
+      "confirm": {
+        "body": "Ben je zeker dat je de instellingen wil veranderen? (Deze dialoog wordt getoond omdat je niet de eigenaar bent)",
+        "title": "Bevestig niet-eigenaar verandering!"
+      }
+    }
+  },
+  "params": {
+    "action": {
+      "0": "${widget.memenu.wave}",
+      "1": "${widget.memenu.blow}",
+      "2": "${widget.memenu.laugh}",
+      "3": "${widget.memenu.thumb}",
+      "4": "Wakker",
+      "5": "${widget.memenu.idle}",
+      "6": "${widget.memenu.sit}",
+      "7": "${widget.memenu.stand}",
+      "8": "Liggend",
+      "9": "Zwemmend",
+      "10": "${widget.memenu.sign}",
+      "11": "${widget.memenu.dance}",
+      "dance": {
+        "1": "${widget.memenu.dance1}",
+        "2": "${widget.memenu.dance2}",
+        "3": "${widget.memenu.dance3}",
+        "4": "${widget.memenu.dance4}"
+      },
+      "sign": {
+        "0": "0",
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "10",
+        "11": "|",
+        "12": "ª",
+        "13": "!",
+        "14": "Voetbal",
+        "15": ":)",
+        "16": "Rode Kaart",
+        "17": "Gele Kaart"
+      }
+    },
+    "action_selection": "Actie:",
+    "allmatch": "Match alle tekst",
+    "allowafter2": "Actief na:",
+    "allowafter": "Laat toe na {{seconds}} seconden",
+    "allowbefore2": "Actief  voor:",
+    "allowbefore": "Laat toe binnen {{seconds}} seconden",
+    "anyavatar": "Een willekeurige Habbo",
+    "area_selection": "Geselecteerd Gebied",
+    "bot": {
+      "name": "Bot Naam",
+      "usage": "Geef hand item met behulp van bot"
+    },
+    "capture": {
+      "figure": "Kopieer mijn look",
+      "handitem": "Kopieer mijn hand item"
+    },
+    "carry_mode": "Spelers worden gedragen wanneer:",
+    "certainavatar": "Bepaalde Habbo",
+    "chat": {
+      "hide": "Verberg triggers bericht",
+      "onlyowner": "Alleen de kamereigenaar kan triggeren"
+    },
+    "chatcontains": "Bevat sleutelwoord",
+    "chattriggertype": "Kies type:",
+    "choose_type": "Selecteer type:",
+    "clock_control": "Selecteer een optie",
+    "clock_minutes": "{{minutes}} minuten",
+    "clock_minutes_elapsed": "{{minutes}} minuten verstreken",
+    "clock_seconds": "{{seconds}} seconden",
+    "clock_seconds_elapsed": "{{seconds}} seconden verstreken",
+    "comparison": {
+      "0": "Lager dan",
+      "1": "Gelijk aan",
+      "2": "Hoger dan"
+    },
+    "comparison_selection": "Selecteer type:",
+    "cond_eval": {
+      "note": "Je kunt de WIRED-voorwaarden selecteren waarop deze add-on van toepassing is. Als de selectie leeg is, is deze van toepassing op alle beschikbare voorwaarden."
+    },
+    "condition": {
+      "altitude": "Huidige hoogte",
+      "direction": "Huidige richting",
+      "position": "Huidige plek in de kamer",
+      "state": "Huidige Meubi staat"
+    },
+    "conditions": "Instellingen die worden gebruikt:",
+    "dance_filter": "Filter op dans",
+    "dance_selection": "Dans:",
+    "delay": "Start Reactie na {{seconds}} seconden",
+    "direction_selection": "Selecteer richting:",
+    "emptytiles": "Space placed Furnis {{tiles}} tiles apart",
+    "enddate": "Eind datum:",
+    "enter_names": "Vul gebruikersnaam in:",
+    "enteravatarname": "Type Habbonaam",
+    "enterawordorphrase": "Geef een woord of zin",
+    "entermessage": "Type een woord",
+    "eval_mode": "Voorwaarden die moeten overeenkomen:",
+    "exactmatch": "Exacte overeenkomst",
+    "formation": "Kies formatie",
+    "freeze": {
+      "cancel_on_teleport": "Unfreeze tijdens het teleporteren",
+      "effect": {
+        "0": "${fx_218}",
+        "1": "${fx_12}",
+        "2": "${fx_11}",
+        "3": "${fx_53}",
+        "4": "${fx_163}"
+      },
+      "effect_selection": "Kies een effect:"
+    },
+    "groupselection": "Kies een groep:",
+    "grouptype": {
+      "0": "Huidige groep",
+      "1": "Selecteer uit lijst"
+    },
+    "handitem": "Hand Item",
+    "length": {
+      "minutes": "Duur: {{minutes}} minuten"
+    },
+    "level_selection": "Set level: {{level}}",
+    "message": "Wat is je bericht:",
+    "movefurni": "Verplaats meubi:",
+    "movement": {
+      "horizontal": {
+        "distance": "Verplaats {{distance}} tegels in richting",
+        "selection": "X as"
+      },
+      "vertical": {
+        "distance": "Verplaats {{distance}} tegels in richting",
+        "selection": "Y as"
+      }
+    },
+    "movephysics": {
+      "block_by_furni": "Is geblokkeerd door meubi",
+      "keep_altitude": "Meubi hoogte behouden",
+      "move_through_furni": "Beweeg door meubels",
+      "move_through_users": "Beweeg door users"
+    },
+    "moveuser": "Verplaats user:",
+    "neighborhood_selection": "Selecteer Aangrenzende Tegels",
+    "not_requireall": "Trigger voorwaarde als:",
+    "onfurni": {
+      "0": "Meubi boven meubi",
+      "1": "Meubi onder meubi",
+      "2": "Meubi op dezelfde hoogte",
+      "3": "Alle meubi op de tegel"
+    },
+    "operator": {
+      "0": "Verhogen",
+      "1": "Verlagen",
+      "2": "Waarde instellen"
+    },
+    "pickamount": "Kies {{picks}} effecten",
+    "picktriggerer": "Selecteer de trigger's naam:",
+    "placement": {
+      "1": "1ste",
+      "2": "2de",
+      "3": "3de",
+      "4": "4de"
+    },
+    "placement_selection": "Plaatsing:",
+    "placetodirection": "Plaats Meubis in deze richting",
+    "points_operation": "Effect type:",
+    "prizelimit": "Totale beloning limiet: {{amount}}",
+    "quantifier": {
+      "furni": {
+        "0": "Alle meubi komen overeen",
+        "1": "Minstens 1 meubi komt overeen",
+        "neg": {
+          "0": "Minstens 1 van de meubi komt niet overeen",
+          "1": "Geen van de meubi komt overeen"
+        }
+      },
+      "users": {
+        "0": "Moet kloppen voor alle spelers",
+        "1": "Moet kloppen voor minstens 1 speler",
+        "neg": {
+          "0": "Minstens 1 van de spelers komt niet overeen",
+          "1": "Geen van de spelers komen overeen"
+        }
+      },
+      "variables": {
+        "0": "Alle komen overeen",
+        "1": "Minstens 1 komt overeen",
+        "neg": {
+          "0": "Minstens 1 komt niet overeen",
+          "1": "Geen komen overeen"
+        }
+      }
+    },
+    "quantifier_selection": "Voorwaarde opties:",
+    "remote_selection": {
+      "filter": "Filter de stapels",
+      "type": "Selectie type:"
+    },
+    "requireall": "Reacties werken alleen als...",
+    "requiredformationsize": "Minstens {{furnis}} Meubis hebben een overeenkomende staat/locatie",
+    "rotatefurni": "Draai Meubi:",
+    "rotateuser": "Draai user:",
+    "seconds": "{{seconds}} seconden",
+    "select_options": "Selecteer opties:",
+    "selection_type": "Meubi selectie opties:",
+    "selector_option": {
+      "0": "Filter bestaande selectie",
+      "1": "Omkeren"
+    },
+    "selector_options_selector": "Selector opties:",
+    "setaltitude": "Selecteer hoogte:",
+    "setamount": "Vergelijk met: {{amount}}",
+    "setanimationtime": "Animatie tijd: {{ms}} milliseconden",
+    "setexecutions": "Aantal acties: {{amount}}",
+    "setfilter": "Filter hoeveelheid:",
+    "setfurnifilter": "Filter op {{amount}} meubi",
+    "setlongtime": "Stel tijd in: {{time}}",
+    "setpoints2": "Stel de punten in:",
+    "setpoints": "Stel puntenaantal in: {{points}} punten",
+    "setscore2": "Team moet scoren:",
+    "setscore": "Stel score in: {{points}} punten",
+    "setshorttime": "Stel interval in: {{ms}} milliseconden",
+    "settime2": "Tijd instellen:",
+    "settime": "Stel tijd in: {{seconds}} seconden",
+    "settimesingame": "Hoe vaak per spel: {{times}}",
+    "settimewindow": "Tijdvenster: {{timewindow}} seconde(n)",
+    "setusersfilter": "Filter op {{amount}} spelers",
+    "shout": "Schreeuw",
+    "sign_filter": "Sorteer op teken",
+    "sign_selection": "Bord:",
+    "signal": {
+      "send_options": "Signaal opties:",
+      "split_furni": "Signaal verzenden voor elke meubi",
+      "split_users": "Signaal verzenden voor elke speler"
+    },
+    "skipactions": "Vermijd effecten van de laatste {{skips}} activiteiten",
+    "sources": {
+      "collapse": "Geavanceerde instellingen verbergen",
+      "context": "Context variabelen",
+      "expand": "Geavanceerde instellingen weergeven",
+      "furni": {
+        "0": "Gebruik het triggerende item",
+        "100": "Gebruik gekozen meubi",
+        "101": "Gebruik de snapshot",
+        "200": "Gebruik meubi van de Selector",
+        "201": "Gebruik meubi van Signal",
+        "900": "Alle meubi in de kamer",
+        "title": "Selecteer meubi bron:"
+      },
+      "global": "Globale variabelen",
+      "merged": {
+        "title": "Selecteer bron:"
+      },
+      "users": {
+        "0": "Gebruik de getriggerde speler",
+        "100": "Gebruik de bot die bij naam is opgegeven",
+        "101": "Gebruik de speler die bij naam is opgegeven",
+        "200": "Gebruik spelers van de Selector",
+        "201": "Gebruik spelers van het Signaal",
+        "900": "Alle spelers in de kamer",
+        "title": "Selecteer de spelersbron:"
+      }
+    },
+    "sourcetype": {
+      "context": "Context",
+      "furni": "Meubi",
+      "global": "Globaal",
+      "users": "Gebruiker"
+    },
+    "start": {
+      "following": "Begin met volgen"
+    },
+    "startdate": "Start datum:",
+    "startdir": "Startrichting",
+    "state_match": "Selecteer enkel meubi als status overeenkomt",
+    "state_trigger": {
+      "0": "Trigger voor alle staten",
+      "1": "Trigger voor de huidige status"
+    },
+    "stop": {
+      "following": "Stop met volgen"
+    },
+    "talk": "Praat",
+    "team": "Kies team",
+    "team_type": {
+      "0": "Wired",
+      "1": "Battle Banzai",
+      "2": "Freeze"
+    },
+    "teleport": {
+      "options": "Teleport opties:"
+    },
+    "texts": {
+      "capturer_name": "Naam vastleggen:",
+      "placeholder_name": "Naam Placeholder:",
+      "placeholder_preview": "Gebruik dit door <font color",
+      "placeholder_type": "Placeholder type:",
+      "select_delimiter": "Kies scheidingsteken:",
+      "variable_display_type": "Variabele display type:",
+      "variable_input_type": "Variabele input type:",
+      "variable_output": "Variabele output:"
+    },
+    "time": {
+      "day_selection": "Dag:",
+      "exact": "Exact",
+      "hour_selection": "Uren:",
+      "minute_selection": "Minuten:",
+      "month": {
+        "1": "Jan.",
+        "2": "Feb.",
+        "3": "Maart",
+        "4": "Apr.",
+        "5": "Mei",
+        "6": "Jun.",
+        "7": "Jul.",
+        "8": "Aug.",
+        "9": "Sep.",
+        "10": "Okt.",
+        "11": "Nov.",
+        "12": "Dec."
+      },
+      "month_selection": "Maanden:",
+      "nofilter": "Geen filter",
+      "range": "Periode",
+      "second_selection": "Seconden:",
+      "skip": "Gebruik geen filter",
+      "timezone_selection": "Selecteer een tijdzone:",
+      "weekday": {
+        "1": "Maandag",
+        "2": "Dinsdag",
+        "3": "Woensdag",
+        "4": "Donderdag",
+        "5": "Vrijdag",
+        "6": "Zaterdag",
+        "7": "Zondag"
+      },
+      "weekday_selection": "Dag van de week:",
+      "year_selection": "Jaar:"
+    },
+    "toggletype": {
+      "0": "Schakel naar de volgende staat",
+      "1": "Schakel naar de vorige staat"
+    },
+    "toggletype_selection": "Kies schakel type:",
+    "triggerer": {
+      "bot": "Bot",
+      "user": "Gebruiker"
+    },
+    "triggerer_choice": "WIRED Effecten toepassen op:",
+    "turn": "Als meubi worden geblokkerd",
+    "user_collide": "Bij botsing met gebruiker",
+    "user_move": {
+      "walkmode": "Als de gebruiker aan het lopen was:"
+    },
+    "usercountmax": "No more than {{value}} users",
+    "usercountmin": "At least {{value}} users",
+    "usertype": "User type:",
+    "variables": {
+      "availability": "Beschikbaarheids opties:",
+      "compare_value": "Vergelijk waarde:",
+      "connect_text": {
+        "caption": "0",
+        "title": "Link tekst aan variabele:"
+      },
+      "duration": "Duur:",
+      "inspection": "Variabele inspectie",
+      "operation": "Operatie:",
+      "quest_chain_name": "Quest Chain code:",
+      "quest_name": "Quest code:",
+      "reference_value": "Referentie waarde",
+      "room_selection": "Selecteer kamer:",
+      "settings": "Variabele opties:",
+      "show_internal": "... toon interne variabelen",
+      "sort_by": "Sorteer op:",
+      "time_selection": "Kies tijd",
+      "trigger_options": "Activeer als variabele is:",
+      "value_settings": "Waarde opties",
+      "variable_name": "Variabele naam:",
+      "variable_output": "Variabele output:",
+      "variable_ref_selection": "Referentie variabele:",
+      "variable_selection": "Kies variabele:"
+    },
+    "whatissaid": "Wat gezegd is:",
+    "whisper": "Fluister"
+  },
+  "pickfurnis": {
+    "caption": "Kies Meubi [{{count}}/{{limit}}]",
+    "desc": "Je zult een of meer meubels moeten kiezen voor deze invoer. Je kunt een meubi in jouw kamer selecteren of deselecteren door erop te klikken / tikken.",
+    "furnitypematches": "The triggering Furni type matches the type of one of the picked furnis",
+    "select": "Selecteer meubi",
+    "stuffselectiontype": {
+      "0": "Voer de Reactie uit op gekozen meubi",
+      "1": "Voer de Reactie uit op een willekurig Meubi dat overeenkomt met één of meer van de gekozen meubi",
+      "2": "Voer de Reactie uit op een meubi gedefinieerd door de Actie of Voorwaarde"
+    }
+  },
+  "ready": "Klaar",
+  "rewardfailed": {
+    "reason": {
+      "0": "Sorry! Er waren slechts een beperkt aantal beloningen beschikbaar. Alle beloningen zijn uitgedeeld!",
+      "1": "Helaas, deze Badge of prijs heb jij al een keer gekregen. Check regelmatig in, voor nieuwe competities en prijzen!",
+      "2": "Je hebt al een beloning gekregen vandaag. Probeer morgen weer!",
+      "3": "Je hebt dit uur al een prijs gekregen. Probeer het later nog eens!",
+      "4": "Helaas! Deze keer had je geen geluk en won je geen prijs. Probeer het later nog eens!",
+      "5": "Je hebt al alle beloningen gekregen die je kon winnen.",
+      "8": "Je hebt een al prijs gekregen deze minuut. Probeer het opnieuw over 1 minuut!"
+    },
+    "title": "Aww, geen prijs :("
+  },
+  "rewardsuccess": {
+    "body": "Je hebt zojuist een beloning gekregen! Check je inventaris om te zien wat het is. Effecten vind je tussen je verschillende outfits bij 'Omkleden'.",
+    "title": "Je hebt een beloning gekregen!"
+  },
+  "settings": {
+    "saved": "Instellingen bewaard"
+  },
+  "title": "Wired",
+  "tooltip": {
+    "action": "Selecteer actie",
+    "avatarname": "Habbonaam",
+    "badgecode": "Badge code:",
+    "bot": {
+      "chatmessage": "Wat moet de bot zeggen",
+      "handitem": "Selecteer het hand item dat de bot zou moeten geven",
+      "name": "Geef bot naam in"
+    },
+    "botname": "Geef bot naam in",
+    "chatinput": "Type een woord",
+    "chatmessage": "Wat is het bericht:",
+    "dance": "Selecteer dans",
+    "effectid": "Effect ID:",
+    "enter_names_info": "Splits de gebruikersnamen door nieuwe regels",
+    "freeze": {
+      "effect": "Selecteer effect"
+    },
+    "group": "Kies een groep",
+    "handitem": "Selecteer hand item",
+    "sign": "Selecteer bord"
+  },
+  "variables": {
+    "availability_change": {
+      "body": "Weet je zeker dat je de beschikbaarheid van deze wired variabele wilt wijzigen? Deze actie verwijdert opgeslagen data en is onomkeerbaar!",
+      "title": "Variabele data wissen"
+    },
+    "pickup": {
+      "body": "Weet je zeker dat je deze variabele wilt oppakken? Alle referenties hierheen worden gewist, net als alle data die erin is opgeslagen.",
+      "title": "Variabele verwijderen"
+    }
+  },
+  "view_in_menu": "Bekijk in Wired Menu"
+}

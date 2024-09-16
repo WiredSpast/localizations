@@ -1,0 +1,544 @@
+{
+  "applysnapshot": "Möbel den eingestellten Bedingungen anpassen",
+  "badgereceived": {
+    "body": "Du hast gerade ein Badge erhalten. Schau in deinem Inventar nach!",
+    "title": "Badge erhalten!"
+  },
+  "chatmsgtoolong": "Nachricht kann nur 100 Zeichen beinhalten.",
+  "conflictingactions": {
+    "caption": "Warnung: Effekte inkompatibel",
+    "text": "Dieser Auslöser bezieht sich nicht auf Habbo. Du hast auf diesen Auslöser Effekte ({{actions}}) gestapelt, die einen Habbo benötigen, um ausgelöst zu werden."
+  },
+  "conflictingtriggers": {
+    "caption": "Warnung: Auslöser inkompatibel",
+    "text": "Dieser Effekt muss von einem Habbo ausgelöst werden. Du hast diesen Effekt mit Auslösern ({{triggers}}) gestapelt, die keinen aktivierenden Habbo bestimmen."
+  },
+  "danger": {
+    "1": {
+      "change": {
+        "confirm": {
+          "body": "Du hast \"umkehren\" gewählt, ohne zu filtern. Damit wählst du alle Möbel/User aus, die den Anforderungen NICHT entsprechen, was der ganze Raum sein KÖNNTE. Bist du dir sicher? (GEFÄHRLICH)",
+          "title": "Bist du sicher?"
+        }
+      }
+    }
+  },
+  "enter_code": "Code eingeben",
+  "enter_id": "ID eingeben",
+  "enter_name": "Namen eingeben",
+  "enter_text": "Text eingeben",
+  "error": {
+    "capturer": {
+      "duplicate": "Du kannst die gleiche Variable nicht zwei Mal in einem Satz erfassen"
+    },
+    "condition_evaluation_furni": "Kann nur WIRED Bedingungen und Add-Ons wählen!",
+    "invalid_freeze_effect": "Ungültiger Effekt ausgewählt!",
+    "invalid_handitem_type": "Handitem-Typ ist nicht erlaubt!",
+    "invalid_reward_products": "Die folgenden Produkte/Badges gibt es nicht: {{products}}",
+    "placeholder": {
+      "delimiter_empty": "Delimiter kann nicht leer sein",
+      "name_length": "Die Placeholder-Länge muss zwischen 1 und 40 Zeichen betragen.",
+      "name_syntax": "Placeholder können nur Buchstaben, Zahlen oder \"_\" Zeichen beinhalten."
+    },
+    "require_antenna_furni": "Nur Antennen-Möbel können ausgewählt werden.",
+    "require_click_tiles": "Kann nur unsichtbare Klick-Möbel auswählen.",
+    "require_counter_furni": "Nur Countdown-Möbel können ausgewählt werden.",
+    "title": "Update fehlgeschlagen",
+    "too_much_text": "Wired-Texte können höchstens {{limit}} Zeichen beinhalten.",
+    "username_length": "Ein Username kann nicht mehr als {{max_username_length}} Zeichen haben!",
+    "usernames_count": "Kann nicht mehr als {{max_usernames}} Usernamen haben!",
+    "variables": {
+      "invalid_availability": "Ungültige Verfügbarkeit",
+      "name_length": "Variablenname muss zwischen 1 und 40 Zeichen lang sein.",
+      "name_syntax": "Variablenname kann nur Buchstaben, Zahlen oder \"_\" Zeichen beinhalten.",
+      "name_uniq": "Der Variablenname wird in diesem Raum bereits verwendet, bitte wähle einen anderen aus!",
+      "permanent_limit": "Dieser Raum hat das Limit für permanente Variablen dieser Art erreicht.",
+      "permissions": {
+        "1": "Nur der Besitzer dieser Wired-Variable hat die Erlaubnis, diese Änderung vorzunehmen.",
+        "2": "Nur der Besitzer dieser Wired-Variable oder der Raumbesitzer hat die Erlaubnis, diese Änderung vorzunehmen."
+      },
+      "reference": {
+        "already_exists": "Es gibt bereits eine Referenz zu dieser Variable in diesem Raum.",
+        "must_own": "Kann sich nur auf von dir selbst erstellte Variablen beziehen",
+        "same_room": "Eine Variable kann nicht im gleichen Raum als Referenz verwendet werden.",
+        "valid": "Bitte wähle eine gültige Referenzvariable aus."
+      },
+      "shared_var_own_room": "Du kannst nur in deinem eigenen Raum geteilte Variablen einstellen."
+    }
+  },
+  "help": "Wired Möbel Hilfe",
+  "kickaction": {
+    "exception": {
+      "message": {
+        "to": {
+          "owner": "Ein Selbstrauswurf ist ein Paradox, das deinen Raum verschluckt."
+        }
+      }
+    }
+  },
+  "muteaction": {
+    "exception": {
+      "message": {
+        "to": {
+          "owner": "Wired Möbel Stummschaltungsausnahme: Raumbesitzer"
+        }
+      }
+    }
+  },
+  "nonowner": {
+    "change": {
+      "confirm": {
+        "body": "Bist du sicher, dass du die Einstellungen dieses Möbels ändern willst? (Diese Nachricht wird dir angezeigt, weil du nicht der Besitzer bist)",
+        "title": "Bitte bestätige die nicht vom Besitzer durchgeführte Änderung!"
+      }
+    }
+  },
+  "params": {
+    "action": {
+      "0": "${widget.memenu.wave}",
+      "1": "${widget.memenu.blow}",
+      "2": "${widget.memenu.laugh}",
+      "3": "${widget.memenu.thumb}",
+      "4": "Aufwachen",
+      "5": "${widget.memenu.idle}",
+      "6": "${widget.memenu.sit}",
+      "7": "${widget.memenu.stand}",
+      "8": "Liegen",
+      "9": "Schwimmen",
+      "10": "${widget.memenu.sign}",
+      "11": "${widget.memenu.dance}",
+      "dance": {
+        "1": "${widget.memenu.dance1}",
+        "2": "${widget.memenu.dance2}",
+        "3": "${widget.memenu.dance3}",
+        "4": "${widget.memenu.dance4}"
+      },
+      "sign": {
+        "0": "0",
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "10",
+        "11": "|",
+        "12": "ª",
+        "13": "!",
+        "14": "Fussball",
+        "15": ":)",
+        "16": "Rote Karte",
+        "17": "Gelbe Karte"
+      }
+    },
+    "action_selection": "Aktion auswählen:",
+    "allmatch": "Den gesamten Text angleichen",
+    "allowafter2": "Aktiv nach:",
+    "allowafter": "Auslöser aktiv nach {{seconds}} Sekunden",
+    "allowbefore2": "Aktiv vor:",
+    "allowbefore": "Auslöser ist aktiv für: {{seconds}} Sekunden",
+    "anyavatar": "Irgendein Habbo",
+    "area_selection": "Bereichauswahl",
+    "bot": {
+      "name": "Botname",
+      "usage": "Handitem von Bot erhalten"
+    },
+    "capture": {
+      "figure": "Mein Outfit kopieren",
+      "handitem": "Mein Handitem kopieren"
+    },
+    "carry_mode": "User werden getragen wenn:",
+    "certainavatar": "Bestimmter Habbo",
+    "chat": {
+      "hide": "Die Nachricht des Auslösers verbergen",
+      "onlyowner": "Nur der Raumbesitzer kann auslösen"
+    },
+    "chatcontains": "Enthält Schlüsselwort",
+    "chattriggertype": "Typ auswählen:",
+    "choose_type": "Typ auswählen:",
+    "clock_control": "Option wählen",
+    "clock_minutes": "{{minutes}} Minuten",
+    "clock_minutes_elapsed": "{{minutes}} Minuten vergangen",
+    "clock_seconds": "{{seconds}} Sekunden",
+    "clock_seconds_elapsed": "{{seconds}} Sekunden vergangen",
+    "comparison": {
+      "0": "Tiefer als",
+      "1": "Ist gleich",
+      "2": "Höher als"
+    },
+    "comparison_selection": "Typ auswählen:",
+    "cond_eval": {
+      "note": "Du kannst die WIRED-Bedingungen für dieses Add-On auswählen. Bleibt die Auswahl leer, wird es für alle verfügbaren Bedingungen gelten."
+    },
+    "condition": {
+      "altitude": "Aktuelle Höhe",
+      "direction": "Aktuelle Richtung",
+      "position": "Aktuelle Position im Raum",
+      "state": "Aktueller Möbel Zustand"
+    },
+    "conditions": "Wähle die Möbel Kriterien, die gegeben sein müssen:",
+    "dance_filter": "Nach Tanz filtern",
+    "dance_selection": "Tanz:",
+    "delay": "Effekt tritt nach {{seconds}} Sekunden ein",
+    "direction_selection": "Richtung auswählen:",
+    "emptytiles": "Im Raum platzierte Möbel {{tiles}} Fliesen auseinander",
+    "enddate": "Enddatum:",
+    "enter_names": "Usernamen eingeben:",
+    "enteravatarname": "Habbo Namen eingeben",
+    "enterawordorphrase": "Ein Wort oder einen Satz eingeben",
+    "entermessage": "Nachricht eingeben",
+    "eval_mode": "Bedingungen, die übereinstimmen müssen:",
+    "exactmatch": "Exakte Übereinstimmung",
+    "formation": "Formatierung auswählen",
+    "freeze": {
+      "cancel_on_teleport": "Auftauen durch Teleport",
+      "effect": {
+        "0": "${fx_218}",
+        "1": "${fx_12}",
+        "2": "${fx_11}",
+        "3": "${fx_53}",
+        "4": "${fx_163}"
+      },
+      "effect_selection": "Wähle einen Effekt:"
+    },
+    "groupselection": "Gruppe auswählen:",
+    "grouptype": {
+      "0": "Aktuelle Gruppe",
+      "1": "Von der Liste auswählen"
+    },
+    "handitem": "Handitem",
+    "length": {
+      "minutes": "Dauer: {{minutes}} Minuten"
+    },
+    "level_selection": "Set level: {{level}}",
+    "message": "Nachricht:",
+    "movefurni": "Möbel bewegen:",
+    "movement": {
+      "horizontal": {
+        "distance": "{{distance}} Fliesen in die Richtung",
+        "selection": "x-Achse"
+      },
+      "vertical": {
+        "distance": "{{distance}} Fliesen in die Richtung",
+        "selection": "y-Achse"
+      }
+    },
+    "movephysics": {
+      "block_by_furni": "Wird durch Möbel blockiert",
+      "keep_altitude": "Möbelhöhe beibehalten",
+      "move_through_furni": "Durch Möbel bewegen",
+      "move_through_users": "Durch User bewegen"
+    },
+    "moveuser": "User bewegen:",
+    "neighborhood_selection": "Benachbarte Fliesen auswählen",
+    "not_requireall": "Bedingung auslosen wenn:",
+    "onfurni": {
+      "0": "Möbel auf Möbel",
+      "1": "Möbel unter Möbel",
+      "2": "Möbel auf der gleichen Höhe",
+      "3": "Alle Möbel an der Fliese"
+    },
+    "operator": {
+      "0": "Erhöhen",
+      "1": "Reduzieren",
+      "2": "Wert einstellen"
+    },
+    "pickamount": "Wähle {{picks}} Effekte",
+    "picktriggerer": "Namen des auslösenden Habbo auswählen:",
+    "placement": {
+      "1": "1.",
+      "2": "2.",
+      "3": "3.",
+      "4": "4."
+    },
+    "placement_selection": "Platzierung:",
+    "placetodirection": "Möbel in diese Richtung stellen",
+    "points_operation": "Art des Effekts:",
+    "prizelimit": "Limit aller Preise: {{amount}}",
+    "quantifier": {
+      "furni": {
+        "0": "Alle Möbel stimmen überein",
+        "1": "Irgendeins der Möbel stimmt überein",
+        "neg": {
+          "0": "Irgendeins der Möbel stimmt nicht überein",
+          "1": "Keines der Möbel stimmt überein"
+        }
+      },
+      "users": {
+        "0": "Alle User stimmen überein",
+        "1": "Irgendeiner der User stimmt überein",
+        "neg": {
+          "0": "Irgendeiner der User stimmt nicht überein",
+          "1": "Keiner der User stimmt überein"
+        }
+      },
+      "variables": {
+        "0": "Alle stimmen überein",
+        "1": "Irgendeine/r/s stimmt überein",
+        "neg": {
+          "0": "Irgendeine/r/s stimmt nicht überein",
+          "1": "Kein/e/s stimmt überein"
+        }
+      }
+    },
+    "quantifier_selection": "Bedingung stimmt überein wenn:",
+    "remote_selection": {
+      "filter": "Die Stapel filtern",
+      "type": "Selektions-Typ"
+    },
+    "requireall": "Auslöser funktionieren nur wenn:",
+    "requiredformationsize": "Mindestens {{furnis}} Möbel passen zu Zustand/Ort",
+    "rotatefurni": "Möbel drehen:",
+    "rotateuser": "User drehen:",
+    "seconds": "{{seconds}} Sekunden",
+    "select_options": "Optionen auswählen:",
+    "selection_type": "Möbelauswahloptionen:",
+    "selector_option": {
+      "0": "Vorhandene Auswahl filtern",
+      "1": "Umkehren"
+    },
+    "selector_options_selector": "Wähler-Optionen",
+    "setaltitude": "Höhe auswählen:",
+    "setamount": "Vergleichen mit: {{amount}}",
+    "setanimationtime": "Animationszeit: {{ms}} Millisekunden",
+    "setexecutions": "Anzahl der Ausführungen: {{amount}}",
+    "setfilter": "Filteranzahl:",
+    "setfurnifilter": "Filtern nach {{amount}} Möbeln",
+    "setlongtime": "Zeit einstellen: {{time}}",
+    "setpoints2": "Die Punkte setzen:",
+    "setpoints": "Punkte festlegen: {{points}} Punkte",
+    "setscore2": "Team muss erzielen:",
+    "setscore": "Team muss {{points}} Punkte erzielen",
+    "setshorttime": "Abstand einstellen: {{ms}} Millisekunden",
+    "settime2": "Zeit einstellen:",
+    "settime": "Timer einstellen: {{seconds}} Sekunden",
+    "settimesingame": "Wiederholungen pro Game: {{times}}",
+    "settimewindow": "Zeitfenster: {{timewindow}} Sekunden",
+    "setusersfilter": "Filtern nach {{amount}} Usern",
+    "shout": "Schreien",
+    "sign_filter": "Nach Schild filtern",
+    "sign_selection": "Zeichen",
+    "signal": {
+      "send_options": "Signaloptionen:",
+      "split_furni": "Signal für jedes Möbel senden",
+      "split_users": "Signal für jeden User senden"
+    },
+    "skipactions": "Effekte der letzten Durchführungen {{skips}} vermeiden",
+    "sources": {
+      "collapse": "Erweiterte Einstellungen ausblenden:",
+      "context": "Kontextvariablen",
+      "expand": "Erweiterte Einstellungen anzeigen",
+      "furni": {
+        "0": "Das auslösende Item nehmen",
+        "100": "Ausgewählte Möbel nehmen",
+        "101": "Den Snapshot verwenden",
+        "200": "Möbel vom Selektor nehmen",
+        "201": "Möbel vom Signal nehmen",
+        "900": "Alle Möbel im Raum",
+        "title": "Möbelquelle auswählen:"
+      },
+      "global": "Globale Variablen",
+      "merged": {
+        "title": "Quelle wählen:"
+      },
+      "users": {
+        "0": "Den auslösenden User nehmen",
+        "100": "Den durch Namen bestimmten Bot verwenden",
+        "101": "Den durch Namen bestimmten User verwenden",
+        "200": "User vom Selektor nehmen",
+        "201": "User vom Signal nehmen",
+        "900": "Alle User im Raum",
+        "title": "Userquelle wählen:"
+      }
+    },
+    "sourcetype": {
+      "context": "Kontext",
+      "furni": "Möbel",
+      "global": "Global",
+      "users": "User"
+    },
+    "start": {
+      "following": "Folgen beginnen"
+    },
+    "startdate": "Startdatum:",
+    "startdir": "Richtung starten",
+    "state_match": "Möbel nur auswählen, wenn Zustand übereinstimmt",
+    "state_trigger": {
+      "0": "Auslöser für alle Zustände",
+      "1": "Auslöser für den aktuellen Zustand"
+    },
+    "stop": {
+      "following": "Folgen beenden"
+    },
+    "talk": "Sprechen",
+    "team": "Team auswählen",
+    "team_type": {
+      "0": "Wired",
+      "1": "Battle Banzai",
+      "2": "Freeze"
+    },
+    "teleport": {
+      "options": "Teleporter-Optionen:"
+    },
+    "texts": {
+      "capturer_name": "Erfassungsname:",
+      "placeholder_name": "Placeholder-Name:",
+      "placeholder_preview": "Verwende dies, indem du <font color",
+      "placeholder_type": "Placeholder-Typ:",
+      "select_delimiter": "Delimiter wählen:",
+      "variable_display_type": "Variablen-Display-Typ:",
+      "variable_input_type": "Variablen-Input-Typ:",
+      "variable_output": "Variablen-Output:"
+    },
+    "time": {
+      "day_selection": "Tag:",
+      "exact": "Genau",
+      "hour_selection": "Stunden:",
+      "minute_selection": "Minuten:",
+      "month": {
+        "1": "Jan.",
+        "2": "Feb.",
+        "3": "Mar.",
+        "4": "Apr.",
+        "5": "Mai",
+        "6": "Jun.",
+        "7": "Jul.",
+        "8": "Aug.",
+        "9": "Sep.",
+        "10": "Okt.",
+        "11": "Nov.",
+        "12": "Dez."
+      },
+      "month_selection": "Monat:",
+      "nofilter": "Kein Filter",
+      "range": "Zeitraum",
+      "second_selection": "Sekunden:",
+      "skip": "Filter nicht verwenden",
+      "timezone_selection": "Zeitzone auswählen",
+      "weekday": {
+        "1": "Montag",
+        "2": "Dienstag",
+        "3": "Mittwoch",
+        "4": "Donnerstag",
+        "5": "Freitag",
+        "6": "Samstag",
+        "7": "Sonntag"
+      },
+      "weekday_selection": "Wochentag:",
+      "year_selection": "Jahr:"
+    },
+    "toggletype": {
+      "0": "In den nächsten Zustand schalten",
+      "1": "In den vorherigen Zustand schalten"
+    },
+    "toggletype_selection": "Schalt-Typ auswählen:",
+    "triggerer": {
+      "bot": "Bot",
+      "user": "User"
+    },
+    "triggerer_choice": "WIRED-Effekte anwenden bei:",
+    "turn": "Wenn die Bewegung blockiert wird:",
+    "user_collide": "Bei Zusammenstoß mit User",
+    "user_move": {
+      "walkmode": "Wenn der User am Laufen war."
+    },
+    "usercountmax": "Nicht mehr als {{value}} User",
+    "usercountmin": "Mindestens {{value}} User",
+    "usertype": "Typ:",
+    "variables": {
+      "availability": "Verfügbarkeitsoptionen:",
+      "compare_value": "Wert vergleichen:",
+      "connect_text": {
+        "caption": "0",
+        "title": "Text verbinden mit Variable:"
+      },
+      "duration": "Dauer:",
+      "inspection": "Variableninspektion",
+      "operation": "Vorgang:",
+      "quest_chain_name": "Quest chain code:",
+      "quest_name": "Quest-Code:",
+      "reference_value": "Referenzwert",
+      "room_selection": "Raum auswählen:",
+      "settings": "Variablenoptionen:",
+      "show_internal": "...zeigt interne Variablen",
+      "sort_by": "Sortieren nach:",
+      "time_selection": "Zeit auswählen",
+      "trigger_options": "Auslösen wenn Variable",
+      "value_settings": "Wert-Optionen",
+      "variable_name": "Variablenname",
+      "variable_output": "Variablen-Output:",
+      "variable_ref_selection": "Referenzvariable:",
+      "variable_selection": "Variable auswählen:"
+    },
+    "whatissaid": "Was gesagt wird:",
+    "whisper": "Flüstern"
+  },
+  "pickfurnis": {
+    "caption": "Möbel auswählen [{{count}}/{{limit}}]",
+    "desc": "Du musst eines oder mehrere Möbel für diesen Eintrag wählen. Du kannst in deinem Raum wählen, indem du draufklickst bzw. tippst.",
+    "furnitypematches": "Das auslösende Möbelstück stimmt mit dem Typ der ausgewählten Möbel überein",
+    "select": "Möbel auswählen",
+    "stuffselectiontype": {
+      "0": "Effekt auf die ausgewählten Möbel ausführen",
+      "1": "Effekt auf einem zufälligen Möbelstück ausführen, dessen Typ mit den ausgewählten Möbel übereinstimmt",
+      "2": "Den Effekt auf ein durch den Auslöser oder Bedingung definiertes Möbelstück ausführen"
+    }
+  },
+  "ready": "Bereit",
+  "rewardfailed": {
+    "reason": {
+      "0": "Tut uns Leid! Es gab nur eine limitierte Auflage an Preisen. Alle Preise wurden bereits verteilt.",
+      "1": "Du hast diesen Preis bereits erhalten. Jeder User bekommt nur einen Preis.",
+      "2": "Du hast heute bereits einen Preis erhalten. Versuch es morgen noch einmal!",
+      "3": "Du hast diese Stunde bereits einen Preis erhalten. Versuch es in einer Stunde noch einmal!",
+      "4": "Schade! Du hattest kein Glück und diesmal keinen Preis erhalten. Versuchs aber weiterhin!",
+      "5": "Du hast bereits alle Preise die es gibt erhalten.",
+      "8": "Du hast in dieser Minute bereits einen Preis erhalten. Versuche es in einer Minute erneut."
+    },
+    "title": "Ohh, kein Preis :("
+  },
+  "rewardsuccess": {
+    "body": "Du hast gerade einen Preis erhalten. Schau in deinem Inventar nach um zu sehen was es ist!",
+    "title": "Du hast einen Preis erhalten."
+  },
+  "settings": {
+    "saved": "Einstellungen gespeichert"
+  },
+  "title": "Wired-Einstellungen",
+  "tooltip": {
+    "action": "Aktion auswählen",
+    "avatarname": "Habbo Namen eingeben",
+    "badgecode": "Badge Code:",
+    "bot": {
+      "chatmessage": "Was soll der Bot sagen",
+      "handitem": "Wähle das Handitem, das der Bot geben soll",
+      "name": "Der Name des zu kontrollierenden Bots"
+    },
+    "botname": "Der Name des zu kontrollierenden Bots",
+    "chatinput": "Schlüsselswort eingeben",
+    "chatmessage": "Die Nachricht ist:",
+    "dance": "Tanz auswählen",
+    "effectid": "Effekt ID:",
+    "enter_names_info": "Usernamen durch neue Zeilen trennen",
+    "freeze": {
+      "effect": "Effekt auswählen"
+    },
+    "group": "Gruppe auswählen",
+    "handitem": "Wähle ein Handitem",
+    "sign": "Schild auswählen"
+  },
+  "variables": {
+    "availability_change": {
+      "body": "Bist du sicher, dass du die Verfügbarkeit dieser Wired-Variable ändern willst? Die gespeicherten Daten werden dadurch entfernt und können nicht wieder zurückgebracht werden!",
+      "title": "Variable Daten werden gelöscht"
+    },
+    "pickup": {
+      "body": "Bist du sicher, dass du diese Variable einsammeln möchtest? Alle Referenzen zu ihr werden gelöscht, so wie auch die in ihr gespeicherten Daten.",
+      "title": "Eine Variable entfernen"
+    }
+  },
+  "view_in_menu": "Im Wired-Menü ansehen"
+}

@@ -1,0 +1,545 @@
+{
+  "applysnapshot": "Appliquer les régles définies au mobi sélectionné",
+  "badgereceived": {
+    "body": "Tu viens de recevoir un badge. Regarde dans ton Inventaire!",
+    "title": "Badge reçu!"
+  },
+  "chatmsgtoolong": "Un message ne peut contenir que 100 caractères.",
+  "conflictingactions": {
+    "caption": "Attention: effets incompatibles",
+    "text": "Ce déclencheur se déclenche sans utilisateur. Or tu as empilé ce déclencheur avec un effet ({{actions}}) qui nécessite l'intervention d'un utilisateur pour être activé."
+  },
+  "conflictingtriggers": {
+    "caption": "Attention: Déclencheurs incompatibles",
+    "text": "Cet effet nécessite qu'un utilisateur l'active.Si tu as combiné cet effet avec les déclencheurs suivants ({{triggers}}) aucun utilisateur ne peut activer cet effet."
+  },
+  "danger": {
+    "1": {
+      "change": {
+        "confirm": {
+          "body": "Vous avez sélectionné \"Inverser\" sans filtrer. Cela sélectionnera tous les mobis/utilisateurs qui ne correspondent PAS à l'exigence, ce qui POURRAIT représenter la salle entière. Êtes-vous sûr de vous ? (DANGEREUX !)",
+          "title": "Êtes-vous sûr ?"
+        }
+      }
+    }
+  },
+  "enter_code": "Saisir le code",
+  "enter_id": "Saisir l'ID",
+  "enter_name": "Saisir le nom",
+  "enter_text": "Saisir le texte",
+  "error": {
+    "capturer": {
+      "duplicate": "Vous ne pouvez pas capturer la même variable deux fois dans une même phrase"
+    },
+    "condition_evaluation_furni": "Vous ne pouvez sélectionner que les WIRED conditions et les Add-Ons !",
+    "invalid_freeze_effect": "Effet non valide choisi !",
+    "invalid_handitem_type": "Le type d'objet de main n'est pas autorisé !",
+    "invalid_reward_products": "Les produits/badges suivants n'existent pas : {{products}}",
+    "placeholder": {
+      "delimiter_empty": "Le délimiteur ne peut pas être vide",
+      "name_length": "La longueur de l'espace réservé doit être comprise entre 1 et 40 caractères.",
+      "name_syntax": "L'espace réservé ne doit comporter que des lettres, des chiffres ou des caractères \"_\"."
+    },
+    "require_antenna_furni": "Ne peut sélectionner que l'antenne mobi.",
+    "require_click_tiles": "Ne peut sélectionner que des mobis à clique invisible.",
+    "require_counter_furni": "Ne peut sélectionner que des contre-mobi.",
+    "title": "Échec de la mise à jour",
+    "too_much_text": "Les textes wired peuvent contenir au maximum {{limit}} caractères.",
+    "username_length": "Un nom d'utilisateur ne peut pas dépasser {{max_username_length}} caractères !",
+    "usernames_count": "Il ne peut y avoir plus de {{max_usernames}} noms d'utilisateurs !",
+    "variables": {
+      "invalid_availability": "Disponibilité non valide",
+      "name_length": "La longueur du nom de la variable doit être comprise entre 1 et 40 caractères.",
+      "name_syntax": "Le nom de la variable ne doit comporter que des lettres, des chiffres ou des caractères \"_\".",
+      "name_uniq": "Le nom variable est déjà utilisé dans cette salle, veuillez en choisir un autre !",
+      "permanent_limit": "Cette salle a atteint la limite des variables permanentes pour ce type de variable.",
+      "permissions": {
+        "1": "Seul le propriétaire de ce wired variable est autorisé à effectuer cette modification.",
+        "2": "Seul le propriétaire de ce wired variable ou le propriétaire de la salle a le droit d'effectuer cette modification."
+      },
+      "reference": {
+        "already_exists": "Une référence à cette variable existe déjà dans cette salle.",
+        "must_own": "Ne peut faire référence qu'à des variables créées par vous-même.",
+        "same_room": "La référence à une variable dans la même salle n'est pas autorisée.",
+        "valid": "Veuillez sélectionner une variable de référence valide."
+      },
+      "shared_var_own_room": "Vous ne pouvez configurer des variables partagées que dans votre propre salle."
+    }
+  },
+  "help": "Aide mobi Wired",
+  "kickaction": {
+    "exception": {
+      "message": {
+        "to": {
+          "owner": "Se kicker soi-même crée un paradoxe qui avalera ton appart."
+        }
+      }
+    }
+  },
+  "muteaction": {
+    "exception": {
+      "message": {
+        "to": {
+          "owner": "Exception : proprio de l'appart"
+        }
+      }
+    }
+  },
+  "nonowner": {
+    "change": {
+      "confirm": {
+        "body": "Es-tu sûr de vouloir changer les paramètres de ce mobi ? (Cette fenêtre s'est ouverte car tu n'es pas le propriétaire)",
+        "title": "Merci de confirmer ce changement !"
+      }
+    }
+  },
+  "params": {
+    "action": {
+      "0": "${widget.memenu.wave}",
+      "1": "${widget.memenu.blow}",
+      "2": "${widget.memenu.laugh}",
+      "3": "${widget.memenu.thumb}",
+      "4": "Réveillé",
+      "5": "${widget.memenu.idle}",
+      "6": "${widget.memenu.sit}",
+      "7": "${widget.memenu.stand}",
+      "8": "Déposer",
+      "9": "Nager",
+      "10": "${widget.memenu.sign}",
+      "11": "${widget.memenu.dance}",
+      "dance": {
+        "1": "${widget.memenu.dance1}",
+        "2": "${widget.memenu.dance2}",
+        "3": "${widget.memenu.dance3}",
+        "4": "${widget.memenu.dance4}"
+      },
+      "sign": {
+        "0": "0",
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "10",
+        "11": "|",
+        "12": "ª",
+        "13": "!",
+        "14": "Football",
+        "15": ":)",
+        "16": "Carton rouge",
+        "17": "Carton jaune"
+      }
+    },
+    "action_selection": "Action :",
+    "allmatch": "Correspondre à tout le texte",
+    "allowafter2": "Actif après :",
+    "allowafter": "Déclencheur activé après {{seconds}} secondes",
+    "allowbefore2": "Actif avant :",
+    "allowbefore": "Déclencheur actif {{seconds}} secondes",
+    "anyavatar": "N'importe quel utilisateur",
+    "area_selection": "Sélection de la zone",
+    "bot": {
+      "name": "Nom du Bot",
+      "usage": "Donner un objet manuel en utilisant un bot"
+    },
+    "capture": {
+      "figure": "Copier mes looks",
+      "handitem": "Copier mon objet manuel"
+    },
+    "carry_mode": "Les utilisateurs sont transportés lorsque :",
+    "certainavatar": "Un utilisateur en particulier",
+    "chat": {
+      "hide": "Masquer le message du déclencheur",
+      "onlyowner": "Seul le propriétaire de la salle peut déclencher"
+    },
+    "chatcontains": "Contient le mot-clé",
+    "chattriggertype": "Choisir le type :",
+    "choose_type": "Choisissez le type :",
+    "clock_control": "Choisis une option",
+    "clock_minutes": "{{minutes}} minutes",
+    "clock_minutes_elapsed": "{{minutes}} minutes écoulées",
+    "clock_seconds": "{{seconds}} secondes",
+    "clock_seconds_elapsed": "{{seconds}} secondes écoulées",
+    "comparison": {
+      "0": "Plus bas que",
+      "1": "Egale à",
+      "2": "Plus haut que"
+    },
+    "comparison_selection": "Choisissez le type :",
+    "cond_eval": {
+      "note": "Vous pouvez sélectionner les conditions  de WIRED auxquelles cet add-on s'applique. Si la sélection est vide, il s'appliquera à toutes les conditions disponibles."
+    },
+    "condition": {
+      "altitude": "Altitude actuelle",
+      "direction": "Direction actuelle",
+      "position": "Position actuelle dans l'appart",
+      "state": "Etat actuel du mobi"
+    },
+    "conditions": "Conditions à reproduire :",
+    "dance_filter": "Filtrer par danse",
+    "dance_selection": "Danse :",
+    "delay": "Retarder l'effet de {{seconds}} secondes",
+    "direction_selection": "Select direction:",
+    "emptytiles": "Espacer les placés de {{tiles}} cases",
+    "enddate": "Date de fin :",
+    "enter_names": "Saisissez les noms d'utilisateur :",
+    "enteravatarname": "Entre un nom de Habbo",
+    "enterawordorphrase": "Entrer un mot ou une phrase",
+    "entermessage": "Entre un message",
+    "eval_mode": "Conditions à respecter :",
+    "exactmatch": "Concordance exacte",
+    "formation": "Choisir une disposition",
+    "freeze": {
+      "cancel_on_teleport": "Dégeler lors de la téléportation",
+      "effect": {
+        "0": "${fx_218}",
+        "1": "${fx_12}",
+        "2": "${fx_11}",
+        "3": "${fx_53}",
+        "4": "${fx_163}"
+      },
+      "effect_selection": "Choisir un effet :"
+    },
+    "groupselection": "Choisir le groupe :",
+    "grouptype": {
+      "0": "Groupe actuel",
+      "1": "Sélectionner dans la liste"
+    },
+    "handitem": "Objet",
+    "length": {
+      "minutes": "Temps: {{minutes}} minutes"
+    },
+    "level_selection": "Set level: {{level}}",
+    "message": "Message:",
+    "movefurni": "Déplacer le mobi:",
+    "movement": {
+      "horizontal": {
+        "distance": "Bouger {{distance}} cases dans la direction",
+        "selection": "Axe des X"
+      },
+      "vertical": {
+        "distance": "Bouger {{distance}} cases dans la direction",
+        "selection": "Axe des Y"
+      }
+    },
+    "movephysics": {
+      "block_by_furni": "Est bloqué par des mobis",
+      "keep_altitude": "Maintenir l'altitude du mobi",
+      "move_through_furni": "Déplacement via les meubles",
+      "move_through_users": "Déplacements via les utilisateurs"
+    },
+    "moveuser": "Déplacer l'utilisateur :",
+    "neighborhood_selection": "Sélectionnez les cases voisines",
+    "not_requireall": "Se déclenche si :",
+    "onfurni": {
+      "0": "Mobi sur mobi",
+      "1": "Mobi sous mobi",
+      "2": "Mobi à la même hauteur",
+      "3": "Tous les mobis sur la case"
+    },
+    "operator": {
+      "0": "Augmenter",
+      "1": "Diminution",
+      "2": "Valeur définie"
+    },
+    "pickamount": "Pick {{picks}} effects",
+    "picktriggerer": "Choisir le nom du déclencheur:",
+    "placement": {
+      "1": "1er",
+      "2": "2ème",
+      "3": "3ème",
+      "4": "4ème"
+    },
+    "placement_selection": "Placement :",
+    "placetodirection": "Placer les mobis dans cette direction",
+    "points_operation": "Type d'effet :",
+    "prizelimit": "Nombre de cadeaux maxi: {{amount}}",
+    "quantifier": {
+      "furni": {
+        "0": "Tous les mobis correspondent",
+        "1": "N'importe lequel des mobis correspond",
+        "neg": {
+          "0": "N'importe lequel des mobis ne correspond pas",
+          "1": "Aucun des mobis ne correspond"
+        }
+      },
+      "users": {
+        "0": "Tous les utilisateurs correspondent",
+        "1": "N'importe lequel des utilisateurs correspond",
+        "neg": {
+          "0": "N'importe lequel des utilisateurs ne correspond",
+          "1": "Aucun des utilisateurs ne correspond"
+        }
+      },
+      "variables": {
+        "0": "Tout correspond",
+        "1": "Toute correspondance",
+        "neg": {
+          "0": "Cetain ne correspond pas",
+          "1": "Aucun ne correspond"
+        }
+      }
+    },
+    "quantifier_selection": "Correspondance de condition si :",
+    "remote_selection": {
+      "filter": "Filtrer les piles",
+      "type": "Type de sélection :"
+    },
+    "requireall": "L'effet est déclenché lorsqu'...",
+    "requiredformationsize": "Au moins {{furnis}} mobis correspondent à l'état / la position",
+    "rotatefurni": "Tourner le mobi:",
+    "rotateuser": "Rotation de l'utilisateur :",
+    "seconds": "{{seconds}} secondes",
+    "select_options": "Sélectionnez les options :",
+    "selection_type": "Options de sélection de mobi :",
+    "selector_option": {
+      "0": "Filtrer la sélection existante",
+      "1": "Inverser"
+    },
+    "selector_options_selector": "Options de sélection :",
+    "setaltitude": "Sélectionnez l'altitude :",
+    "setamount": "Comparer avec : {{amount}}",
+    "setanimationtime": "Temps d'animation : {{ms}} millisecondes",
+    "setexecutions": "Nombre d'exécutions : {{amount}}",
+    "setfilter": "Montant du filtre :",
+    "setfurnifilter": "Filtrer sur {{amount}} mobi",
+    "setlongtime": "Régler le temps : {{time}}",
+    "setpoints2": "Définir les points :",
+    "setpoints": "Définir le nb de points: {{points}} points",
+    "setscore2": "L'équipe doit marquer :",
+    "setscore": "L'equipe doit totaliser: {{points}} points",
+    "setshorttime": "Définir l'intervalle : {{ms}} millisecondes",
+    "settime2": "Temps de réglage :",
+    "settime": "Régler le minuteur: {{seconds}} secondes",
+    "settimesingame": "Nombre de fois par partie: {{times}}",
+    "settimewindow": "Temps: {{timewindow}} secondes",
+    "setusersfilter": "Filtrer sur {{amount}} utilisateurs",
+    "shout": "Crier",
+    "sign_filter": "Filtrer par signe",
+    "sign_selection": "Signe :",
+    "signal": {
+      "send_options": "Options de signal :",
+      "split_furni": "Envoyer un signal pour chaque mobi",
+      "split_users": "Envoyer un signal pour chaque utilisateur"
+    },
+    "skipactions": "Éviter les effets des dernières exécutions de {{skips}}.",
+    "sources": {
+      "collapse": "Masquer les paramètres avancés",
+      "context": "Variables de contexte :",
+      "expand": "Afficher les paramètres avancés",
+      "furni": {
+        "0": "Utiliser l'élément déclencheur",
+        "100": "Utiliser les mobi choisis",
+        "101": "Utiliser l'instantané",
+        "200": "Utiliser les mobis du sélecteur",
+        "201": "Utiliser les mobis de Signal",
+        "900": "Tous les mobis de la salle",
+        "title": "Sélectionner la source du mobi :"
+      },
+      "global": "Variables globales :",
+      "merged": {
+        "title": "Sélectionner la source:"
+      },
+      "users": {
+        "0": "Utiliser l'utilisateur déclencheur",
+        "100": "Utiliser le bot spécifié par son nom",
+        "101": "Utiliser l'utilisateur spécifié par son nom",
+        "200": "Utiliser les utilisateurs du sélecteur",
+        "201": "Utiliser les utilisateurs de Signal",
+        "900": "Tous les utilisateurs dans la salle",
+        "title": "Sélectionner la source des utilisateurs :"
+      }
+    },
+    "sourcetype": {
+      "context": "Contexte",
+      "furni": "Mobi",
+      "global": "Global",
+      "users": "Utilisateur"
+    },
+    "start": {
+      "following": "Commencer à suivre"
+    },
+    "startdate": "Date de début :",
+    "startdir": "Direction initiale",
+    "state_match": "Ne sélectionner le mobi que si l'État correspond",
+    "state_trigger": {
+      "0": "Déclenchement pour tous les états",
+      "1": "Déclencheur pour l'état actuel"
+    },
+    "stop": {
+      "following": "Arrêter de suivre"
+    },
+    "talk": "Parler",
+    "team": "Choisis une équipe",
+    "team_type": {
+      "0": "Wired",
+      "1": "Bataille Banzai",
+      "2": "Geler"
+    },
+    "teleport": {
+      "options": "Options de téléportation :"
+    },
+    "texts": {
+      "capturer_name": "Nom de la capture :",
+      "placeholder_name": "Nom de l'espace :",
+      "placeholder_preview": "Utilise-le en tapant <font color",
+      "placeholder_type": "Type d'espace :",
+      "select_delimiter": "Sélectionner le délimiteur :",
+      "variable_display_type": "Type d'affichage variable :",
+      "variable_input_type": "Type d'entrée variable :",
+      "variable_output": "Sortie variable :"
+    },
+    "time": {
+      "day_selection": "Jour :",
+      "exact": "Exact",
+      "hour_selection": "Hours:",
+      "minute_selection": "Minutes:",
+      "month": {
+        "1": "Janv.",
+        "2": "Fev.",
+        "3": "Mar.",
+        "4": "Avr.",
+        "5": "Mai",
+        "6": "Juin",
+        "7": "Jui.",
+        "8": "Aoû.",
+        "9": "Sep.",
+        "10": "Oct.",
+        "11": "Nov.",
+        "12": "Dec."
+      },
+      "month_selection": "Mois :",
+      "nofilter": "Pas de filtre",
+      "range": "Gamme",
+      "second_selection": "Seconds:",
+      "skip": "Ne pas utiliser de filtre",
+      "timezone_selection": "Fuseau horaire :",
+      "weekday": {
+        "1": "Lundi",
+        "2": "Mardi",
+        "3": "Mercredi",
+        "4": "Jeudi",
+        "5": "Vendredi",
+        "6": "Samedi",
+        "7": "Dimanche"
+      },
+      "weekday_selection": "Jour de la semaine :",
+      "year_selection": "Année :"
+    },
+    "toggletype": {
+      "0": "Passer à l'état suivant",
+      "1": "Passer à l'état précédent"
+    },
+    "toggletype_selection": "Choisissez le type de changement :",
+    "triggered_choice": "appliquer les effets WIRED à:",
+    "triggerer": {
+      "bot": "Bot",
+      "user": "Utilisateur"
+    },
+    "triggerer_choice": "Appliquez les effets WIRED à :",
+    "turn": "Quand le mouvement est bloqué",
+    "user_collide": "Lorsqu'ils entrent en collision avec un utilisateur",
+    "user_move": {
+      "walkmode": "Si l'utilisateur marchait :"
+    },
+    "usercountmax": "Pas plus de {{value}} utilisateurs",
+    "usercountmin": "Au moins {{value}} utilisateurs",
+    "usertype": "Type d'utilisateur :",
+    "variables": {
+      "availability": "Options de disponibilité :",
+      "compare_value": "Comparer les valeurs :",
+      "connect_text": {
+        "caption": "0",
+        "title": "Relier le texte à la variable :"
+      },
+      "duration": "Durée :",
+      "inspection": "Inspection variable",
+      "operation": "Fonctionnement :",
+      "quest_chain_name": "Code de chaîne de quête :",
+      "quest_name": "Code de quête :",
+      "reference_value": "Valeur de référence",
+      "room_selection": "Choisir la salle :",
+      "settings": "Options variables :",
+      "show_internal": "... afficher les variables internes",
+      "sort_by": "Trier par :",
+      "time_selection": "Sélectionner l'heure",
+      "trigger_options": "Déclenchement lorsque la variable est :",
+      "value_settings": "Options de valeur",
+      "variable_name": "Nom de la variable :",
+      "variable_output": "Sortie variable :",
+      "variable_ref_selection": "Variable de référence :",
+      "variable_selection": "Choisir la variable :"
+    },
+    "whatissaid": "Ce qui est dit:",
+    "whisper": "Murmurer"
+  },
+  "pickfurnis": {
+    "caption": "Choisir le mobi [{{count}}/{{limit}}]",
+    "desc": "Tu dois sélectionner un ou plusieurs mobis. Tu peux sélectionner ou dé-sélectionner un mobi dans ton appart en cliquant dessus.",
+    "furnitypematches": "Le type du mobi déclencheur correspond au type des mobis sélectionnés",
+    "select": "Sélectionner un mobi",
+    "stuffselectiontype": {
+      "0": "Appliquer l'effet sur les mobis sélectionnés",
+      "1": "Appliquer l'effet sur un mobi au hasard parmi ceux dont le type correspond à des mobis sélectionnés",
+      "2": "Appliquer l'effet sur un mobi défini par le déclencheur ou la condition"
+    }
+  },
+  "ready": "Prêt",
+  "rewardfailed": {
+    "reason": {
+      "0": "Désolé! Il y avait un nombre limité de cadeaux disponibles. Tous ont déjà été donnés.",
+      "1": "Tu as déjà reçu ce cadeau. Chaque joueur ne peut le recevoir qu'une seule fois.",
+      "2": "Tu as déjà reçu un cadeau aujourd'hui. Essaye encore demain!",
+      "3": "Tu as déjà reçu un cadeau dans l'heure qui vient de s'écouler. Essaye encore dans une heure!",
+      "4": "Dommage! Tu n'as pas eu de chance et tu n'auras pas de cadeau cette fois. Essaye encore!",
+      "5": "Tu as déjà reçu tous les cadeaux qu'il est possible d'avoir.",
+      "8": "Tu as déjà eu ta récompense durant cette minute. Essaie encore dans une minute !"
+    },
+    "title": "Arf pas de cadeau :("
+  },
+  "rewardsuccess": {
+    "body": "Tu viens de recevoir un cadeau. Regarde dans ton Inventaire pour savoir de quoi il s'agit!",
+    "title": "Tu as reçu un cadeau."
+  },
+  "settings": {
+    "saved": "Paramètres sauvegardés"
+  },
+  "title": "Mobi Wired",
+  "tooltip": {
+    "action": "Sélectionnez une action",
+    "avatarname": "Entre un nom d'utilisateur",
+    "badgecode": "Code du badge :",
+    "bot": {
+      "chatmessage": "Que devrait dire le bot",
+      "handitem": "Choisis l'objet que le bot doit donner",
+      "name": "Le nom du bot doit être contrôlé"
+    },
+    "botname": "Le nom du bot doit être contrôlé",
+    "chatinput": "Entre un mot de passe",
+    "chatmessage": "Quel est le message :",
+    "dance": "Sélectionner la danse",
+    "effectid": "ID de l'effet :",
+    "enter_names_info": "Séparer les noms d'utilisateur par de nouvelles lignes",
+    "freeze": {
+      "effect": "Sélectionner l'effet"
+    },
+    "group": "Sélectionner le groupe",
+    "handitem": "Choisis l'objet",
+    "sign": "Sélectionnez le signe"
+  },
+  "variables": {
+    "availability_change": {
+      "body": "Êtes-vous sûr de vouloir modifier la disponibilité de ce wired variable ? Cette action supprime les données stockées et est irréversible !",
+      "title": "Effacement des données variables"
+    },
+    "pickup": {
+      "body": "Êtes-vous sûr de vouloir récupérer ce variable ? Toutes les références à ce dernier seront effacées, ainsi que toutes les données qu'il a stockées.",
+      "title": "Suppression variable"
+    }
+  },
+  "view_in_menu": "Voir dans le menu Wired"
+}

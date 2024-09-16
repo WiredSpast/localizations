@@ -1,0 +1,545 @@
+{
+  "win_error": "Erro!",
+  "applysnapshot": "Selecionar Mobi para aplicar uma Condição",
+  "badgereceived": {
+    "body": "Você ganhou um Emblema. Veja seu Inventário!",
+    "title": "Ganhou Emblema!"
+  },
+  "chatmsgtoolong": "Sua mensagem só pode ter 100 caracteres.",
+  "conflictingactions": {
+    "caption": "Aviso: Efeitos incompatíveis",
+    "text": "Este Ativador não especifica um Habbo. Você juntou este Ativador com Efeitos ({{actions}}) que precisam de alguém para ativá-lo."
+  },
+  "conflictingtriggers": {
+    "caption": "Aviso: Ativadores incompatíveis",
+    "text": "Este Efeito precisa de um Habbo para ativá-lo."
+  },
+  "danger": {
+    "1": {
+      "change": {
+        "confirm": {
+          "body": "Você selecionou \"Inverter\" sem filtragem. Isso selecionará todos os mobis/usuários que NÃO correspondem aos requisitos, que PODE ser o quarto inteiro. Tem certeza? (PERIGOSO!)",
+          "title": "Tem certeza?"
+        }
+      }
+    }
+  },
+  "enter_code": "Digite o código",
+  "enter_id": "Digite ID",
+  "enter_name": "Digite o nome",
+  "enter_text": "digite o texto",
+  "error": {
+    "capturer": {
+      "duplicate": "Você não pode gravar a mesma variável duas vezes em uma frase"
+    },
+    "condition_evaluation_furni": "Você só pode selecionar Condições WIRED e WIRED Extras!",
+    "invalid_freeze_effect": "Você selecionou um efeito inválido!",
+    "invalid_handitem_type": "Este item de mão não é permitido!",
+    "invalid_reward_products": "Os seguintes produtos/emblemas não existem: {{products}}",
+    "placeholder": {
+      "delimiter_empty": "O delimitador não pode ficar vazio",
+      "name_length": "O tamanho do espaço deve ter entre 1 e 40 caracteres.",
+      "name_syntax": "O espaço deve conter apenas letras, números ou caracteres \"_\"."
+    },
+    "require_antenna_furni": "Você só pode selecionar mobis do tipo Antena Wired!",
+    "require_click_tiles": "Você só pode selecionar pisos de clique invisível.",
+    "require_counter_furni": "Você só pode selecionar mobis do tipo Relógio e Cronômetro!",
+    "title": "Falha ao atualizar",
+    "too_much_text": "Os textos wired podem ter no máximo {{limit}} caracteres.",
+    "username_length": "O nome do usuário não pode ultrapassar {{max_username_length}} caracteres!",
+    "usernames_count": "Você não pode inserir mais do que {{max_usernames}} nomes de usuários!",
+    "variables": {
+      "invalid_availability": "Disponibilidade inválida",
+      "name_length": "O nome da variável precisa ter entre 1 e 40 caracteres.",
+      "name_syntax": "O nome da variável deve conter apenas letras, números ou caracteres \"_\".",
+      "name_uniq": "Esse nome de variável já está em uso neste quarto, escolha um nome diferente!",
+      "permanent_limit": "Este quarto atingiu o limite de variáveis permanentes para este tipo de variável.",
+      "permissions": {
+        "1": "Somente o proprietário desta variável wired tem permissão para fazer essa alteração.",
+        "2": "Somente o proprietário desta variável wired e o dono do quarto têm permissão para fazer essa alteração."
+      },
+      "reference": {
+        "already_exists": "Já existe uma referência para esta variável neste quarto.",
+        "must_own": "Você só pode referenciar variáveis criadas por você mesmo",
+        "same_room": "Não é permitido estabelecer uma referência a uma variável que está no mesmo quarto.",
+        "valid": "Selecione uma variável de referência válida."
+      },
+      "shared_var_own_room": "Você só pode definir variáveis como compartilhadas em seu próprio quarto."
+    }
+  },
+  "help": "Ajuda de Mobis Wired",
+  "kickaction": {
+    "exception": {
+      "message": {
+        "to": {
+          "owner": "Chutar-se causa um paradoxo que engolirá seu Quarto."
+        }
+      }
+    }
+  },
+  "muteaction": {
+    "exception": {
+      "message": {
+        "to": {
+          "owner": "Exceção para silenciar: Dono do quarto"
+        }
+      }
+    }
+  },
+  "nonowner": {
+    "change": {
+      "confirm": {
+        "body": "Tem certeza de que quer mudar as configurações deste Mobi? (Você vê esse aviso porque não é o dono)",
+        "title": "Por favor confirme a mudança de um não-proprietário!"
+      }
+    }
+  },
+  "params": {
+    "action": {
+      "0": "${widget.memenu.wave}",
+      "1": "${widget.memenu.blow}",
+      "2": "${widget.memenu.laugh}",
+      "3": "${widget.memenu.thumb}",
+      "4": "Desperto",
+      "5": "${widget.memenu.idle}",
+      "6": "${widget.memenu.sit}",
+      "7": "${widget.memenu.stand}",
+      "8": "Deitar",
+      "9": "Nadar",
+      "10": "${widget.memenu.sign}",
+      "11": "${widget.memenu.dance}",
+      "dance": {
+        "1": "${widget.memenu.dance1}",
+        "2": "${widget.memenu.dance2}",
+        "3": "${widget.memenu.dance3}",
+        "4": "${widget.memenu.dance4}"
+      },
+      "sign": {
+        "0": "0",
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "10",
+        "11": "|",
+        "12": "ª",
+        "13": "!",
+        "14": "Futebol",
+        "15": ":)",
+        "16": "Cartão vermelho",
+        "17": "Cartão Amarelo"
+      }
+    },
+    "action_selection": "Ação:",
+    "allmatch": "Concordar com todo o texto",
+    "allowafter2": "Ativar depois de:",
+    "allowafter": "Ativador será ligado em {{seconds}} segundos",
+    "allowbefore2": "Ativar antes de:",
+    "allowbefore": "O Ativador está ligado por {{seconds}} segundos",
+    "anyavatar": "Qualquer Habbo",
+    "area_selection": "Seleção de Área",
+    "bot": {
+      "name": "Nome do Bot",
+      "usage": "Dar item de mão usando um Bot"
+    },
+    "capture": {
+      "figure": "Copiar os meus visuais",
+      "handitem": "Copiar meu item de mão"
+    },
+    "carry_mode": "Usuários são carregados quando:",
+    "certainavatar": "Especificar Habbo",
+    "chat": {
+      "hide": "Ocultar a mensagem do gatilho",
+      "onlyowner": "Somente o proprietário da sala pode acionar"
+    },
+    "chatcontains": "Contém palavra-chave",
+    "chattriggertype": "Escolha o tipo:",
+    "choose_type": "Escolha o tipo:",
+    "clock_control": "Selecione a Opção",
+    "clock_minutes": "{{minutes}} minutos",
+    "clock_minutes_elapsed": "Passaram {{minutes}} minutos",
+    "clock_seconds": "{{seconds}} segundos",
+    "clock_seconds_elapsed": "passaram {{seconds}} segundos",
+    "comparison": {
+      "0": "Menor que",
+      "1": "Igual",
+      "2": "Maior que"
+    },
+    "comparison_selection": "Escolha o tipo:",
+    "cond_eval": {
+      "note": "Você pode selecionar as condições que se aplicam a este WIRED. Se nada for selecionado, todas as condições disponíveis serão aplicadas."
+    },
+    "condition": {
+      "altitude": "Altura atual",
+      "direction": "Atual direção",
+      "position": "Atual posição no Quarto",
+      "state": "Atual estado do Mobi"
+    },
+    "conditions": "Selecione um critério de Mobi que precisa ser marcado:",
+    "dance_filter": "Filtrar por Dança",
+    "dance_selection": "Dança:",
+    "delay": "Efeito de atraso de {{seconds}} segundos",
+    "direction_selection": "Selecionar direção:",
+    "emptytiles": "Space placed Furnis {{tiles}} tiles apart",
+    "enddate": "Data do final:",
+    "enter_names": "Digite os nomes:",
+    "enteravatarname": "Digite o nome do Habbo",
+    "enterawordorphrase": "Digite uma palavra ou uma frase:",
+    "entermessage": "Digite uma mensagem",
+    "eval_mode": "Condições que precisam coincidir:",
+    "exactmatch": "Combinação exata",
+    "formation": "Pick formation",
+    "freeze": {
+      "cancel_on_teleport": "Descongelar ao teletransportar",
+      "effect": {
+        "0": "${fx_218}",
+        "1": "${fx_12}",
+        "2": "${fx_11}",
+        "3": "${fx_53}",
+        "4": "${fx_163}"
+      },
+      "effect_selection": "Escolha um efeito:"
+    },
+    "groupselection": "Escolha o grupo:",
+    "grouptype": {
+      "0": "Grupo atual",
+      "1": "Selecionar da lista"
+    },
+    "handitem": "Item de mão",
+    "length": {
+      "minutes": "Duração: {{minutes}} minutos"
+    },
+    "level_selection": "Set level: {{level}}",
+    "message": "Mensagem:",
+    "movefurni": "Mover Mobi:",
+    "movement": {
+      "horizontal": {
+        "distance": "Mover {{distance}} quadrados na direção",
+        "selection": "eixo X"
+      },
+      "vertical": {
+        "distance": "Mover {{distance}} quadrados na direção",
+        "selection": "eixo Y"
+      }
+    },
+    "movephysics": {
+      "block_by_furni": "Está bloqueado por mobis",
+      "keep_altitude": "Manter a altura do mobi",
+      "move_through_furni": "Mover através dos mobis",
+      "move_through_users": "Mover através dos Habbos"
+    },
+    "moveuser": "Mover usuário:",
+    "neighborhood_selection": "Selecionar Pisos Vizinhos",
+    "not_requireall": "Defina a condição:",
+    "onfurni": {
+      "0": "Mobis acima de Mobis",
+      "1": "Mobis sob Mobis",
+      "2": "Mobis na mesma altura",
+      "3": "Todos os mobis no piso"
+    },
+    "operator": {
+      "0": "Aumentar",
+      "1": "Diminuir",
+      "2": "Configurar valor"
+    },
+    "pickamount": "Selecione {{picks}} efeitos",
+    "picktriggerer": "Selecione o nome do ativador:",
+    "placement": {
+      "1": "1º",
+      "2": "2º",
+      "3": "3º",
+      "4": "4º"
+    },
+    "placement_selection": "Posicionamento:",
+    "placetodirection": "Place Furnis in this direction",
+    "points_operation": "Tipo de efeito:",
+    "prizelimit": "Prêmio: {{amount}}",
+    "quantifier": {
+      "furni": {
+        "0": "Todos os mobis coincidem",
+        "1": "Qualquer um dos mobis coincide",
+        "neg": {
+          "0": "Algum dos mobis não coincide",
+          "1": "Nenhum dos mobis coincide"
+        }
+      },
+      "users": {
+        "0": "Todos os usuários coincidem",
+        "1": "Qualquer um dos usuários coincide",
+        "neg": {
+          "0": "Qualquer um dos usuários não coincide",
+          "1": "Nenhum dos usuários coincide"
+        }
+      },
+      "variables": {
+        "0": "Todas as variáveis correspondem",
+        "1": "Qualquer uma das variáveis corresponde",
+        "neg": {
+          "0": "Qualquer uma das variáveis NÃO corresponde",
+          "1": "Nenhuma das variáveis corresponde"
+        }
+      }
+    },
+    "quantifier_selection": "Condição de correspondência se:",
+    "remote_selection": {
+      "filter": "Filtrar as pilhas de Wired",
+      "type": "Tipo de seleção:"
+    },
+    "requireall": "Permite ativação se:",
+    "requiredformationsize": "At least {{furnis}} Furnis match state/ location",
+    "rotatefurni": "Girar Mobi:",
+    "rotateuser": "Girar usuário:",
+    "seconds": "{{seconds}} segundos",
+    "select_options": "Selecione as opções:",
+    "selection_type": "Opções de seleção de Mobis:",
+    "selector_option": {
+      "0": "Filtrar seleção existente",
+      "1": "Inverter"
+    },
+    "selector_options_selector": "Opções do seletor:",
+    "setaltitude": "Selecionar altura:",
+    "setamount": "Comparar com: {{amount}}",
+    "setanimationtime": "Tempo de animação: {{ms}} millisegundos",
+    "setexecutions": "Quantidade de execuções: {{amount}}",
+    "setfilter": "Filtrar quantidade:",
+    "setfurnifilter": "Filtrar para {{amount}} mobis",
+    "setlongtime": "Estabelecer o tempo: {{time}}",
+    "setpoints2": "Configurar pontuação:",
+    "setpoints": "Defina os pontos: {{points}} pontos",
+    "setscore2": "Equipe tem que marcar:",
+    "setscore": "Time precisa marcar: {{points}} pontos",
+    "setshorttime": "Configurar intervalo: {{ms}} millisegundos",
+    "settime2": "Configurar tempo:",
+    "settime": "Temporizador: {{seconds}} segundos",
+    "settimesingame": "Quantidade de tempo por jogo: {{times}}",
+    "settimewindow": "Janela de tempo: {{timewindow}} segundos",
+    "setusersfilter": "Filtrar para {{amount}} Habbos",
+    "shout": "Gritar",
+    "sign_filter": "Fitrar por sinal",
+    "sign_selection": "Sinais:",
+    "signal": {
+      "send_options": "Opções de sinal:",
+      "split_furni": "Enviar sinal para cada mobi",
+      "split_users": "Enviar sinal para cada usuário"
+    },
+    "skipactions": "Evitar os efeitos das últimas {{skips}} execuções.",
+    "sources": {
+      "collapse": "Ocultar configurações avançadas",
+      "context": "Variáveis de contexto",
+      "expand": "Mostrar configurações avançadas",
+      "furni": {
+        "0": "Use o item de ativação",
+        "100": "Use mobis escolhidos",
+        "101": "Use o instantâneo",
+        "200": "Usar mobis do seletor",
+        "201": "Usar mobis do sinal",
+        "900": "Todos os mobis do quarto",
+        "title": "Selecione a fonte do Mobi:"
+      },
+      "global": "Variáveis globais",
+      "merged": {
+        "title": "Selecione a fonte:"
+      },
+      "users": {
+        "0": "Use o usuário acionador",
+        "100": "Use o bot especificado pelo nome",
+        "101": "Use o Habbo especificado pelo nome",
+        "200": "Usar usuários do seletor",
+        "201": "Usar usuários do Sinal",
+        "900": "Todos os usuários no quarto",
+        "title": "Selecionar usuários fonte:"
+      }
+    },
+    "sourcetype": {
+      "context": "Contexto",
+      "furni": "Mobi",
+      "global": "Global",
+      "users": "Usuário"
+    },
+    "start": {
+      "following": "Começar a seguir"
+    },
+    "startdate": "Data de início:",
+    "startdir": "Direção de Início",
+    "state_match": "Selecione mobis apenas se o estado corresponder",
+    "state_trigger": {
+      "0": "Trigger for all states",
+      "1": "Trigger for the current state"
+    },
+    "stop": {
+      "following": "Parar de seguir"
+    },
+    "talk": "Conversar",
+    "team": "Escolha um time",
+    "team_type": {
+      "0": "Wired",
+      "1": "Battle Banzai",
+      "2": "Freeze"
+    },
+    "teleport": {
+      "options": "Opções de Tele:"
+    },
+    "texts": {
+      "capturer_name": "Nome gravado:",
+      "placeholder_name": "Nome do Espaço:",
+      "placeholder_preview": "Use-o digitando <font color",
+      "placeholder_type": "Tipo de Espaço:",
+      "select_delimiter": "Selecionar delimitador:",
+      "variable_display_type": "Tipo de exibição variável:",
+      "variable_input_type": "Tipo de entrada variável:",
+      "variable_output": "Saída variável:"
+    },
+    "time": {
+      "day_selection": "Dia:",
+      "exact": "Exato",
+      "hour_selection": "Horas:",
+      "minute_selection": "Minutos:",
+      "month": {
+        "1": "Jan.",
+        "2": "Fev.",
+        "3": "Mar.",
+        "4": "Abr.",
+        "5": "Mai.",
+        "6": "Jun.",
+        "7": "Jul.",
+        "8": "Ago.",
+        "9": "Set.",
+        "10": "Out.",
+        "11": "Nov.",
+        "12": "Dez."
+      },
+      "month_selection": "Mês:",
+      "nofilter": "Sem filtro",
+      "range": "Período",
+      "second_selection": "Segundos:",
+      "skip": "Não filtrar",
+      "timezone_selection": "Selecione a zona horária:",
+      "weekday": {
+        "1": "Segunda-Feira",
+        "2": "Terça-Feira",
+        "3": "Quarta-Feira",
+        "4": "Quinta-Feira",
+        "5": "Sexta-Feira",
+        "6": "Sábado",
+        "7": "Domingo"
+      },
+      "weekday_selection": "Dia da semana:",
+      "year_selection": "Ano:"
+    },
+    "toggletype": {
+      "0": "Alternar para o próximo estado",
+      "1": "Alternar para o estado anterior"
+    },
+    "toggletype_selection": "Escolha o tipo de alternância:",
+    "triggerer": {
+      "bot": "Bot",
+      "user": "Habbo"
+    },
+    "triggerer_choice": "Aplicar Efeito WIRED em:",
+    "turn": "Quando o movimento é bloqueado",
+    "user_collide": "Ao colidir com o usuário",
+    "user_move": {
+      "walkmode": "Se o usuário estivesse andando:"
+    },
+    "usercountmax": "Não mais de {{value}} pessoas",
+    "usercountmin": "Ao menos {{value}} pessoas",
+    "usertype": "Tipo de Usuário:",
+    "variables": {
+      "availability": "Opções de disponibilidade:",
+      "compare_value": "Comparar valor:",
+      "connect_text": {
+        "caption": "0",
+        "title": "Conectar texto a variável:"
+      },
+      "duration": "Duração:",
+      "inspection": "Checar variável",
+      "operation": "Operação:",
+      "quest_chain_name": "Quest chain code:",
+      "quest_name": "Quest code:",
+      "reference_value": "Valor referência",
+      "room_selection": "Selecione um quarto:",
+      "settings": "Configurações da variável:",
+      "show_internal": "... mostrar variáveis internas",
+      "sort_by": "Ordenar por:",
+      "time_selection": "Selecionar tempo",
+      "trigger_options": "Ativar quando a variável for:",
+      "value_settings": "Opções de valor",
+      "variable_name": "Nome da variável:",
+      "variable_output": "Saída variável:",
+      "variable_ref_selection": "Variável de referência:",
+      "variable_selection": "Selecione uma variável:"
+    },
+    "whatissaid": "O que é dito:",
+    "whisper": "Sussurrar"
+  },
+  "pickfurnis": {
+    "caption": "Selecionar Mobi [{{count}}/{{limit}}]",
+    "desc": "Você deve selecionar um ou mais mobis para esta ação. Você pode selecionar ou cancelar a seleção de mobis no seu quarto clicando neles.",
+    "furnitypematches": "O tipo de Mobi ativador coincide com um dos Mobis selecionados",
+    "select": "Selecione Mobis",
+    "stuffselectiontype": {
+      "0": "Perform the Effect on picked Furnis",
+      "1": "Perform the Effect on one random Furni whose type matches one of the picked Furnis",
+      "2": "Perform the Effect on a Furni defined by the Trigger or Condition"
+    }
+  },
+  "ready": "Pronto",
+  "rewardfailed": {
+    "reason": {
+      "0": "Desculpe! Existe um limite de prêmios. Todos os prêmios já foram entregues.",
+      "1": "Você já ganhou esse prêmio. Cada Habbo só ganha uma vez.",
+      "2": "Você já ganhou prêmio hoje. Tente de novo amanhã!",
+      "3": "Você já ganhou prêmio essa hora. Tente de novo daqui uma hora!",
+      "4": "Que pena! Você não teve sorte dessa vez. Tente novamente!",
+      "5": "Você já ganhou os prêmios possíveis de hoje.",
+      "8": "Você já recebeu um prêmio neste minuto. Tente de novo um pouquinho mais tarde."
+    },
+    "title": "Aww, sem prêmio :("
+  },
+  "rewardsuccess": {
+    "body": "Você acabou de receber um prêmio. Veja seu inventário!",
+    "title": "Você acabou de receber um prêmio."
+  },
+  "settings": {
+    "saved": "Configurações guardadas"
+  },
+  "title": "Mobis Wired",
+  "tooltip": {
+    "action": "Selecionar ação",
+    "avatarname": "Digite o nome Habbo",
+    "badgecode": "Código do Emblema:",
+    "bot": {
+      "chatmessage": "O que o Bot deve dizer",
+      "handitem": "Selecione o item de mão que o Bot deve dar",
+      "name": "O nome do Bot é para ser controlado"
+    },
+    "botname": "O nome do Bot é para ser controlado",
+    "chatinput": "Digite uma palavra-passe",
+    "chatmessage": "Qual é a mensagem:",
+    "dance": "Selecionar dança",
+    "effectid": "ID do efeito:",
+    "enter_names_info": "Separar nomes de usuário por novas linhas",
+    "freeze": {
+      "effect": "Selecionar efeito"
+    },
+    "group": "Selecione o grupo",
+    "handitem": "Selecione o item de mão",
+    "sign": "Selecionar sinal"
+  },
+  "variables": {
+    "availability_change": {
+      "body": "Tem certeza de que deseja alterar a disponibilidade desta variável wired? Esta ação apagará todos os dados armazenados e é irreversível!",
+      "title": "Limpando os dados das variáveis"
+    },
+    "pickup": {
+      "body": "Tem certeza de que deseja remover esta variável? Todas as suas referências serão apagadas, assim como todos os dados armazenados por ela.",
+      "title": "Removendo uma variável"
+    }
+  },
+  "view_in_menu": "Ver no menu Wired"
+}
