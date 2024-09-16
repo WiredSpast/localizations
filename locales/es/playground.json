@@ -1,0 +1,13 @@
+{
+  "state_changed": {
+    "easy": "La palanca está seleccionada en el wired de <u>Furni es usado</u> y al hacer click en la palanca la bola se moverá."
+  },
+  "says_something": {
+    "secret": "secreto",
+    "easy": "Si el usuario dice la palabra <u>secreto</u> entonces se activará el causante.",
+    "medium": {
+      "1": "¡Parece que no funciona!",
+      "2": "Intentaré decirlo de nuevo en la alfombra"
+    }
+  }
+}

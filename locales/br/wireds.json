@@ -1,0 +1,632 @@
+{
+  "core": {
+    "condition": {
+      "name_one": "Condição",
+      "name_other": "Condições",
+      "description": "As condições verificam situações e ativam ativadores se forem atendidas."
+    },
+    "effect": {
+      "name_one": "Efeito",
+      "name_other": "Efeitos",
+      "description": "Os efeitos são ações que são executadas quando um ativador é ativado."
+    },
+    "trigger": {
+      "name_one": "Ativador",
+      "name_other": "Ativadores",
+      "description": "Os ativadores são usados para ativar efeitos."
+    },
+    "selector": {
+      "name_one": "Seletor",
+      "name_other": "Seletores",
+      "description": "Os seletores são usados para selecionar usuários ou móveis para um ativador ou efeito."
+    },
+    "variable": {
+      "name_one": "Variável",
+      "name_other": "Variáveis",
+      "description": "As variáveis são usadas para armazenar informações que podem ser usadas em ativadores e efeitos."
+    },
+    "addon": {
+      "name_one": "Adicional",
+      "name_other": "Adicionais",
+      "description": "Os adicionais são usados para adicionar funcionalidade extra aos ativadores e efeitos."
+    }
+  },
+  "info": {
+    "random": {
+      "name": "WIRED EXTRA: Efeito Aleatório",
+      "description": "Apenas um Efeito aleatório poderá ser feito por vez."
+    },
+    "unseen": {
+      "name": "WIRED EXTRA: Efeito Inédito",
+      "description": "Apenas um Efeito inédito pode ser ativado por vez."
+    },
+    "teleport_to": {
+      "name": "EFEITO WIRED: Teleportar para Mobi",
+      "description": "O efeito teleporta um Habbo para um Mobi. Se selecionar mais de um Mobi, o Habbo é teleportado aleatoriamente para um deles."
+    },
+    "move_rotate": {
+      "name": "EFEITO WIRED: Mover e Rotacionar Mobi",
+      "description": "O efeito move e rotaciona o Mobi selecionado"
+    },
+    "time_more_than": {
+      "name": "CONDIÇÃO WIRED: Mais de X segundos passados",
+      "description": "Ativadores funcionarão se mais de x segundos tiverem passado desde o reinicio do temporizador"
+    },
+    "state_changed": {
+      "name": "ATIVADOR WIRED: Mobi é usado",
+      "description": "Efeitos são ativados quando o estado do Mobi é alterado clicando duas vezes."
+    },
+    "periodically": {
+      "name": "ATIVADOR WIRED: Repetir Efeito",
+      "description": "Efeitos são ativados a cada x segundos"
+    },
+    "score_achieved": {
+      "name": "ATIVADOR WIRED: Pontuação obtida",
+      "description": "Disparado quando a pontuação definida é atingida"
+    },
+    "says_something": {
+      "name": "ATIVADOR WIRED: Habbo diz algo",
+      "description": "Efeitos são ativados quando o Habbo diz uma palavra ou frase."
+    },
+    "walks_off_furni": {
+      "name": "ATIVADOR WIRED: Habbo sai do Mobi",
+      "description": "Efeitos são ativados quando o Habbo sai de cima do Mobi."
+    },
+    "at_given_time": {
+      "name": "ATIVADOR WIRED: No tempo escolhido",
+      "description": "Efeitos são ativados em uma hora definida depois do contador ser reiniciado."
+    },
+    "game_ends": {
+      "name": "ATIVADOR WIRED: Final de Jogo",
+      "description": "Efeitos são ativados quando um jogo de Battle Banzai terminar."
+    },
+    "show_message": {
+      "name": "EFEITO WIRED: Mostrar mensagem",
+      "description": "Este Efeito mostra uma mensagem secreta apenas para os Habbos que o ativaram."
+    },
+    "time_less_than": {
+      "name": "CONDIÇÃO WIRED: Menos de X segundos passados desde o reinicio do temporizador",
+      "description": "Ativadores funcionarão se menos de x segundos tiverem passado desde o reinicio do temporizador"
+    },
+    "enter_room": {
+      "name": "ATIVADOR WIRED: Habbo entra no Quarto",
+      "description": "Efeitos são ativados quando um Habbo entra no Quarto."
+    },
+    "toggle_state": {
+      "name": "EFEITO WIRED: Mudar estado do Mobi",
+      "description": "Este Efeito muda o estado do Mobi escolhido como se alguém tivesse clicando duas vezes nele."
+    },
+    "walks_on_furni": {
+      "name": "ATIVADOR WIRED: Habbo anda no Mobi",
+      "description": "Efeitos são ativados quando alguém pisa ou senta no Mobi."
+    },
+    "reset_timers": {
+      "name": "EFEITO WIRED: Reiniciar tempo",
+      "description": "Este efeito reinicia Ativadores que usam temporizadores"
+    },
+    "furnis_hv_avtrs": {
+      "name": "CONDIÇÃO WIRED: Mobis com Habbos",
+      "description": "Ativador funcionará se todos os Mobis selecionados tiverem Habbos em cima."
+    },
+    "trggrer_on_frn": {
+      "name": "CONDIÇÃO WIRED: Habbo Ativador está no Mobi",
+      "description": "Ativação é permitida se o Habbo Ativador estiver no Mobi selecionado"
+    },
+    "match_snapshot": {
+      "name": "CONDIÇÃO WIRED: Estado e Posição do Mobi combinam",
+      "description": "Ativador funcionará se a posição e o estado do Mobi combinarem."
+    },
+    "give_score": {
+      "name": "EFEITO WIRED: Dar Pontos",
+      "description": "Este Efeito dá uma quantidade x de pontos para os jogadores. Você poderá criar grandes jogos!"
+    },
+    "match_to_sshot": {
+      "name": "EFEITO WIRED: Mobis que voltam à programação original",
+      "description": "Este Efeito faz o Mobi selecionado voltar ao estado original que você o programou."
+    },
+    "game_starts": {
+      "name": "ATIVADOR WIRED: Começo de Jogo",
+      "description": "Efeitos são ativados quando um jogo de Battle Banzai começar."
+    },
+    "has_furni_on": {
+      "name": "CONDIÇÃO WIRED: Ter Mobi em cima",
+      "description": "O efeito funcionará se um dos Mobis selecionados tiverem Mobi em cima. O Mobi superior pode ser modificado com Efeitos."
+    },
+    "actor_in_group": {
+      "name": "CONDIÇÃO WIRED: Membro do Grupo",
+      "description": "A condição ocorre quando esta é a central de um quarto de grupo ou o usuário é membro daquele grupo."
+    },
+    "give_reward": {
+      "name": "wf_act_give_reward name",
+      "description": "UNKNOWN"
+    },
+    "call_stacks": {
+      "name": "EFEITO WIRED: Faz pilhas de wireds",
+      "description": "Esse Wired permite selecionar 5 pilhas de wireds para executar de um mesmo disparador, não importando as condições atuais ou disparadores."
+    },
+    "kick_user": {
+      "name": "EFEITO WIRED: Kickar Usuário",
+      "description": "Esse efeito chuta um usuário dependendo dos critérios de acionamento"
+    },
+    "period_long": {
+      "name": "ATIVADOR WIRED: Duração periódica",
+      "description": "Jogos mais longos! Os Efeitos são disparados ao passar de um certo tempo Disparando periodicamente, mas não por mais tempo!"
+    },
+    "give_score_tm": {
+      "name": "EFEITO WIRED: Pontuação recebida",
+      "description": "Dá pontuação para a Equipe pré-definida"
+    },
+    "move_to_dir": {
+      "name": "EFEITO WIRED: Mudar Direção Mobi",
+      "description": "Esse Efeito muda a direção do Mobi. Quando o movimento é bloqueado, o Mobi terá sua direção trocada segundo sua configuração. Se há um usuário perto do Mobi, o Wired Ativador será ativado."
+    },
+    "leave_team": {
+      "name": "EFEITO WIRED: Sair da Equipe",
+      "description": "Disparar o avatar abandonará a equipe pré-definida"
+    },
+    "collision": {
+      "name": "ATIVADOR WIRED: Batida",
+      "description": "Disparado ao mover um Mobi (usando o Wired perseguir ou Fugir) e bater em um avatar - o usuário que dispara é o avatar que bate."
+    },
+    "chase": {
+      "name": "EFEITO WIRED: Perseguir",
+      "description": "Este efeito move o mobi para o usuário mais próximo dele na mesma linha ou coluna. Se tiver um usuário próximo a este mobi, o DISPARADOR WIRED: Batida irá ativar."
+    },
+    "actor_in_team": {
+      "name": "CONDIÇÃO WIRED: Membro da Equipe",
+      "description": "A condição passa quando o avatar é um membro da equipe pré-definida"
+    },
+    "flee": {
+      "name": "EFEITO WIRED: Fugir",
+      "description": "Quando o Mobi disparado vai uma Telha mais longe do avatar mais próximo."
+    },
+    "join_team": {
+      "name": "EFEITO WIRED: Entrar na Equipe",
+      "description": "Disparar o avatar entrará na equipe pré-definida"
+    },
+    "wearing_badge": {
+      "name": "CONDIÇÃO WIRED: Usar Emblema",
+      "description": "CONDIÇÃO WIRED: Usar Emblema"
+    },
+    "wearing_effect": {
+      "name": "CONDIÇÃO WIRED: Vestir o Efeito Avatar",
+      "description": "CONDIÇÃO WIRED: Vestir o Efeito Avatar"
+    },
+    "not_trggrer_on": {
+      "name": "WIRED Condição negativa: Ativador NÃO está no Mobi",
+      "description": "Ativador é permitido se quem o ativa NÃO está em cima de um dos Mobis escolhidos."
+    },
+    "not_in_team": {
+      "name": "WIRED Condição negativa: NÃO é membro da equipe",
+      "description": "Condição aceita quando usuário NÃO é membro de um time pré-determinado."
+    },
+    "not_furni_on": {
+      "name": "WIRED Condição negativa: NÃO há Mobis em cima",
+      "description": "Ativador é permitido se um dos Mobis escolhidos NÃO tiver outro Mobi em cima."
+    },
+    "not_hv_avtrs": {
+      "name": "WIRED Condição negativa: Mobis NÃO têm usuários em cima",
+      "description": "Ativador é permitido se NENHUM dos Mobis escolhidos tiver usuários em cima dele."
+    },
+    "at_time_long": {
+      "name": "wf_trg_at_time_long name",
+      "description": "UNKNOWN"
+    },
+    "not_user_count": {
+      "name": "WIRED Condição negativa: NÃO há usuários suficientes no quarto",
+      "description": "Ativador não é permitido se o número de usuários em um quarto NÃO equivale aos limites pré-determinados."
+    },
+    "not_wearing_fx": {
+      "name": "WIRED Condição negativa: Não está usando o efeito",
+      "description": "UNKNOWN"
+    },
+    "user_count_in": {
+      "name": "CONDIÇÃO WIRED: Número de usuários no quarto",
+      "description": "Ativador é permitido se o número de usuários no quarto está dentro dos limites definidos."
+    },
+    "not_wearing_b": {
+      "name": "WIRED Condição negativa: Não está usando o emblema",
+      "description": "UNKNOWN"
+    },
+    "stuff_is": {
+      "name": "CONDIÇÃO WIRED: Tipo de Mobis coincidem",
+      "description": "Ativador é permitido se o Mobi definido pelo ativador é um dos Mobis escolhidos ou é do mesmo tipo."
+    },
+    "not_in_group": {
+      "name": "WIRED Condição negativa: NÃO é membro de grupo",
+      "description": "Condição ocorre quando é um quarto de grupo e o usuário NÃO é um membro do grupo."
+    },
+    "not_stuff_is": {
+      "name": "WIRED Condição negativa: Mobi NÃO coincide",
+      "description": "Ativador é permitido se um Mobi definido como ativador NÃO é um dos Mobis escolhidos ou NÃO é do mesmo tipo."
+    },
+    "move_furni_to": {
+      "name": "WIRED Effect: Move Triggering Furni",
+      "description": "This Effect moves a Furni defined by the Trigger to the vicinity of one of the selected Furnis."
+    },
+    "toggle_to_rnd": {
+      "name": "EFEITO WIRED: Alterar mobi para estado aleatório",
+      "description": "This Effect changes the state of the chosen furni randomly."
+    },
+    "not_match_snap": {
+      "name": "WIRED Condição negativa: O estado do Mobi NÃO coincide",
+      "description": "Ativador não é permitido se o estado dos Mobis escolhidos NÃO coincidir."
+    },
+    "mute_triggerer": {
+      "name": "EFEITO WIRED: Silenciar usuário",
+      "description": "Este efeito silencia o usuário escolhido"
+    },
+    "date_rng_active": {
+      "name": "CONDIÇÃO WIRED: Data e Hora",
+      "description": "Permite que a configuração de uma data/hora específica para que o efeito wired funcione"
+    },
+    "bot_clothes": {
+      "name": "EFEITO WIRED: Bot muda de roupa",
+      "description": "Esse efeito muda a roupa do Bot selecionado"
+    },
+    "bot_teleport": {
+      "name": "EFEITO WIRED: Teletransportar Bot ao Mobi",
+      "description": "Esse efeito teletransporta o Bot selecionado a um dos Mobis escolhidos"
+    },
+    "bot_reached_stf": {
+      "name": "ATIVADOR WIRED: Bot alcança Mobi",
+      "description": "Efeito ativado quando o Bot alcança um dos Mobis selecionados"
+    },
+    "bot_follow_avatar": {
+      "name": "EFEITO WIRED: Bot segue o usuário",
+      "description": "Este efeito faz com que o Bot siga o usuário ativado"
+    },
+    "bot_give_handitem": {
+      "name": "EFEITO WIRED: Bot dá item de mão",
+      "description": "Este efeito faz com que o Bot dê o item de mão selecionado"
+    },
+    "bot_move": {
+      "name": "EFEITO WIRED: Bot se muda ao Mobi",
+      "description": "Esse efeito faz com que Bot se mova a um dos Mobis selecionados"
+    },
+    "has_handitem": {
+      "name": "CONDIÇÃO WIRED: Usuário tem item de mão",
+      "description": "Ativador funciona quando o usuário está segurando o item de mão"
+    },
+    "bot_talk_to_avatar": {
+      "name": "EFEITO WIRED: Bot fala ou sussurra ao usuário ativado",
+      "description": "Esse efeito faz com que o Bot fale ou sussurre ao usuário ativado"
+    },
+    "bot_reached_avtr": {
+      "name": "ATIVADOR WIRED: Bot alcança usuário",
+      "description": "Efeitos são ativados quando um dos Bots alcança o usuário"
+    },
+    "bot_talk": {
+      "name": "EFEITO WIRED: Bot fala a todos os usuários",
+      "description": "Esse efeito faz com que o Bot selecionado fale a todos os usuários"
+    },
+    "or_eval": {
+      "name": "WIRED EXTRA: Pelo menos uma condição é verdadeira",
+      "description": "UNKNOWN"
+    },
+    "clock_counter": {
+      "name": "ATIVADOR WIRED: Tempo Escolhido Cronômetro",
+      "description": "UNKNOWN"
+    },
+    "control_clock": {
+      "name": "EFEITO WIRED: Controlar Cronômetro",
+      "description": "UNKNOWN"
+    },
+    "not_user_performs_action": {
+      "name": "WIRED Condição Negativa: Habbo não faz NENHUMA ação",
+      "description": "UNKNOWN"
+    },
+    "match_date": {
+      "name": "CONDIÇÃO WIRED: Data coincide",
+      "description": "UNKNOWN"
+    },
+    "match_time": {
+      "name": "CONDIÇÃO WIRED: Tempo coincide",
+      "description": "UNKNOWN"
+    },
+    "triggerer_match": {
+      "name": "CONDIÇÃO WIRED: Ativador coincide",
+      "description": "UNKNOWN"
+    },
+    "not_has_handitem": {
+      "name": "Wired Condição Negativa: Habbo NÃO tem item de mão",
+      "description": "UNKNOWN"
+    },
+    "user_performs_action": {
+      "name": "Déclencheur WIRED: Habbo faz ação",
+      "description": "Este acionador é atendido quando o usuário acionador está executando uma ação especificada."
+    },
+    "not_triggerer_match": {
+      "name": "Wired Condição Negativa: Ativador NÃO coincide",
+      "description": "UNKNOWN"
+    },
+    "counter_time_matches": {
+      "name": "CONDIÇÃO WIRED: Contador coincide",
+      "description": "UNKNOWN"
+    },
+    "team_has_rank": {
+      "name": "CONDIÇÃO WIRED: Equipe está vencendo",
+      "description": "UNKNOWN"
+    },
+    "team_has_score": {
+      "name": "CONDIÇÃO WIRED: Equipe marcou ponto",
+      "description": "UNKNOWN"
+    },
+    "send_signal": {
+      "name": "EFEITO WIRED: Mandar Sinal",
+      "description": "UNKNOWN"
+    },
+    "mov_physics": {
+      "name": "WIRED EXTRA: Física do Movimento",
+      "description": "UNKNOWN"
+    },
+    "mov_no_animation": {
+      "name": "WIRED EXTRA: Cancelar Animação de Movimento",
+      "description": "UNKNOWN"
+    },
+    "click_furni": {
+      "name": "ATIVADOR WIRED: Habbo Clica no Mobi",
+      "description": "UNKNOWN"
+    },
+    "recv_signal": {
+      "name": "ATIVADOR WIRED: Recebe Sinal",
+      "description": "UNKNOWN"
+    },
+    "stuff_state": {
+      "name": "ATIVADOR WIRED: Estado do Mobi é modificado",
+      "description": "UNKNOWN"
+    },
+    "set_altitude": {
+      "name": "EFEITO WIRED: Configurar a Altura do Mobi",
+      "description": "UNKNOWN"
+    },
+    "has_altitude": {
+      "name": "CONDIÇÃO WIRED: Estado do Mobi Coincide",
+      "description": "UNKNOWN"
+    },
+    "mov_carry_users": {
+      "name": "WIRED EXTRA: Carrega Habbos",
+      "description": "UNKNOWN"
+    },
+    "execution_limit": {
+      "name": "WIRED EXTRA: Limite de Execução",
+      "description": "UNKNOWN"
+    },
+    "freeze": {
+      "name": "EFEITO WIRED: Congelar Habbo",
+      "description": "UNKNOWN"
+    },
+    "rel_mov": {
+      "name": "EFEITO WIRED: Movimento Relativo do Mobi",
+      "description": "UNKNOWN"
+    },
+    "period_short": {
+      "name": "ATIVADOR WIRED: Repetir Efeito (curto)",
+      "description": "UNKNOWN"
+    },
+    "actor_dir": {
+      "name": "CONDIÇÃO WIRED: Direção do Habbo",
+      "description": "UNKNOWN"
+    },
+    "unfreeze": {
+      "name": "EFEITO WIRED: Descongelar Habbo",
+      "description": "UNKNOWN"
+    },
+    "anim_time": {
+      "name": "WIRED EXTRA - Tempo de Animação",
+      "description": "UNKNOWN"
+    },
+    "users_area": {
+      "name": "SELETOR Wired: Habbos na Área",
+      "description": "UNKNOWN"
+    },
+    "furni_signal": {
+      "name": "SELETOR Wired: Mobi do Sinal",
+      "description": "UNKNOWN"
+    },
+    "users_byname": {
+      "name": "SELETOR Wired: Habbos por Nome",
+      "description": "UNKNOWN"
+    },
+    "furni_to_furni": {
+      "name": "EFEITO Wired: Mover Mobi a Mobi",
+      "description": "UNKNOWN"
+    },
+    "furni_onfurni": {
+      "name": "SELETOR Wired: Mobi em Mobi",
+      "description": "UNKNOWN"
+    },
+    "furni_altitude": {
+      "name": "SELETOR Wired: Mobi com Altitude",
+      "description": "UNKNOWN"
+    },
+    "users_group": {
+      "name": "SELETOR Wired: Habbos no Grupo",
+      "description": "UNKNOWN"
+    },
+    "filter_users": {
+      "name": "FILTRO Wired: Filtrar Habbos",
+      "description": "UNKNOWN"
+    },
+    "furni_area": {
+      "name": "SELETOR Wired: Mobi na Área",
+      "description": "UNKNOWN"
+    },
+    "furni_bytype": {
+      "name": "SELETOR Wired: Mobi por Tipo",
+      "description": "UNKNOWN"
+    },
+    "slc_quantity": {
+      "name": "CONDIÇÃO Wired: Selecionar Quantidade",
+      "description": "UNKNOWN"
+    },
+    "users_handitem": {
+      "name": "SELETOR Wired: Habbos com Item de Mão",
+      "description": "UNKNOWN"
+    },
+    "furni_picks": {
+      "name": "SELETOR Wired: Escolha de Mobis",
+      "description": "UNKNOWN"
+    },
+    "users_signal": {
+      "name": "SELETOR Wired: Habbos do Sinal",
+      "description": "UNKNOWN"
+    },
+    "users_byaction": {
+      "name": "SELETOR Wired: Habbos por Ação",
+      "description": "UNKNOWN"
+    },
+    "furni_to_user": {
+      "name": "EFEITO Wired: Mover Mobi a Habbo",
+      "description": "UNKNOWN"
+    },
+    "users_onfurni": {
+      "name": "SELETOR Wired: Habbos no Mobi",
+      "description": "UNKNOWN"
+    },
+    "furni_neighborhood": {
+      "name": "SELETOR Wired: Mobis na Vizinhança",
+      "description": "UNKNOWN"
+    },
+    "users_bytype": {
+      "name": "SELETOR Wired: Habbos por Tipo",
+      "description": "UNKNOWN"
+    },
+    "filter_furni": {
+      "name": "FILTRO Wired: Filtrar Mobis",
+      "description": "UNKNOWN"
+    },
+    "users_team": {
+      "name": "SELETOR Wired: Habbos na Equipe",
+      "description": "UNKNOWN"
+    },
+    "users_neighborhood": {
+      "name": "SELETOR Wired: Habbos na Vizinhança",
+      "description": "UNKNOWN"
+    },
+    "valid_moves": {
+      "name": "CONDIÇÃO WIRED: pode realizar movimentos",
+      "description": "UNKNOWN"
+    },
+    "click_tile": {
+      "name": "ATIVADOR WIRED: Habbo clica no piso",
+      "description": "UNKNOWN"
+    },
+    "adjust_clock": {
+      "name": "EFEITO WIRED: Ajustar o tempo do contador",
+      "description": "UNKNOWN"
+    },
+    "neg_send_signal": {
+      "name": "WIRED EFEITO NEGATIVO: Envia sinal",
+      "description": "UNKNOWN"
+    },
+    "neg_call_stacks": {
+      "name": "WIRED EFEITO NEGATIVO: Faz pilhas",
+      "description": "UNKNOWN"
+    },
+    "furni_with_var": {
+      "name": "SELETOR WIRED: Mobis com a Variável",
+      "description": "UNKNOWN"
+    },
+    "var_changed": {
+      "name": "ATIVADOR WIRED: Variável Modificada",
+      "description": "UNKNOWN"
+    },
+    "filter_furni_by_var": {
+      "name": "FILTRO WIRED: Usuários com a Maior/Menor Variável",
+      "description": "UNKNOWN"
+    },
+    "var_val_match": {
+      "name": "CONDIÇÃO WIRED: Valor da Variável",
+      "description": "UNKNOWN"
+    },
+    "leave_room": {
+      "name": "ATIVADOR WIRED: Sai do quarto",
+      "description": "UNKNOWN"
+    },
+    "change_var_val": {
+      "name": "EFEITO WIRED: Alterar Valor da Variável",
+      "description": "UNKNOWN"
+    },
+    "filter_users_by_var": {
+      "name": "FILTRO WIRED: Mobis com a Maior/Menor Variável",
+      "description": "UNKNOWN"
+    },
+    "context": {
+      "name": "VARIÁVEL WIRED: Variável de Contexto",
+      "description": "UNKNOWN"
+    },
+    "user": {
+      "name": "VARIÁVEL WIRED: Variável de Usuário",
+      "description": "UNKNOWN"
+    },
+    "var_text_connector": {
+      "name": "wf_xtra_var_text_connector name",
+      "description": "UNKNOWN"
+    },
+    "var_age_match": {
+      "name": "CONDIÇÃO WIRED: Idade da Variável",
+      "description": "UNKNOWN"
+    },
+    "text_output_variable": {
+      "name": "wf_xtra_text_output_variable name",
+      "description": "UNKNOWN"
+    },
+    "furni": {
+      "name": "VARIÁVEL WIRED: Variável de Mobi",
+      "description": "UNKNOWN"
+    },
+    "give_var": {
+      "name": "EFEITO WIRED: Atribuir Variável",
+      "description": "UNKNOWN"
+    },
+    "move_rotate_user": {
+      "name": "EFEITO WIRED: Mover e rodar o utilizador",
+      "description": "UNKNOWN"
+    },
+    "remove_var": {
+      "name": "EFEITO WIRED: Remover Variável",
+      "description": "UNKNOWN"
+    },
+    "user_to_furni": {
+      "name": "EFEITO WIRED: Mover Habbo a Mobi",
+      "description": "UNKNOWN"
+    },
+    "text_output_username": {
+      "name": "wf_xtra_text_output_username name",
+      "description": "UNKNOWN"
+    },
+    "remote": {
+      "name": "wf_slc_remote name",
+      "description": "UNKNOWN"
+    },
+    "neg_has_var": {
+      "name": "WIRED Condição negativa: NÃO Possui Variável",
+      "description": "UNKNOWN"
+    },
+    "text_input_variable": {
+      "name": "wf_xtra_text_input_variable name",
+      "description": "UNKNOWN"
+    },
+    "users_with_var": {
+      "name": "SELETOR WIRED: Usuários com a Variável",
+      "description": "UNKNOWN"
+    },
+    "has_var": {
+      "name": "CONDIÇÃO WIRED: Possui Variável",
+      "description": "UNKNOWN"
+    },
+    "reference": {
+      "name": "VARIÁVEL WIRED: Variável de outro Quarto",
+      "description": "UNKNOWN"
+    },
+    "exec_in_order": {
+      "name": "wf_xtra_exec_in_order name",
+      "description": "UNKNOWN"
+    },
+    "room": {
+      "name": "VARIÁVEL WIRED: Variável Global",
+      "description": "UNKNOWN"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "state_changed" : {
+    "easy" : "L'interrupteur est sélectionné dans le <u>Furni est utilisé</u> câblé et en cliquant sur l'interrupteur, la balle se déplace."
+  },
+  "says_something" : {
+    "secret" : "secret",
+    "easy" : "Si l'utilisateur prononce le mot <u>secret</u>, le déclencheur sera activé",
+    "medium" : {
+      "1" : "Il semble que cela ne fonctionne pas",
+      "2" : "Je vais essayer de le répéter sur le tapis"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "state_changed": {
+    "easy": "The switch is selected in the <u>Furni is used</u> wired and by clicking on the switch the ball will move."
+  },
+  "says_something": {
+    "secret": "secret",
+    "easy": "If the user says the word <u>secret</u> then the trigger will be activated.",
+    "medium": {
+      "1": "It seems not to be working",
+      "2": "I'll try to say it again on the carpet"
+    }
+  }
+}

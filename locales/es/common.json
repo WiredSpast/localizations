@@ -1,0 +1,16 @@
+{
+  "common": {
+    "hotel": "Hotel",
+    "setHabboName": "Establecer nombre de Habbo",
+    "search": "Buscar"
+  },
+  "menu": {
+    "changeHabboName": "Cambiar nombre de Habbo",
+    "viewProfile": "Ver perfil",
+    "settings": "Configuración",
+    "logout": "Cerrar sesión"
+  },
+  "avatarNameInput": {
+    "placeholder": "Ingrese nuevo nombre de Habbo"
+  }
+}

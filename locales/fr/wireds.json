@@ -1,0 +1,632 @@
+{
+  "core": {
+    "condition": {
+      "name_one": "Condition",
+      "name_other": "Conditions",
+      "description": "Les conditions vérifient des situations et activent des déclencheurs si elles sont remplies."
+    },
+    "effect": {
+      "name_one": "Effet",
+      "name_other": "Effets",
+      "description": "Les effets sont des actions exécutées lorsqu'un déclencheur est activé."
+    },
+    "trigger": {
+      "name_one": "Déclencheur",
+      "name_other": "Déclencheurs",
+      "description": "Les déclencheurs sont utilisés pour activer des effets."
+    },
+    "selector": {
+      "name_one": "Sélécteur",
+      "name_other": "Sélécteurs",
+      "description": "Les sélecteurs sont utilisés pour choisir des utilisateurs ou des meubles pour un déclencheur ou un effet."
+    },
+    "variable": {
+      "name_one": "Variable",
+      "name_other": "Variables",
+      "description": "Les variables sont utilisées pour stocker des informations pouvant être utilisées dans des déclencheurs et des effets."
+    },
+    "addon": {
+      "name_one": "Verrou",
+      "name_other": "Verrous",
+      "description": "Les verrous sont utilisés pour ajouter des fonctionnalités supplémentaires aux déclencheurs et aux effets."
+    }
+  },
+  "info": {
+    "trggrer_on_frn": {
+      "name": "Condition WIRED: L'utilisateur est sur l'un des mobis sélectionnés",
+      "description": "Effet déclenché si l'utilisateur se trouve sur l'un des mobis sélectionnés."
+    },
+    "walks_off_furni": {
+      "name": "Déclencheur WIRED: L'utilisateur quitte le mobi sur lequel il était",
+      "description": "L'effet est déclenché lorsque l'utilisateur quitte le mobi sur lequel il se trouvait."
+    },
+    "reset_timers": {
+      "name": "Effet WIRED: Réinitialise le minuteur",
+      "description": "Cet effet relance les minuteurs."
+    },
+    "match_snapshot": {
+      "name": "Condition WIRED: L'état et la position des mobis correspondent",
+      "description": "Effet déclenché si l'état et la position des mobis seléctionnés correspondent."
+    },
+    "show_message": {
+      "name": "Effet WIRED: Affiche un message",
+      "description": "Cet effet fait appraître un message secret visible uniquement par celui qui l'a déclenché."
+    },
+    "random": {
+      "name": "Effet aléatoire",
+      "description": "Il ne peut s'enclencher à la fois qu'un seul effet aléatoire."
+    },
+    "time_more_than": {
+      "name": "Condition WIRED: Plus de x secondes écoulées depuis la dernière relance du minuteur",
+      "description": "Effet déclenché si plus de x secondes se sont écoulées depuis que la dernière relance du minuteur"
+    },
+    "says_something": {
+      "name": "Déclencheur WIRED: L'utilisateur prononce le mot de passe",
+      "description": "Les effets se déclenchent lorsque l'utilisateur prononce un certain mot."
+    },
+    "move_rotate": {
+      "name": "Effet WIRED: Déplace et tourne le mobi sélectionné",
+      "description": "Cet effet déplace et fait tourner le mobi sélectionné"
+    },
+    "state_changed": {
+      "name": "Déclencheur WIRED : le mobi est utilisé",
+      "description": "Les effets se déclenchent lorsqu'on double-clique sur le mobi sélectionné."
+    },
+    "unseen": {
+      "name": "Effet cyclique",
+      "description": "Il ne peut s'enclencher à la fois qu'un seul effet cyclique"
+    },
+    "game_ends": {
+      "name": "Déclencheur WIRED: En fin de partie",
+      "description": "Les effets de déclenchent lorsqu'une partie de Battle Banzai se termine dans un appart."
+    },
+    "toggle_state": {
+      "name": "Effet WIRED: Modifie l'état du mobi",
+      "description": "Cet effet modifie l'état du mobi sélectionné comme si l'on avait double-cliqué dessus."
+    },
+    "enter_room": {
+      "name": "Déclencheur WIRED: L'utilisateur entre dans l'appart",
+      "description": "Les effets se déclenchent lorsqu'un utilisateur entre dans l'appart."
+    },
+    "give_score": {
+      "name": "Effet WIRED: Donne des points",
+      "description": "Cette action récompense d'un certain nombre de points l'équipe d'utilisateurs qui a délcenché cet effet. TU peux aussi choisir combien de fois ces points seront donnés au cours du jeu."
+    },
+    "at_given_time": {
+      "name": "Déclencheur WIRED: Minuteur",
+      "description": "Les effets se déclenchent X secondes après que le minuteur ait été réinitialisé."
+    },
+    "time_less_than": {
+      "name": "Condition WIRED: Moins de x secondes écoulées depuis la &lt;br&gt;dernière relance du minuteur",
+      "description": "Effet déclenché si moins de x secondes se sont écoulées depuis la dernière relance du minuteur"
+    },
+    "furnis_hv_avtrs": {
+      "name": "Condition WIRED: Un utilisateur sur chaque mobi",
+      "description": "Effet déclenché s'il y a des utilisateurs sur tous les mobis sélectionnés."
+    },
+    "match_to_sshot": {
+      "name": "Effet WIRED: Réinstalle le mobi dans sa condition-état initial",
+      "description": "Cet effet ramène le mobi sélectionné à sa condition de départ."
+    },
+    "teleport_to": {
+      "name": "Effet WIRED: Téléporte vers un mobi",
+      "description": "Cet effet téléporte l'utilisateur qui l'a déclenché vers un mobi. Si tu en sélectionnes plus d'un l'utilisateur sera alors téléporté de manière aléatoire."
+    },
+    "periodically": {
+      "name": "Déclencheur WIRED: l'effet se répète",
+      "description": "Les effets se déclenchent toutes les x secondes."
+    },
+    "game_starts": {
+      "name": "Déclencheur WIRED: la partie commence",
+      "description": "Les effets se déclenchent lorsqu'un chrono se met en route dans l'appart"
+    },
+    "score_achieved": {
+      "name": "Déclencheur WIRED: Score obtenu",
+      "description": "Déclenché quand le score prédéfini est atteint"
+    },
+    "walks_on_furni": {
+      "name": "Déclencheur WIRED: l'utilisateur marche sur un mobi",
+      "description": "L'effet est déclenché lorsque l'utilisateur se tient ou s'assoit sur un mobi."
+    },
+    "has_furni_on": {
+      "name": "Condition WIRED: doit être recouvert par un mobi",
+      "description": "L'effet se déclenche si l'un des mobis sélectionnés est recouvert par un autre."
+    },
+    "actor_in_group": {
+      "name": "Condition Wired: Membre du Groupe",
+      "description": "Se déclenche quand c'est une salle de groupe et que l'utilisateur est membre de ce groupe"
+    },
+    "give_reward": {
+      "name": "Effet WIRED: Donne un lot",
+      "description": "Cet effet donne la récompense choisie à l'utilisateur déclencheur."
+    },
+    "call_stacks": {
+      "name": "Effet WIRED : Exécuter piles Wired",
+      "description": "Ce Wired te permet de sélectionner 5 piles Wired à exécuter avec un seul déclencheur, indépendamment des conditions ou des déclencheurs."
+    },
+    "kick_user": {
+      "name": "Effet WIRED : Expulser utilisateur",
+      "description": "Cet effet expulse un utilisateur en fonction des critères déclencheurs"
+    },
+    "leave_team": {
+      "name": "Effet WIRED : Quitter équipe",
+      "description": "L'avatar déclencheur quitte l'équipe prédéfinie"
+    },
+    "move_to_dir": {
+      "name": "Effet WIRED : Change la direction du mobi",
+      "description": "Cet Effet change la direction du mobi. Quand le mouvement est bloqué, le mobi change de direction selon les paramètres. Si un utilisateur est à côté, Déclencheur : collision s'activera."
+    },
+    "chase": {
+      "name": "Effet WIRED : Poursuite",
+      "description": "Cet effet déplace les Mobis vers l'utilisateur le plus proche de la même ligne ou colonne. Si il y a un utilisateur près de ce mobi, Déclencheur : collision peut l'activer."
+    },
+    "collision": {
+      "name": "Déclencheur WIRED: Collision mobi/utilisateur",
+      "description": "Déclenché si un mobi déplacé (avec Wired fuite ou poursuite) entre en collision avec un avatar - l'utilisateur déclencheur est l'avatar qui entre en collision."
+    },
+    "give_score_tm": {
+      "name": "Effet WIRED : Donner score",
+      "description": "Donne le score à l'équipe prédéfinie"
+    },
+    "join_team": {
+      "name": "Effet WIRED : Rejoindre équipe",
+      "description": "L'avatar déclencheur rejoint l'équipe prédéfinie"
+    },
+    "period_long": {
+      "name": "Déclencheur WIRED: Périodique long",
+      "description": "Des parties plus longues ! Les effets sont déclenchés chaque fois qu'une période prédifinie s'est écoulée. Comme Déclenchement périodique, en plus long !"
+    },
+    "actor_in_team": {
+      "name": "Condition WIRED: Membre d'une équipe",
+      "description": "Condition remplie si l'avatar est un membre de l'équipe prédéfinie"
+    },
+    "flee": {
+      "name": "Effet WIRED : Fuite",
+      "description": "Quand le mobi déclenché s'éloigne d'une dalle de l'avatar le plus proche."
+    },
+    "wearing_effect": {
+      "name": "Condition WIRED: L'utilisateur porte l'effet",
+      "description": "Les effets se déclenchent lorsque l'utilisateur déclencheur porte l'effet défini."
+    },
+    "wearing_badge": {
+      "name": "Condition WIRED: L'utilisateur porte le badge",
+      "description": "Les effets se déclenchent lorsque l'utilisateur déclencheur porte le badge défini."
+    },
+    "not_furni_on": {
+      "name": "Condition négative WIRED: N'a PAS de mobis dessus",
+      "description": "Les effets se déclenchent lorsqu'AUCUN des mobis sélectionnés n'a d'autre mobi sur lui."
+    },
+    "not_user_count": {
+      "name": "Condition négative WIRED: La limite d'utilisateur n'est PAS atteinte",
+      "description": "Déclenchement autorisé si le nombre d'utilisateurs dans la salle n'est pas dans les limites définies"
+    },
+    "not_trggrer_on": {
+      "name": "Condition négative WIRED: L'utilisateur n'est PAS sur le mobis",
+      "description": "Déclenchement autorisé si le déclencheur N'est PAS l'un des mobis sélectionnés"
+    },
+    "at_time_long": {
+      "name": "Déclencheur WIRED: Minuteur long",
+      "description": "Se comporte comme un minuteur, mais te permet de choisir un délai plus long."
+    },
+    "not_wearing_b": {
+      "name": "Condition WIRED: L'utilisateur NE porte PAS le badge",
+      "description": "Les effets se déclenchent lorsque l'utilisateur déclencheur NE porte PAS le badge défini."
+    },
+    "not_in_team": {
+      "name": "Condition négative WIRED : PAS Membre de l'Équipe",
+      "description": "Condition l'utilisateur n'est pas membre de l'équipe"
+    },
+    "toggle_to_rnd": {
+      "name": "Effet WIRED : mettre le mobi à un état aléatoire",
+      "description": "Cet Effet modifie au hasard l'état du mobi choisi."
+    },
+    "not_stuff_is": {
+      "name": "Condition négative WIRED : mobis ne correspondent pas",
+      "description": "Le déclenchement est autorisé si le mobi défini par le déclencheur n'est PAS un des mobis choisis ou n'est PAS du même type"
+    },
+    "not_match_snap": {
+      "name": "Condition négative WIRED : états des mobis NE correspondent PAS",
+      "description": "Déclenchement est autorisé si les états des mobis sélectionnés ne correspondent pas."
+    },
+    "not_wearing_fx": {
+      "name": "Condition WIRED: L'utilisateur NE porte PAS l'effet",
+      "description": "Les effets se déclenchent lorsque l'utilisateur déclencheur NE porte PAS l'effet défini."
+    },
+    "not_hv_avtrs": {
+      "name": "Condition négative WIRED: Il n'y a PAS d'utilisateur dessus",
+      "description": "Les effets se déclenchent lorsqu'il n'y a PAS d'utilisateurs sur les mobis sélectionnés."
+    },
+    "not_in_group": {
+      "name": "Condition négative WIRED: PAS membre du groupe",
+      "description": "Les effets se déclenchent lorsqu'il s'agit d'une salle de groupe et que l'utilisateur n'en est PAS membre."
+    },
+    "stuff_is": {
+      "name": "Condition WIRED: Mobis correspond",
+      "description": "Se déclenche si le mobi déclencheur est l'un des mobis choisi ou du même type."
+    },
+    "move_furni_to": {
+      "name": "Effet WIRED : Déplace le mobi déclencheur",
+      "description": "Cet Effet déplace un mobi défini et se déclenche à proximité d'un des mobis sélectionnés."
+    },
+    "user_count_in": {
+      "name": "Condition WIRED: Nombre d'utilisateurs dans la salle",
+      "description": "Se déclenche si le nombre d'utilisateurs dans la salle est dans la limite définie"
+    },
+    "mute_triggerer": {
+      "name": "Effet WIRED : Mute",
+      "description": "Cet Effet permet de muter un utilisateur choisi"
+    },
+    "date_rng_active": {
+      "name": "Condition WIRED: La date et l'heure correspondent",
+      "description": "Les effets se déclenchent lorsque la date et l'heure actuelles sont dans les limites définies."
+    },
+    "bot_follow_avatar": {
+      "name": "Effet WIRED : Le Bot suit l'utilisateur",
+      "description": "Le Bot choisi suit l'utilisateur déclencheur."
+    },
+    "bot_reached_stf": {
+      "name": "Déclencheur WIRED : Le Bot atteint un mobi",
+      "description": "Les effets se déclenchent lorsque le Bot sélectionné atteint un mobi choisi"
+    },
+    "bot_clothes": {
+      "name": "Effet WIRED : Le Bot change de vêtements",
+      "description": "Cet effet change les vêtements du Bot sélectionné."
+    },
+    "bot_talk_to_avatar": {
+      "name": "Effet WIRED: Le bot parle ou murmure à l'utilisateur",
+      "description": "Le Bot sélectionné parle ou murmure à l'utilisateur déclencheur"
+    },
+    "has_handitem": {
+      "name": "Condition WIRED : L'utilisateur a un objet",
+      "description": "Le déclenchement est permis si l'utilisateur tient l'objet sélectionné."
+    },
+    "bot_move": {
+      "name": "Effet WIRED : Le Bot se déplace vers un mobi",
+      "description": "Le Bot sélectionné se déplace vers le mobi choisi."
+    },
+    "bot_teleport": {
+      "name": "Effet WIRED: Téléporte le Bot vers un mobi",
+      "description": "Téléporte le Bot sélectionné vers le mobi choisi."
+    },
+    "bot_reached_avtr": {
+      "name": "Déclencheur WIRED : Le Bot atteint un utilisateur",
+      "description": "Les effets sont déclenché lorsque le Bot sélectionné atteint un utilisateur."
+    },
+    "bot_give_handitem": {
+      "name": "Effet WIRED : donne un objet",
+      "description": "Le Bot sélectionné donne l'objet choisi."
+    },
+    "bot_talk": {
+      "name": "Effet WIRED : Le Bot parle à tous les utilisateurs",
+      "description": "Le bot parle à tous les utilisateurs."
+    },
+    "or_eval": {
+      "name": "Wired Add-on : au moins une condition est remplie",
+      "description": "UNKNOWN"
+    },
+    "clock_counter": {
+      "name": "Wired Déclencheur: Le Compteur atteint le temps programmé",
+      "description": "UNKNOWN"
+    },
+    "control_clock": {
+      "name": "Effet Wired : Compteur de contrôle",
+      "description": "UNKNOWN"
+    },
+    "not_user_performs_action": {
+      "name": "WIRED Condition négative : L'utilisateur n'effectue PAS d'action",
+      "description": "UNKNOWN"
+    },
+    "match_date": {
+      "name": "Condition WIRED : Correspondance des dates",
+      "description": "UNKNOWN"
+    },
+    "match_time": {
+      "name": "Condition WIRED : Correspondance des temps",
+      "description": "UNKNOWN"
+    },
+    "triggerer_match": {
+      "name": "Condition WIRED : Correspondance des déclencheurs",
+      "description": "UNKNOWN"
+    },
+    "not_has_handitem": {
+      "name": "WIRED Condition négative : L'utilisateur n'a pas l'objet en main.",
+      "description": "UNKNOWN"
+    },
+    "user_performs_action": {
+      "name": "ATIVADOR WIRED : L'utilisateur effectue une action",
+      "description": "Ce déclencheur est satisfait lorsque l'utilisateur déclencheur effectue une action spécifiée."
+    },
+    "not_triggerer_match": {
+      "name": "WIRED Condition négative : Le déclencheur ne correspond pas.",
+      "description": "UNKNOWN"
+    },
+    "counter_time_matches": {
+      "name": "Condition WIRED : Correspondances de contre-temps",
+      "description": "UNKNOWN"
+    },
+    "team_has_rank": {
+      "name": "Condition WIRED : L'équipe gagne",
+      "description": "UNKNOWN"
+    },
+    "team_has_score": {
+      "name": "Condition WIRED : L'équipe a marqué des points",
+      "description": "UNKNOWN"
+    },
+    "send_signal": {
+      "name": "Effet WIRED : Envoyer un signal",
+      "description": "UNKNOWN"
+    },
+    "mov_physics": {
+      "name": "Add-on WIRED : Mouvement physiques",
+      "description": "UNKNOWN"
+    },
+    "mov_no_animation": {
+      "name": "WIRED Add-on : Annule l'animation du mouvement",
+      "description": "UNKNOWN"
+    },
+    "click_furni": {
+      "name": "Déclencheur WIRED : L'utilisateur clique sur le mobi",
+      "description": "UNKNOWN"
+    },
+    "recv_signal": {
+      "name": "Déclencheur WIRED : Recevoir le signal",
+      "description": "UNKNOWN"
+    },
+    "stuff_state": {
+      "name": "Déclencheur WIRED : Le mobi change d'état",
+      "description": "UNKNOWN"
+    },
+    "set_altitude": {
+      "name": "Effet WIRED : Régler l'altitude du mobi",
+      "description": "UNKNOWN"
+    },
+    "has_altitude": {
+      "name": "Condition WIRED : L'altitude du mobi correspond",
+      "description": "UNKNOWN"
+    },
+    "mov_carry_users": {
+      "name": "Add-on WIRED : Porte l'utilisateur",
+      "description": "UNKNOWN"
+    },
+    "execution_limit": {
+      "name": "Add-on WIRED : Limite d'exécution",
+      "description": "UNKNOWN"
+    },
+    "freeze": {
+      "name": "Effet WIRED : Gèle l'utilisateur",
+      "description": "UNKNOWN"
+    },
+    "rel_mov": {
+      "name": "Effet WIRED : Mouvement relatif du mobi",
+      "description": "UNKNOWN"
+    },
+    "period_short": {
+      "name": "Déclencheur WIRED : Effet de répétition (court)",
+      "description": "UNKNOWN"
+    },
+    "actor_dir": {
+      "name": "Condition WIRED : Direction de l'utilisateur",
+      "description": "UNKNOWN"
+    },
+    "unfreeze": {
+      "name": "Effet WIRED : Dégèle l'utilisateur",
+      "description": "UNKNOWN"
+    },
+    "anim_time": {
+      "name": "Add-On WIRED : Temps d'animation",
+      "description": "UNKNOWN"
+    },
+    "users_area": {
+      "name": "Sélecteur WIRED : Utilisateurs dans la zone",
+      "description": "UNKNOWN"
+    },
+    "furni_signal": {
+      "name": "Sélecteur WIRED : Mobi de Signal",
+      "description": "UNKNOWN"
+    },
+    "users_byname": {
+      "name": "Sélecteur WIRED : Utilisateurs par nom",
+      "description": "UNKNOWN"
+    },
+    "furni_to_furni": {
+      "name": "Effet WIRED : Déplacer Mobi vers Mobi",
+      "description": "UNKNOWN"
+    },
+    "furni_onfurni": {
+      "name": "Sélecteur WIRED : Mobi sur mobi",
+      "description": "UNKNOWN"
+    },
+    "furni_altitude": {
+      "name": "Sélecteur WIRED : Mobi avec altitude",
+      "description": "UNKNOWN"
+    },
+    "users_group": {
+      "name": "Sélecteur WIRED : Utilisateurs en groupe",
+      "description": "UNKNOWN"
+    },
+    "filter_users": {
+      "name": "Filtre WIRED : Filtre X utilisateurs",
+      "description": "UNKNOWN"
+    },
+    "furni_area": {
+      "name": "Sélecteur WIRED : Mobi dans la zone",
+      "description": "UNKNOWN"
+    },
+    "furni_bytype": {
+      "name": "Sélecteur WIRED : Mobi par type",
+      "description": "UNKNOWN"
+    },
+    "slc_quantity": {
+      "name": "Condition WIRED : Sélection de la quantité",
+      "description": "UNKNOWN"
+    },
+    "users_handitem": {
+      "name": "Sélecteur WIRED : Utilisateurs avec article en main",
+      "description": "UNKNOWN"
+    },
+    "furni_picks": {
+      "name": "Sélecteur WIRED : Mobi Favoris",
+      "description": "UNKNOWN"
+    },
+    "users_signal": {
+      "name": "Sélecteur WIRED : Utilisateurs de Signal",
+      "description": "UNKNOWN"
+    },
+    "users_byaction": {
+      "name": "Sélecteur WIRED : Utilisateurs par action",
+      "description": "UNKNOWN"
+    },
+    "furni_to_user": {
+      "name": "Effet WIRED : Déplacer Mobi vers Utilisateur",
+      "description": "UNKNOWN"
+    },
+    "users_onfurni": {
+      "name": "Sélecteur WIRED : Utilisateurs sur mobi",
+      "description": "UNKNOWN"
+    },
+    "furni_neighborhood": {
+      "name": "Sélecteur WIRED : Mobi dans le voisinage",
+      "description": "UNKNOWN"
+    },
+    "users_bytype": {
+      "name": "Sélecteur WIRED : Utilisateurs par type",
+      "description": "UNKNOWN"
+    },
+    "filter_furni": {
+      "name": "Filtre WIRED : Filtre X mobi",
+      "description": "UNKNOWN"
+    },
+    "users_team": {
+      "name": "Sélecteur WIRED : Utilisateurs en équipe",
+      "description": "UNKNOWN"
+    },
+    "users_neighborhood": {
+      "name": "Sélecteur WIRED : Utilisateurs dans le voisinage",
+      "description": "UNKNOWN"
+    },
+    "valid_moves": {
+      "name": "Condition WIRED : Peut effectuer des mouvements",
+      "description": "UNKNOWN"
+    },
+    "click_tile": {
+      "name": "Déclencheur WIRED : L'utilisateur clique sur la case",
+      "description": "UNKNOWN"
+    },
+    "adjust_clock": {
+      "name": "Effet WIRED : Ajuster le temps de comptage",
+      "description": "UNKNOWN"
+    },
+    "neg_send_signal": {
+      "name": "Effet négatif WIRED : Envoyer un signal",
+      "description": "UNKNOWN"
+    },
+    "neg_call_stacks": {
+      "name": "Effet négatif WIRED : Exécuter les piles",
+      "description": "UNKNOWN"
+    },
+    "furni_with_var": {
+      "name": "WIRED Sélecteur : Mobi avec variable",
+      "description": "UNKNOWN"
+    },
+    "var_changed": {
+      "name": "WIRED Déclencheur : Variable modifiée",
+      "description": "UNKNOWN"
+    },
+    "filter_furni_by_var": {
+      "name": "WIRED Filtre : Mobi avec la variable la plus élevée/la plus basse",
+      "description": "UNKNOWN"
+    },
+    "var_val_match": {
+      "name": "WIRED Condition : Valeur variable",
+      "description": "UNKNOWN"
+    },
+    "leave_room": {
+      "name": "WIRED Déclencheur: Leave Room",
+      "description": "UNKNOWN"
+    },
+    "change_var_val": {
+      "name": "Effet WIRED: Modification de la valeur de la variable",
+      "description": "UNKNOWN"
+    },
+    "filter_users_by_var": {
+      "name": "WIRED Filtre : Utilisateurs avec la variable la plus élevée/la plus basse",
+      "description": "UNKNOWN"
+    },
+    "context": {
+      "name": "WIRED Variable : Variable de contexte",
+      "description": "UNKNOWN"
+    },
+    "user": {
+      "name": "WIRED Variable : Variable Utilisateur",
+      "description": "UNKNOWN"
+    },
+    "var_text_connector": {
+      "name": "wf_xtra_var_text_connector name",
+      "description": "UNKNOWN"
+    },
+    "var_age_match": {
+      "name": "WIRED Condition : Variable Âge",
+      "description": "UNKNOWN"
+    },
+    "text_output_variable": {
+      "name": "wf_xtra_text_output_variable name",
+      "description": "UNKNOWN"
+    },
+    "furni": {
+      "name": "WIRED Variable : Variable Mobi",
+      "description": "UNKNOWN"
+    },
+    "give_var": {
+      "name": "Effet WIRED: Donner une variable",
+      "description": "UNKNOWN"
+    },
+    "move_rotate_user": {
+      "name": "Effet WIRED: Déplacer et faire pivoter l'utilisateur",
+      "description": "UNKNOWN"
+    },
+    "remove_var": {
+      "name": "Effet WIRED: Suppression de la variable",
+      "description": "UNKNOWN"
+    },
+    "user_to_furni": {
+      "name": "Effet WIRED : Déplacer Utilisateur vers Mobi",
+      "description": "UNKNOWN"
+    },
+    "text_output_username": {
+      "name": "wf_xtra_text_output_username name",
+      "description": "UNKNOWN"
+    },
+    "remote": {
+      "name": "wf_slc_remote name",
+      "description": "UNKNOWN"
+    },
+    "neg_has_var": {
+      "name": "WIRED Condition négative : N'a pas de variable",
+      "description": "UNKNOWN"
+    },
+    "text_input_variable": {
+      "name": "wf_xtra_text_input_variable name",
+      "description": "UNKNOWN"
+    },
+    "users_with_var": {
+      "name": "WIRED Sélecteur : Utilisateurs avec variable",
+      "description": "UNKNOWN"
+    },
+    "has_var": {
+      "name": "WIRED Condition : A une valeur variable",
+      "description": "UNKNOWN"
+    },
+    "reference": {
+      "name": "WIRED Variable : D'une autre salle",
+      "description": "UNKNOWN"
+    },
+    "exec_in_order": {
+      "name": "wf_xtra_exec_in_order name",
+      "description": "UNKNOWN"
+    },
+    "room": {
+      "name": "WIRED Variable : Variable globale",
+      "description": "UNKNOWN"
+    }
+  }
+}

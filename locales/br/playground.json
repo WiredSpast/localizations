@@ -1,0 +1,13 @@
+{
+  "state_changed": {
+    "easy": "O ativador é selecionado no <u>Mobi usado</u> com fio e clicando no interruptor a bola se moverá."
+  },
+  "says_something": {
+    "secret": "segredo",
+    "easy": "Se o usuário disser a palavra <u>segredo</u> o ativador será ativado.",
+    "medium": {
+      "1": "Parece que não está funcionando",
+      "2": "Vou tentar dizer de novo no tapete"
+    }
+  }
+}

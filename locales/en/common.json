@@ -1,0 +1,15 @@
+{
+  "common": {
+    "setHabboName": "Set Habbo Name",
+    "search": "Search"
+  },
+  "menu": {
+    "changeHabboName": "Change Habbo Name",
+    "viewProfile": "View Profile",
+    "settings": "Settings",
+    "logout": "Logout"
+  },
+  "avatarNameInput": {
+    "placeholder": "Enter new Habbo name"
+  }
+}

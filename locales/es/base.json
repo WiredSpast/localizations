@@ -1,0 +1,58 @@
+{
+  "home": {
+    "header": {
+      "learn": "Aprende",
+      "construct": "Construye",
+      "innovate": "Innova"
+    },
+    "buttons": {
+      "start_tutorial": "Empezar Tutorial",
+      "show_wireds_list": "Ver lista de Wireds"
+    },
+    "room_phrases": [
+      "Me encanta WiredSnippets ❤️!",
+      "El sobre un furni es mi guia."
+    ],
+    "set_my_habbo": "Usar mi Avatar"
+  },
+  "playground_overview": {
+    "scenario_explanation": "Explicación",
+    "difficulties": {
+      "easy": "Fácil",
+      "medium": "Medio",
+      "hard": "Difícil",
+      "expert": "Experto"
+    },
+    "allowed_types": {
+      "user": "Usuario",
+      "bot": "Bot",
+      "pet": "Mascota",
+      "furni": "Furni",
+      "wired": "Wired"
+    },
+    "scenario_one": "Escenario",
+    "scenario_other": "Escenarios",
+    "show_real_case": "Mostrar caso real",
+    "condition_applied": "La condición se puede aplicar a",
+    "effect_applied": "El efecto se puede aplicar a",
+    "selector_filter_by": "El selector puede seleccionar o filtrarse por",
+    "trigger_allowed": "Activadores permitidos",
+    "click_to_check": "Haz click para ver que sucede",
+    "addon_applied_to": "El complemento puede ser aplicado a",
+    "variable_applied_to": "La variable puede ser aplicada a",
+    "shared_by": "Compartido por:"
+  },
+  "playground_overview_explains": {
+    "short_period": "Este causante no necesita un usuario, bot o mascota para funcionar, su función es repetir infinitamente los efectos de la pila.",
+    "has_handitem": "Cuando el avatar tenga la bebida <b>\"café\"</b> la condición será aceptada.",
+    "selector_users_area_playground": "Este selector permite obtener todos los usuarios que se encuentren en una <b>zona determinada de la sala definida por ti</b>."
+  },
+  "navbar": {
+    "community": "Comunidad",
+    "wired_editor": "Wired Editor",
+    "courses": "Cursos",
+    "wired_overview": "Visión General de los Wireds",
+    "sign_up": "Registrarme",
+    "sign_in": "Iniciar Sesión"
+  }
+}

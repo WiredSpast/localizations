@@ -1,0 +1,628 @@
+{
+  "core": {
+    "condition": {
+      "name_one": "Condición",
+      "name_other": "Condiciones",
+      "description": "Las condiciones verifican situaciones y activan causantes si se cumplen."
+    },
+    "effect": {
+      "name_one": "Efecto",
+      "name_other": "Efectos",
+      "description": "Los efectos son acciones que se ejecutan cuando se activa un causante."
+    },
+    "trigger": {
+      "name_one": "Causante",
+      "name_other": "Causantes",
+      "description": "Los causantes se utilizan para activar efectos."
+    },
+    "selector": {
+      "name_one": "Selector",
+      "name_other": "Selectores",
+      "description": "Los selectores se utilizan para seleccionar usuarios o muebles para un causante o efecto."
+    },
+    "variable": {
+      "name_one": "Variable",
+      "name_other": "Variables",
+      "description": "Las variables se utilizan para almacenar información que puede ser usada en causantes y efectos."
+    },
+    "addon": {
+      "name_one": "Complemento",
+      "name_other": "Complementos",
+      "description": "Los complementos se utilizan para agregar funcionalidad adicional a los causantes y efectos."
+    }
+  },
+  "info": {
+    "move_rotate": {
+      "name": "Efecto WIRED: Mover",
+      "description": "Permite mover y rotar los furnis seleccionados, ajustando su posición y orientación en la sala según se desee."
+    },
+    "time_more_than": {
+      "name": "Condición WIRED: más de x segundos transcurridos desde que reseteaste",
+      "description": "El efecto se activa solo si han pasado más de x segundos desde el último reinicio del temporizador."
+    },
+    "state_changed": {
+      "name": "Causante WIRED: Furni es Usado",
+      "description": "Se activa cuando el estado de un furni cambia, por ejemplo, al hacer doble clic sobre él."
+    },
+    "periodically": {
+      "name": "Causante WIRED: Periodos",
+      "description": "Activa efectos de forma periódica en intervalos de tiempo definidos desde que un usuario entra en la sala o se resetea el wired."
+    },
+    "score_achieved": {
+      "name": "Causante WIRED: Puntos conseguidos",
+      "description": "Se activa cuando un usuario o equipo alcanza una puntuación específica en un juego."
+    },
+    "teleport_to": {
+      "name": "Efecto WIRED: ¡Adiós!",
+      "description": "Teletransporta al usuario desencadenante a un furni específico. Si se seleccionan varios furnis, el usuario será teletransportado aleatoriamente a uno de ellos."
+    },
+    "says_something": {
+      "name": "Causante WIRED: Clave",
+      "description": "Se activa cuando un usuario dice una palabra o frase específica en el chat."
+    },
+    "walks_off_furni": {
+      "name": "Causante WIRED: Vete",
+      "description": "Se activa cuando un usuario, bot o mascota se aleja de uno de los furnis configurados."
+    },
+    "at_given_time": {
+      "name": "Causante WIRED: ¡Ya!",
+      "description": "Activa los efectos a una hora específica después de que un usuario entre en la sala o se reinicie el temporizador."
+    },
+    "game_ends": {
+      "name": "Causante WIRED: Acaba el juego",
+      "description": "Se activa cuando finaliza un juego en la sala, como Battle Banzai, Freeze o cuando se acaba el tiempo."
+    },
+    "show_message": {
+      "name": "Efecto WIRED: Mensaje",
+      "description": "Muestra un mensaje personalizado al usuario desencadenante o a los usuarios seleccionados mediante un selector."
+    },
+    "time_less_than": {
+      "name": "Condición WIRED: menos de x segundos transcurridos desde que reseteaste",
+      "description": "El efecto se activa solo si han pasado menos de x segundos desde el último reinicio del temporizador."
+    },
+    "enter_room": {
+      "name": "Causante WIRED: Entrada",
+      "description": "Se activa cuando un usuario entra en la sala."
+    },
+    "toggle_state": {
+      "name": "Efecto WIRED: Mutar",
+      "description": "Cambia el estado del furni seleccionado como si se hubiera hecho doble clic sobre él."
+    },
+    "reset_timers": {
+      "name": "Efecto WIRED: Reset",
+      "description": "Reinicia los temporizadores utilizados en los causantes '¡Ya!' y 'Periodos'."
+    },
+    "furnis_hv_avtrs": {
+      "name": "Condición WIRED: Furnis con avatares",
+      "description": "El efecto se activa si todos los furnis seleccionados tienen un avatar encima."
+    },
+    "trggrer_on_frn": {
+      "name": "Condición WIRED: Písalo tú",
+      "description": "El efecto se activa si el usuario desencadenante está sobre uno de los furnis configurados."
+    },
+    "match_snapshot": {
+      "name": "Condición WIRED: El estado de los Furnis coincide",
+      "description": "El efecto se activa si los estados de los furnis seleccionados coinciden con una configuración previa."
+    },
+    "give_score": {
+      "name": "Efecto WIRED: Dar puntos",
+      "description": "Otorga una cantidad específica de puntos a los jugadores de un equipo. Puedes definir cuántas veces se pueden otorgar estos puntos en un mismo juego."
+    },
+    "match_to_sshot": {
+      "name": "Efecto WIRED: A cero",
+      "description": "Restablece los furnis seleccionados a sus condiciones originales o estado guardado."
+    },
+    "game_starts": {
+      "name": "Causante WIRED: Comienza el juego",
+      "description": "Se activa cuando se inicia un juego en la sala, como Battle Banzai."
+    },
+    "walks_on_furni": {
+      "name": "Causante WIRED: Sobre un Furni",
+      "description": "Se activa cuando un usuario camina sobre un furni específico."
+    },
+    "has_furni_on": {
+      "name": "Condición WIRED: Furni encima",
+      "description": "El efecto se activa si uno de los furnis seleccionados tiene otro furni encima, permitiendo aplicar efectos al furni superior."
+    },
+    "actor_in_group": {
+      "name": "CONDICIÓN WIRED: Miembro de Grupo",
+      "description": "La condición se cumple si el usuario desencadenante es miembro del grupo asociado a la sala."
+    },
+    "give_reward": {
+      "name": "wf_act_give_reward desc",
+      "description": "Recompensa al usuario o equipo desencadenante según criterios predefinidos, como alcanzar cierta puntuación."
+    },
+    "call_stacks": {
+      "name": "EFECTO WIRED: Ejecuta Pilas",
+      "description": "Permite ejecutar efectos WIRED externos a la pila actual desde un solo causante, independientemente de las condiciones o causantes existentes."
+    },
+    "kick_user": {
+      "name": "EFECTO WIRED: Expulsar usuario",
+      "description": "Expulsa al usuario desencadenante de la sala según los criterios establecidos (no afecta al dueño de la sala)."
+    },
+    "period_long": {
+      "name": "CAUSANTE WIRED: Periódico Largo",
+      "description": "Activa efectos a intervalos de tiempo más largos, ideal para juegos prolongados."
+    },
+    "give_score_tm": {
+      "name": "EFECTO WIRED: Dar Puntos",
+      "description": "Otorga una cantidad específica de puntos al equipo seleccionado. Puedes definir cuántas veces se pueden otorgar estos puntos en un mismo juego."
+    },
+    "move_to_dir": {
+      "name": "Efecto WIRED: Cambiar dirección de Furni",
+      "description": "Cambia la dirección de los furnis seleccionados. Si el movimiento es bloqueado, el furni cambiará de dirección según la configuración. Se puede combinar con 'Causante WIRED: Colisión' si hay usuarios cerca."
+    },
+    "leave_team": {
+      "name": "EFECTO WIRED: Abandonar Equipo",
+      "description": "El usuario desencadenante abandonará el equipo al que pertenece."
+    },
+    "collision": {
+      "name": "CAUSANTE WIRED: Colisión",
+      "description": "Se activa cuando un furni en movimiento (usando WIRED Caza o Fuga) choca con un avatar; el usuario desencadenante es el avatar impactado."
+    },
+    "chase": {
+      "name": "EFECTO WIRED: Caza",
+      "description": "Acerca los furnis seleccionados al usuario más cercano en la misma fila o columna. Se puede combinar con 'Causante WIRED: Colisión' para ejecutar una acción si el objeto ha chocado contra el usuario."
+    },
+    "actor_in_team": {
+      "name": "CONDICIÓN WIRED: Miembro del Equipo",
+      "description": "La condición se cumple si el usuario desencadenante es miembro del equipo especificado."
+    },
+    "flee": {
+      "name": "EFECTO WIRED: Fuga",
+      "description": "Aleja los furnis seleccionados del usuario más cercano en la misma fila o columna. Puede activarse 'Causante WIRED: Colisión' si hay usuarios cerca."
+    },
+    "join_team": {
+      "name": "EFECTO WIRED: Unirse al Equipo",
+      "description": "El usuario desencadenante se unirá al equipo seleccionado."
+    },
+    "wearing_badge": {
+      "name": "Condición Wired: Llevar la Placa",
+      "description": "La condición se cumple si el usuario lleva la placa específica."
+    },
+    "wearing_effect": {
+      "name": "Condición Wired: Llevar el Efecto de Avatar",
+      "description": "La condición se cumple si el usuario tiene activo el efecto de avatar especificado."
+    },
+    "not_trggrer_on": {
+      "name": "WIRED Condición Negativa: El causante no está en el Furni",
+      "description": "La condición se cumple si el usuario desencadenante no está sobre ninguno de los furnis seleccionados."
+    },
+    "not_in_team": {
+      "name": "Condición Negativa WIRED: el usuario no es Miembro del Equipo",
+      "description": "La condición se cumple si el usuario desencadenante no es miembro del equipo especificado."
+    },
+    "not_furni_on": {
+      "name": "WIRED Condición Negativa: NO tiene un Furni encima",
+      "description": "La condición se cumple si ninguno de los furnis seleccionados tiene otro furni encima."
+    },
+    "not_hv_avtrs": {
+      "name": "WIRED Condición Negativa: los Furnis NO tienen avatares",
+      "description": "La condición se cumple si ninguno de los furnis seleccionados tiene avatares encima."
+    },
+    "at_time_long": {
+      "name": "wf_trg_at_time_long name",
+      "description": "Activa efectos después de un intervalo de tiempo más prolongado, basado en un tiempo predefinido."
+    },
+    "not_user_count": {
+      "name": "Condición WIRED: el recuento de usuarios no es",
+      "description": "La condición se cumple si el número de usuarios en la sala no está dentro de los límites definidos."
+    },
+    "not_wearing_fx": {
+      "name": "wf_cnd_not_wearing_fx name",
+      "description": "La condición se cumple si el usuario desencadenante no tiene activo un efecto de avatar específico."
+    },
+    "user_count_in": {
+      "name": "Condición WIRED: Usuarios en sala",
+      "description": "El efecto se activa si el número de usuarios en la sala está dentro de los límites establecidos."
+    },
+    "not_wearing_b": {
+      "name": "wf_cnd_not_wearing_b name",
+      "description": "La condición se cumple si el usuario desencadenante no lleva una placa específica."
+    },
+    "stuff_is": {
+      "name": "Condición WIRED: Furnis Coinciden",
+      "description": "La condición se cumple si el furni desencadenante es uno de los furnis seleccionados o es del mismo tipo."
+    },
+    "not_in_group": {
+      "name": "WIRED Condición Negativa: usuario NO es miembro del grupo",
+      "description": "La condición se cumple si el usuario desencadenante no es miembro del grupo asociado a la sala."
+    },
+    "not_stuff_is": {
+      "name": "WIRED Condición: Furni NO se corresponde",
+      "description": "La condición se cumple si el furni desencadenante no es uno de los furnis seleccionados ni es del mismo tipo."
+    },
+    "move_furni_to": {
+      "name": "Efecto WIRED: Mover hacia Furni",
+      "description": "Mueve un furni a la proximidad de otros furnis seleccionados."
+    },
+    "toggle_to_rnd": {
+      "name": "Efecto WIRED: Estado Aleatorios del Furni",
+      "description": "Cambia el estado de un furni a uno aleatorio entre sus posibles estados."
+    },
+    "not_match_snap": {
+      "name": "WIRED Condición Negativa: el estado de los Furnis NO coincide",
+      "description": "La condición se cumple si los estados de los furnis seleccionados no coinciden con una configuración previa."
+    },
+    "mute_triggerer": {
+      "name": "Efecto WIRED: Mutear usuario",
+      "description": "Silencia al usuario desencadenante, impidiéndole hablar temporalmente."
+    },
+    "date_rng_active": {
+      "name": "Condición Wired: Fecha y Hora",
+      "description": "Permite programar un rango específico de fecha y hora para que el efecto WIRED funcione."
+    },
+    "bot_clothes": {
+      "name": "Efecto WIRED: Bot cambia ropa",
+      "description": "Cambia la vestimenta del bot seleccionado."
+    },
+    "bot_teleport": {
+      "name": "Efecto WIRED: Teletransporte Bot a Furni",
+      "description": "Teletransporta al bot seleccionado a uno de los furnis especificados."
+    },
+    "bot_reached_stf": {
+      "name": "Causante WIRED: Bot alcanza furni",
+      "description": "Se activa cuando el bot seleccionado llega a uno de los furnis especificados."
+    },
+    "bot_follow_avatar": {
+      "name": "Efecto WIRED: Bot sigue usuario",
+      "description": "Ordena al bot seleccionado que siga al usuario desencadenante."
+    },
+    "bot_give_handitem": {
+      "name": "Efecto WIRED: Dar Ítem de mano",
+      "description": "Hace que el bot seleccionado entregue un ítem de mano específico al usuario."
+    },
+    "bot_move": {
+      "name": "Efecto WIRED: Bot mover a furni",
+      "description": "Mueve al bot seleccionado a uno de los furnis especificados."
+    },
+    "has_handitem": {
+      "name": "Condición WIRED: Usuario tiene ítem de mano",
+      "description": "La condición se cumple si el usuario sostiene el ítem de mano especificado."
+    },
+    "bot_talk_to_avatar": {
+      "name": "Efecto WIRED: Bot habla o susurra a usuario",
+      "description": "Hace que el bot seleccionado hable o susurre al usuario desencadenante."
+    },
+    "bot_reached_avtr": {
+      "name": "Causante WIRED: Bot alcanza usuario",
+      "description": "Se activa cuando el bot seleccionado alcanza a un usuario."
+    },
+    "bot_talk": {
+      "name": "Efecto WIRED: Bot habla a todos los usuarios",
+      "description": "Hace que el bot seleccionado hable o grite a todos los usuarios en la sala."
+    },
+    "clock_counter": {
+      "name": "Causante Wired: El contador transcurre el tiempo establecido",
+      "description": "Se activa cuando un contador alcanza un tiempo predefinido."
+    },
+    "control_clock": {
+      "name": "Efecto Wired: Contador de control",
+      "description": "Controla un contador, permitiendo iniciarlo, detenerlo o reiniciarlo según se requiera."
+    },
+    "not_user_performs_action": {
+      "name": "WIRED Condición Negativa: Usuario NO está realizando acción",
+      "description": "El efecto se activa si el usuario no está realizando una acción específica."
+    },
+    "match_date": {
+      "name": "Condición WIRED: Fecha Coincidente",
+      "description": "El efecto se activa si la fecha actual coincide con una fecha especificada."
+    },
+    "match_time": {
+      "name": "Condición WIRED: Hora Coincidente",
+      "description": "El efecto se activa si la hora actual coincide con una hora especificada."
+    },
+    "triggerer_match": {
+      "name": "Condición WIRED: El Desencadenante Es",
+      "description": "El efecto se activa si el usuario desencadenante cumple con criterios específicos."
+    },
+    "not_has_handitem": {
+      "name": "WIRED Condición Negativa: Usuario NO tiene ítem de mano",
+      "description": "El efecto se activa si el usuario no sostiene el ítem de mano especificado."
+    },
+    "user_performs_action": {
+      "name": "Causante WIRED: Usuario está realizando acción",
+      "description": "Se activa cuando el usuario desencadenante realiza una acción específica."
+    },
+    "not_triggerer_match": {
+      "name": "WIRED  Condición Negativa: Causante NO coincide",
+      "description": "El efecto se activa si el usuario desencadenante no cumple con criterios específicos."
+    },
+    "counter_time_matches": {
+      "name": "Condición WIRED: Contador Coincidente",
+      "description": "El efecto se activa si un contador alcanza un tiempo específico."
+    },
+    "team_has_rank": {
+      "name": "Condición WIRED: El Equipo Gana",
+      "description": "El efecto se activa si un equipo específico está liderando en el juego."
+    },
+    "team_has_score": {
+      "name": "Condición WIRED: Equipo Tiene Puntos",
+      "description": "El efecto se activa si un equipo ha alcanzado una puntuación predefinida."
+    },
+    "send_signal": {
+      "name": "Efecto WIRED: Enviar Señal",
+      "description": "Envía una señal a una o varias antenas seleccionadas con la información configurada."
+    },
+    "click_furni": {
+      "name": "Causante WIRED: Hacer Clic en Furni",
+      "description": "Se activa cuando un usuario hace clic en un furni específico."
+    },
+    "recv_signal": {
+      "name": "Causante WIRED: Recibir Señal",
+      "description": "Se activa al recibir una señal predefinida, ejecutando los efectos conectados."
+    },
+    "stuff_state": {
+      "name": "Causante WIRED: Cambia el Estado de los Furnis",
+      "description": "Se activa cuando cambia el estado de un furni específico."
+    },
+    "set_altitude": {
+      "name": "Efecto WIRED: Establecer Altura de Furni",
+      "description": "Modifica la altura de un furni seleccionado, elevándolo o bajándolo en la sala."
+    },
+    "has_altitude": {
+      "name": "Condición WIRED: Altura de Furni Coincide",
+      "description": "La condición se cumple si el furni seleccionado está a una altura específica."
+    },
+    "freeze": {
+      "name": "Efecto WIRED: Congelar Usuario",
+      "description": "Impide temporalmente que un usuario se mueva, 'congelándolo' en su lugar."
+    },
+    "rel_mov": {
+      "name": "Efecto WIRED: Movimiento Furni Relativo",
+      "description": "Mueve los furnis seleccionados en relación a su posición actual."
+    },
+    "period_short": {
+      "name": "Causante WIRED: Efecto Repetición (Corto)",
+      "description": "Activa efectos a intervalos más cortos que el causante periódico estándar."
+    },
+    "actor_dir": {
+      "name": "Condición WIRED: Dirección del Usuario",
+      "description": "La condición se cumple si el usuario mira hacia una dirección específica."
+    },
+    "unfreeze": {
+      "name": "Efecto WIRED: Descongelar Usuario",
+      "description": "Permite que un usuario previamente congelado vuelva a moverse."
+    },
+    "users_area": {
+      "name": "Selector WIRED: Usuarios en Área",
+      "description": "Selecciona o filtra usuarios dentro de un área específica de la sala. Se puede invertir la selección."
+    },
+    "furni_signal": {
+      "name": "Selector WIRED: Furnis desde Señal",
+      "description": "Selecciona los furnis que han recibido una señal específica. Se puede invertir la selección."
+    },
+    "users_byname": {
+      "name": "Selector WIRED: Usuarios por Nombre",
+      "description": "Selecciona usuarios por sus nombres específicos, permitiendo interacciones personalizadas. Se puede invertir la selección."
+    },
+    "furni_to_furni": {
+      "name": "Efecto WIRED: Mover Furni a Furni",
+      "description": "Mueve un furni a la ubicación de otro furni seleccionado, permitiendo interacciones dinámicas entre ellos."
+    },
+    "furni_onfurni": {
+      "name": "Selector WIRED: Furni sobre Furni",
+      "description": "Identifica furnis colocados encima de otros furnis. Se puede invertir la selección."
+    },
+    "furni_altitude": {
+      "name": "Selector WIRED: Furni con Altura",
+      "description": "Selecciona furnis basándose en su altura en la sala. Se puede invertir la selección."
+    },
+    "users_group": {
+      "name": "Selector WIRED: Usuarios en Grupo",
+      "description": "Selecciona usuarios que son miembros de un grupo específico. Se puede invertir la selección."
+    },
+    "furni_area": {
+      "name": "Selector WIRED: Furni en Área",
+      "description": "Selecciona furnis dentro de un área específica de la sala. Se puede invertir la selección."
+    },
+    "furni_bytype": {
+      "name": "Selector WIRED: Furni por Tipo",
+      "description": "Selecciona furnis de un tipo específico. Se puede invertir la selección."
+    },
+    "slc_quantity": {
+      "name": "Condición WIRED: Selector de Cantidad",
+      "description": "Verifica si la cantidad de elementos seleccionados cumple una condición específica."
+    },
+    "valid_moves": {
+      "name": "Condición WIRED: puede realizar movimientos",
+      "description": "La condición se cumple si el movimiento previsto del furni es válido y sin obstrucciones."
+    },
+    "users_handitem": {
+      "name": "Selector WIRED: Usuarios con Ítem de mano",
+      "description": "Selecciona usuarios que sostienen un ítem de mano específico. Se puede invertir la selección."
+    },
+    "furni_picks": {
+      "name": "Selector WIRED: Furnis Seleccionados",
+      "description": "Permite seleccionar furnis basados en criterios específicos. Se puede invertir la selección."
+    },
+    "users_signal": {
+      "name": "Selector WIRED: Usuarios desde Señal",
+      "description": "Selecciona usuarios que han recibido una señal específica. Se puede invertir la selección."
+    },
+    "users_byaction": {
+      "name": "Selector WIRED: Usuarios por Acción",
+      "description": "Selecciona usuarios según acciones realizadas, como caminar o hablar. Se puede invertir la selección."
+    },
+    "furni_to_user": {
+      "name": "Efecto WIRED: Mover Furni a Usuario",
+      "description": "Mueve furnis a la ubicación del usuario seleccionado, permitiendo interacciones dinámicas."
+    },
+    "users_onfurni": {
+      "name": "Selector WIRED: Usuarios sobre Furni",
+      "description": "Identifica usuarios que están sobre un furni específico. Se puede invertir la selección."
+    },
+    "furni_neighborhood": {
+      "name": "Selector WIRED: Furnis Vecinos",
+      "description": "Selecciona furnis cercanos a un punto u objeto específico. Se puede invertir la selección."
+    },
+    "users_bytype": {
+      "name": "Selector WIRED: Usuarios por Tipo",
+      "description": "Selecciona usuarios basados en un tipo o clasificación. Se puede invertir la selección."
+    },
+    "users_team": {
+      "name": "Selector WIRED: Usuarios en Equipo",
+      "description": "Selecciona usuarios que son parte de un equipo específico. Se puede invertir la selección."
+    },
+    "users_neighborhood": {
+      "name": "Selector WIRED: Usuarios Vecinos",
+      "description": "Selecciona usuarios dentro de una proximidad específica en la sala. Se puede invertir la selección."
+    },
+    "furni_with_var": {
+      "name": "Selector WIRED: Furnis con variable",
+      "description": "Selecciona furnis que tienen una variable específica asignada. Se puede invertir la selección."
+    },
+    "var_changed": {
+      "name": "Causante WIRED: Cambio de variable",
+      "description": "Se activa cuando una variable configurada cambia de valor."
+    },
+    "filter_furni_by_var": {
+      "name": "Filtro WIRED: Furnis con variable más alta/baja",
+      "description": "Filtra los furnis con los valores más altos o más bajos de una variable específica."
+    },
+    "var_val_match": {
+      "name": "Condición WIRED: Valor de variable",
+      "description": "La condición se cumple si una variable tiene un valor específico."
+    },
+    "leave_room": {
+      "name": "Causante WIRED: Abandona la Sala",
+      "description": "Se activa cuando un usuario sale de la sala."
+    },
+    "change_var_val": {
+      "name": "Efecto WIRED: Cambiar valor de variable",
+      "description": "Modifica el valor de una variable estableciéndolo, sumando o restando."
+    },
+    "filter_users_by_var": {
+      "name": "Filtro WIRED: Usuarios con variable más alta/baja",
+      "description": "Filtra usuarios con los valores más altos o más bajos de una variable específica."
+    },
+    "var_text_connector": {
+      "name": "Complemento de variable: Conector de Texto",
+      "description": "Permite asignar un número a una frase o palabra para crear mensajes personalizados."
+    },
+    "var_age_match": {
+      "name": "Condición WIRED: Edad de variable",
+      "description": "La condición se cumple si una variable fue modificada dentro de un período de tiempo específico."
+    },
+    "text_output_variable": {
+      "name": "Complemento de texto: Ejemplo de Variable",
+      "description": "Muestra valores de variables dentro de mensajes de texto a los usuarios."
+    },
+    "give_var": {
+      "name": "Efecto WIRED: Dar variable",
+      "description": "Asigna o modifica una variable en un usuario o furni."
+    },
+    "move_rotate_user": {
+      "name": "Efecto WIRED: Mover y rotar Avatar",
+      "description": "Mueve y rota al usuario desencadenante a una posición y dirección específicas."
+    },
+    "remove_var": {
+      "name": "Efecto WIRED: Eliminar Variable",
+      "description": "Elimina una variable de un usuario o furni."
+    },
+    "user_to_furni": {
+      "name": "Efecto WIRED: Mover Usuario a Furni",
+      "description": "Mueve al usuario desencadenante a la ubicación de un furni seleccionado."
+    },
+    "text_output_username": {
+      "name": "Complemento de texto: Ejemplo de nombre",
+      "description": "Permite insertar el nombre del usuario recibido en mensajes de texto."
+    },
+    "remote": {
+      "name": "Selector WIRED: Selección Remota",
+      "description": "Selecciona elementos o usuarios de otra sala o ubicación. Se puede invertir la selección."
+    },
+    "neg_has_var": {
+      "name": "Condición Negativa WIRED: NO tiene variable",
+      "description": "La condición se cumple si el usuario o furni no tiene una variable específica."
+    },
+    "text_input_variable": {
+      "name": "Complemento de texto: Capturador de variable",
+      "description": "Captura texto ingresado por el usuario y lo almacena en una variable."
+    },
+    "users_with_var": {
+      "name": "Selector WIRED: Usuarios con variable",
+      "description": "Selecciona usuarios que tienen una variable específica asignada. Se puede invertir la selección."
+    },
+    "has_var": {
+      "name": "Condición WIRED: Tiene variable",
+      "description": "La condición se cumple si el usuario o furni tiene una variable específica."
+    },
+    "exec_in_order": {
+      "name": "Complemento WIRED: Ejecutar efectos en orden",
+      "description": "Ejecuta los efectos en un orden específico establecido por el usuario."
+    },
+    "random": {
+      "name": "Complemento WIRED: Efecto aleatorio",
+      "description": "Activa aleatoriamente un efecto de la pila."
+    },
+    "unseen": {
+      "name": "Complemento WIRED: Efecto no visto",
+      "description": "Activa un efecto de la pila que no haya sido utilizado previamente."
+    },
+    "or_eval": {
+      "name": "Complemento WIRED: Condición Lógica",
+      "description": "Permite que los efectos se activen si se cumplen criterios lógicos definidos por el usuario."
+    },
+    "mov_physics": {
+      "name": "Complemento WIRED: Movimientos Físicos",
+      "description": "Aplica física al movimiento de los furnis, haciendo que respondan según el criterio seleccionado."
+    },
+    "mov_no_animation": {
+      "name": "Complemento WIRED: Cancelar Animación de Movimiento",
+      "description": "Los furnis se mueven instantáneamente sin animaciones."
+    },
+    "mov_carry_users": {
+      "name": "Complemento WIRED: Transportar Usuario",
+      "description": "Los usuarios sobre furnis en movimiento son transportados con ellos."
+    },
+    "execution_limit": {
+      "name": "Complemento WIRED: Límite de Ejecución",
+      "description": "Limita la cantidad de veces que un efecto puede ejecutarse."
+    },
+    "anim_time": {
+      "name": "Complemento WIRED: Tiempo de Animación",
+      "description": "Personaliza el tiempo de transición de una posición a otra."
+    },
+    "filter_users": {
+      "name": "Filtro WIRED: Filtrar a X Usuarios",
+      "description": "Filtra la selección de usuarios a un número específico."
+    },
+    "filter_furni": {
+      "name": "Filtro WIRED: Filtrar a X Furni",
+      "description": "Filtra la selección de furnis a un número específico."
+    },
+    "context": {
+      "name": "Variable WIRED: Variable de contexto",
+      "description": "Variables temporales que se pueden utilizar en causantes y efectos durante una interacción."
+    },
+    "user": {
+      "name": "Variable WIRED: Variable de usuario",
+      "description": "Variable asignada a usuarios específicos, útil para almacenar información personalizada. Puede ser permanente, temporal o compartida entre salas."
+    },
+    "furni": {
+      "name": "Variable WIRED: Variable de furni",
+      "description": "Variable asignada a furnis específicos, útil para almacenar información sobre ellos. Puede ser permanente, temporal o compartida entre salas."
+    },
+    "reference": {
+      "name": "Variable WIRED: Desde otra sala",
+      "description": "Permite acceder a variables compartidas de otra sala."
+    },
+    "room": {
+      "name": "Variable WIRED: Variable global",
+      "description": "Variable asignada a la sala, útil para almacenar información general. Puede ser permanente, temporal o compartida entre salas."
+    },
+    "click_tile": {
+      "name": "Causante WIRED: Usuario hace click en baldosas",
+      "description": "Se activa cuando un usuario hace clic en una baldosa del suelo."
+    },
+    "neg_send_signal": {
+      "name": "Efecto WIRED inverso: Enviar Señal",
+      "description": "Si la condición no se cumple, envía una señal negativa a la antena seleccionada."
+    },
+    "neg_call_stacks": {
+      "name": "Efecto WIRED inverso: Apilar",
+      "description": "Si la condición no se cumple, ejecuta los efectos seleccionados."
+    }
+  }
+}
