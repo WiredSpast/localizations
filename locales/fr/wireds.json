@@ -486,11 +486,11 @@
     },
     "furni_neighborhood": {
       "name": "Sélecteur WIRED : Mobi dans le voisinage",
-      "description": "UNKNOWNn"
+      "description": "UNKNOWN"
     },
     "users_bytype": {
       "name": "Sélecteur WIRED : Utilisateurs par type",
-      "description": "UNKNOWNN"
+      "description": "UNKNOWN"
     },
     "filter_furni": {
       "name": "Filtre WIRED : Filtre X mobi",
