@@ -1,0 +1,15 @@
+{
+  "common": {
+    "setHabboName": "Stel Habbo Naam In",
+    "search": "Zoek"
+  },
+  "menu": {
+    "changeHabboName": "Verander Habbo Naam",
+    "viewProfile": "Bekijk Profiel",
+    "settings": "Instellingen",
+    "logout": "Log uit"
+  },
+  "avatarNameInput": {
+    "placeholder": "Voer nieuwe Habbo naam in"
+  }
+}
