@@ -1,0 +1,58 @@
+{
+  "home": {
+    "header": {
+      "learn": "Leer",
+      "construct": "Maak",
+      "innovate": "Innoveer"
+    },
+    "buttons": {
+      "start_tutorial": "Begin Tutorial",
+      "show_wireds_list": "Toon Wired Lijst"
+    },
+    "room_phrases": [
+      "Ik hou van WiredSnippets ❤️!",
+      "Stap op Wired is mijn begeleiding."
+    ],
+    "set_my_habbo": "Stel mijn Avatar in"
+  },
+  "playground_overview": {
+    "scenario_explanation": "Verkalring",
+    "difficulties": {
+      "easy": "Makkelijk",
+      "medium": "Medium",
+      "hard": "Moeilijk",
+      "expert": "Expert"
+    },
+    "allowed_types": {
+      "user": "Gebruiker",
+      "bot": "Bot",
+      "pet": "Huisdier",
+      "furni": "Meubi",
+      "wired": "Wired"
+    },
+    "scenario_one": "Scenario",
+    "scenario_other": "Scenarios",
+    "show_real_case": "Toon echt geval",
+    "condition_applied": "Voorwaarde kan worden toegepast op",
+    "effect_applied": "Reactie kan worden toegepast op",
+    "selector_filter_by": "Selector kan worden toegepast op",
+    "addon_applied_to": "Add-On kan worden toegepast op",
+    "variable_applied_to": "Variabele kan worden toegepast op",
+    "trigger_allowed": "Toegestane triggers",
+    "click_to_check": "Klik om te zien wat er gebeurt",
+    "shared_by": "Gedeeld door:"
+  },
+  "playground_overview_explains": {
+    "short_period": "Deze actie heeft geen gebruiker, bot of huisdier nodig, zijn functie is om de reacties van de stapel oneindig te herhalen.",
+    "has_handitem": "Wanneer de gebruiker een <b>\"koffie\"</b> vast heeft activeert de voorwaarde.",
+    "selector_users_area_playground": "Deze selector laat toe om alle gebruikers in een <b>bepaald gebied van de kamer gedefinieerd door jou</b> te selecteren."
+  },
+  "navbar": {
+    "community": "Community",
+    "wired_editor": "Wired Editor",
+    "wired_overview": "Wired Overzicht",
+    "courses": "Lessen",
+    "sign_in": "Log In",
+    "sign_up": "Registreer"
+  }
+}
