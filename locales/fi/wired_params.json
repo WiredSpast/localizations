@@ -66,7 +66,30 @@
       "shared_var_own_room": "Voit luoda jaettuja muuttujia vain omassa huoneessasi."
     }
   },
-  "help": "Tarvitsetko apua?",
+  "help": {
+    "1": {
+      "img": "wf_help_1",
+      "text": "Tämä on Wired FAQ, josta löydät apua Wired-tavaroihin liittyviin kysymyksiin.",
+      "title": "Apua Wired-tavaroiden ohjelmointiin"
+    },
+    "2": {
+      "img": "wf_help_2",
+      "text": "Toiminto määrittää sen, mitä tapahtuu, kun laukaisin aktivoidaan. Ohjelmoi toiminto asettamalla se huoneen lattialle ja kaksoisklikkaamalla tavaraa.",
+      "title": "Toiminnot"
+    },
+    "3": {
+      "img": "wf_help_3",
+      "text": "Laukaisimilla voit määrittää, mitä pitää tapahtua, jotta toiminto aktivoituu. Ohjelmoi laukaisin asettamalla se huoneen lattialle ja kaksoisklikkaamalla laukaisinta.",
+      "title": "Laukaisimet"
+    },
+    "4": {
+      "img": "wf_help_4",
+      "text": "Ehdot määrittävät lisäehtoja laukaisimille. Jos haluat käyttää niitä, sinun pitää pinota ne laukaisimien ja toimintojen kanssa päällekkäin.",
+      "title": "Ehdot"
+    },
+    "link": "Wired FAQ",
+    "title": "Tarvitsetko apua?"
+  },
   "kickaction": {
     "exception": {
       "message": {
@@ -141,7 +164,12 @@
     "allowbefore2": "Aktivoi ennen kuin on kulunut:",
     "allowbefore": "Salli ennen: {{seconds}} sekuntia",
     "anyavatar": "Kuka tahansa",
-    "area_selection": "Alueen valinta",
+    "area_selection": {
+      "clear": "Tyhjennä",
+      "info": "Valitse alue klikkaamalla \"Valitse alue\"-painiketta ja merkitse haluamasi alue huoneessa painamalla ja vetämällä kursoria.",
+      "select": "Valitse alue",
+      "title": "Alueen valinta"
+    },
     "bot": {
       "name": "Botin nimi",
       "usage": "Anna käsiesineet botin avulla"
@@ -150,7 +178,11 @@
       "figure": "Kopioi tyylini",
       "handitem": "Kopioi käsiesineeni"
     },
-    "carry_mode": "Kuljeta hahmoja, kun he:",
+    "carry_mode": {
+      "0": "seisovat suoraan liikkuvalla tavaralla",
+      "1": "seisovat samassa ruudussa kuin liikkuva tavara",
+      "title": "Kuljeta hahmoja, kun he:"
+    },
     "certainavatar": "Tietty hahmo",
     "chat": {
       "hide": "Piilota laukaisijan teksti",
@@ -159,7 +191,14 @@
     "chatcontains": "Sisältää avainsanan",
     "chattriggertype": "Valitse tyyppi:",
     "choose_type": "Valitse tyyppi:",
-    "clock_control": "Valitse seuraavista vaihtoehdoista",
+    "clock_control": {
+      "0": "Aloita",
+      "1": "Pysäytä",
+      "2": "Nollaa",
+      "3": "Tauota",
+      "4": "Jatka",
+      "title": "Valitse seuraavista vaihtoehdoista"
+    },
     "clock_minutes": "{{minutes}} minuuttia",
     "clock_minutes_elapsed": "{{minutes}} minuuttia kulunut",
     "clock_seconds": "{{seconds}} sekuntia",
@@ -190,9 +229,24 @@
     "enteravatarname": "Hahmon nimi:",
     "enterawordorphrase": "Sana tai lause:",
     "entermessage": "Kirjoita viesti",
-    "eval_mode": "Ehdot, joiden tulee täsmätä:",
+    "eval_mode": {
+      "0": "Kaikki",
+      "1": "Ainakin yksi",
+      "2": "Ei kaikki",
+      "3": "Ei mikään",
+      "cmp": {
+        "0": "Vähemmän kuin:",
+        "1": "Tarkalleen:",
+        "2": "Enemmän kuin:"
+      },
+      "title": "Ehdot, joiden tulee täsmätä:"
+    },
     "exactmatch": "Täsmävastaavuus",
-    "formation": "Pick formation",
+    "formation": {
+      "0": "Row",
+      "1": "Column",
+      "title": "Pick formation"
+    },
     "freeze": {
       "cancel_on_teleport": "Mahdollista liikkuminen teleportatessa",
       "effect": {
@@ -215,7 +269,11 @@
     },
     "level_selection": "Set level: {{level}}",
     "message": "Viesti:",
-    "movefurni": "Siirrä tavaraa:",
+    "movefurni": {
+      "0": "Älä siirrä",
+      "1": "Siirrä sattumanvaraisesti",
+      "title": "Siirrä tavaraa:"
+    },
     "movement": {
       "horizontal": {
         "distance": "Siirrä {{distance}} ruutua suuntaan",
@@ -234,7 +292,13 @@
     },
     "moveuser": "Siirrä hahmoa:",
     "neighborhood_selection": "Valitse läheisyyden koko",
-    "not_requireall": "Laukaisin aktivoituu, jos:",
+    "not_requireall": {
+      "0": "Yhden tai useamman valitun tavaran päällä EI ole tavaraa.",
+      "1": "Millään valituista tavaroista EI ole tavaraa päällään",
+      "2": "Jos yhdellä valituista kamoista ei ole avataria",
+      "3": "Jos millään valitulla kamalla ei ole avataria",
+      "title": "Laukaisin aktivoituu, jos:"
+    },
     "onfurni": {
       "0": "Tavara tavaran päällä",
       "1": "Tavara tavaran alla",
@@ -256,7 +320,11 @@
     },
     "placement_selection": "Sijoitus:",
     "placetodirection": "Place Furnis in this direction",
-    "points_operation": "Toimintotyyppi:",
+    "points_operation": {
+      "0": "Lisää pisteitä",
+      "1": "Poista pisteitä",
+      "title": "Toimintotyyppi:"
+    },
     "prizelimit": "Total rewards limit: {{amount}}",
     "quantifier": {
       "furni": {
@@ -286,12 +354,33 @@
     },
     "quantifier_selection": "Ehto on tosi, jos:",
     "remote_selection": {
-      "filter": "Pinojen suodatus",
-      "type": "Valinnan tyyppi:"
+      "filter": {
+        "0": "Käytä kaikkia valittuja Wired-pinoja",
+        "1": "Valitse satunnainen määrä:",
+        "title": "Pinojen suodatus"
+      },
+      "type": {
+        "0": "Yhdiste",
+        "1": "Leikkaus",
+        "info": "Valitse käyttäytymismalli, kun valittuna on useita Wired-pinoja.",
+        "title": "Valinnan tyyppi:"
+      }
     },
-    "requireall": "Laukaisimet toimivat vain, jos...",
+    "requireall": {
+      "0": "...valitun tavaran päällä on toinen tavara",
+      "1": "...kaikkien valittujen tavaroiden päällä on toinen tavara",
+      "2": "Jos yhdellä valituista kamoista on avatar",
+      "3": "Jos kaikilla valituilla kamoilla on avatar",
+      "title": "Laukaisimet toimivat vain, jos..."
+    },
     "requiredformationsize": "At least {{furnis}} Furnis match state/ location",
-    "rotatefurni": "Käännä tavaraa:",
+    "rotatefurni": {
+      "0": "Älä käännä",
+      "1": "Käännä vastapäivään",
+      "2": "Käännä myötäpäivään",
+      "3": "Sattumanvaraisesti",
+      "title": "Käännä tavaraa:"
+    },
     "rotateuser": "Käännä hahmoa:",
     "seconds": "{{seconds}} sekuntia",
     "select_options": "Valitse asetukset:",
@@ -338,11 +427,40 @@
         "200": "Käytä tavaroita Wired-valitsijasta",
         "201": "Käytä tavaroita signaalista",
         "900": "Kaikki huoneen tavarat",
-        "title": "Valitse tavaroiden lähde:"
+        "title": {
+          "match": {
+            "0": "Tavarat, joiden pitää täsmätä:",
+            "1": "Tavarat, joihin verrataan:"
+          },
+          "mv": {
+            "0": "Siirrettävät tavarat:",
+            "1": "Kohteena käytettävät tavarat:"
+          },
+          "mv_user2": "Siirrettävä hahmo:",
+          "mv_user": "Kohteena käytettävät hahmot:",
+          "physics": {
+            "0": "Liikuta tavaroiden läpi:",
+            "1": "Liikkeen estävät tavarat:"
+          },
+          "signal_antenna": "Antennit:",
+          "signal_forward": "Välitettävät tavarat:",
+          "snapshot": {
+            "0": "Tarkistettava tila:",
+            "1": "Tarkistettava tila/ asento:",
+            "2": "Asetettava tila/ asento:"
+          },
+          "title": "Valitse tavaroiden lähde:"
+        }
       },
       "global": "Yleiset muuttujat",
       "merged": {
-        "title": "Valitse lähde:"
+        "title": {
+          "neighborhood": "Valitse, minkä läheisyydessä:",
+          "variables": "Muuttujan lähde:",
+          "variables_destination": "Muuttujan kohde:",
+          "variables_reference": "Muuttujan viite:",
+          "title": "Valitse lähde:"
+        }
       },
       "users": {
         "0": "Käytä laukaisevaa hahmoa",
@@ -351,7 +469,19 @@
         "200": "Käytä hahmoja Wired-valitsijasta",
         "201": "Käytä hahmoja signaalista",
         "900": "Kaikki huoneen hahmot",
-        "title": "Valitse hahmojen lähde:"
+        "title": {
+          "bots": "Valitse bottien lähde:",
+          "carry": "Salli kuljettaminen:",
+          "match": {
+            "0": "Hahmot, joiden pitää täsmätä:",
+            "1": "Hahmot, joihin verrataan:"
+          },
+          "physics": {
+            "0": "Liikuta hahmojen läpi:"
+          },
+          "signal_forward": "Välitettävät hahmot:",
+          "title": "Valitse hahmojen lähde:"
+        }
       }
     },
     "sourcetype": {
@@ -374,22 +504,48 @@
       "following": "Lopeta seuraaminen"
     },
     "talk": "Puhu",
-    "team": "Valitse joukkue",
+    "team": {
+      "1": "Punainen",
+      "2": "Vihreä",
+      "3": "Sininen",
+      "4": "Keltainen",
+      "any": "Mikä tahansa joukkue",
+      "triggerer": "Laukaisijan joukkue",
+      "title": "Valitse joukkue"
+    },
     "team_type": {
       "0": "Wired",
       "1": "Battle Banzai",
       "2": "Freeze"
     },
     "teleport": {
-      "options": "Teleporttivaihtoehdot:"
+      "options": {
+        "0": "Nopea teleporttaus",
+        "title": "Teleporttivaihtoehdot:"
+      }
     },
     "texts": {
       "capturer_name": "Lukijan nimi:",
       "placeholder_name": "Paikan nimi:",
-      "placeholder_preview": "Käytä tätä kirjoittamalla <font color",
-      "placeholder_type": "Paikan tyyppi:",
+      "placeholder_preview": "Käytä tätä kirjoittamalla {{placeholder}} Wired-teksteihin.",
+      "placeholder_type": {
+        "1": "Yksittäinen",
+        "2": "Useita",
+        "user": {
+          "1": "Yksittäinen käyttäjä",
+          "2": "Useita käyttäjiä"
+        },
+        "title": "Paikan tyyppi:"
+      },
       "select_delimiter": "Valitse erotin:",
-      "variable_display_type": "Muuttujan näyttötyyppi:",
+      "variable_display_type": {
+        "1": "Numeerinen",
+        "2": {
+          "info": "Käytä yhdessä \"Wired-muuttujalisä: Tekstiliitin\"-tavaran kanssa",
+          "title": "Tekstimuotoinen"
+        },
+        "title": "Muuttujan näyttötyyppi:"
+      },
       "variable_input_type": "Muuttujan syötetyyppi:",
       "variable_output": "Muuuttuja ulostuloon:"
     },
@@ -440,38 +596,140 @@
       "user": "Käyttäjä"
     },
     "triggerer_choice": "Sovella WIRED-efektit seuraaviin:",
-    "turn": "Törmätessä",
-    "user_collide": "Kun osut käyttäjään",
+    "turn": {
+      "0": "Odota",
+      "1": "Käänny oikealle 45 astetta",
+      "2": "Käänny oikealle 90 astetta",
+      "3": "Käänny vasemmalle 45 astetta",
+      "4": "Käänny vasemmalle 90 astetta",
+      "5": "Käänny takaisin",
+      "6": "Käänny satunnaiseen suuntaan",
+      "title": "Törmätessä"
+    },
+    "user_collide": {
+      "0": "Estä tavaran liike",
+      "title": "Kun osut käyttäjään"
+    },
     "user_move": {
-      "walkmode": "Jos käyttäjä käveli:"
+      "walkmode": {
+        "0": "Jatka kävelemistä, jos kohde on lähempänä",
+        "1": "Jatka kävelemistä",
+        "2": "Lopeta käveleminen",
+        "title": "Jos käyttäjä käveli:"
+      }
     },
     "usercountmax": "Enintään {{value}} käyttäjä(ä)",
     "usercountmin": "Vähintään {{value}} käyttäjä(ä)",
-    "usertype": "Käyttäjätyyppi:",
+    "usertype": {
+      "1": "Habbo",
+      "2": "Lemmikki",
+      "4": "Botti",
+      "title": "Käyttäjätyyppi:"
+    },
     "variables": {
-      "availability": "Saatavuusasetukset:",
-      "compare_value": "Vertailuarvo:",
+      "availability": {
+        "0": "Kun hahmo on huoneessa",
+        "1": "Kun huone on aktiivinen",
+        "10": "Pysyvä",
+        "11": "Pysyvä, jaettu huoneiden välillä",
+        "title": "Saatavuusasetukset:"
+      },
+      "compare_value": {
+        "0": "Luontiaika",
+        "1": "Viimeisin päivitysaika",
+        "title": "Vertailuarvo:"
+      },
       "connect_text": {
-        "caption": "0",
+        "caption": "0=teksti0\\n1=teksti1\\n2=...",
         "title": "Liitä teksti muuttujaan:"
       },
-      "duration": "Kesto:",
-      "inspection": "Muuttujan tarkastus",
-      "operation": "Toimenpide:",
+      "duration": {
+        "0": "millisekuntia",
+        "1": "sekuntia",
+        "2": "minuuttia",
+        "3": "tuntia",
+        "4": "päivää",
+        "5": "viikkoa",
+        "6": "kuukautta",
+        "7": "vuotta",
+        "title": "Kesto:"
+      },
+      "inspection": {
+        "current_value": "Nykyinen arvo: {{value}}",
+        "title": "Muuttujan tarkastus"
+      },
+      "operation": {
+        "0": "Aseta",
+        "1": "Lisää",
+        "2": "Vähennä",
+        "3": "Kerro",
+        "4": "Jaa",
+        "5": "Potenssi",
+        "6": "Jakojäännös",
+        "40": "Aseta minimi",
+        "41": "Aseta maksimi",
+        "50": "Satunnainen ylärajalla",
+        "60": "Absoluuttinen arvo",
+        "100": "Bittioperaatio AND",
+        "101": "Bittioperaatio OR",
+        "102": "Bittioperaatio XOR",
+        "103": "Bittioperaatio NOT",
+        "104": "Siirto vasemmalle (<<)",
+        "105": "Siirto oikealle (>>)",
+        "advanced": "...näytä edistyneet",
+        "tooltip": "Valitse toimenpide",
+        "title": "Toimenpide:"
+      },
       "quest_chain_name": "Tehtäväsarjan koodi:",
       "quest_name": "Tehtävän koodi:",
-      "reference_value": "Viitearvo",
-      "room_selection": "Valitse huone:",
-      "settings": "Muuttujan asetukset:",
+      "reference_value": {
+        "from_variable": "Muuttujasta:",
+        "set_value": "Aseta arvo:",
+        "title": "Viitearvo"
+      },
+      "room_selection": {
+        "tooltip": "Valitse huone",
+        "title": "Valitse huone:"
+      },
+      "settings": {
+        "has_value": "Muuttujalla on arvo",
+        "read_only": "Vain luku",
+        "title": "Muuttujan asetukset:"
+      },
       "show_internal": "... näytä sisäiset muuttujat",
-      "sort_by": "Järjestä:",
+      "sort_by": {
+        "0": "Suurin arvo",
+        "1": "Pienin arvo",
+        "2": "Vanhin luontiaika",
+        "3": "Viimeisin luontiaika",
+        "4": "Vanhin päivitysaika",
+        "5": "Viimeisin päivitysaika",
+        "caption": "Valitse järjestämistyyppi",
+        "title": "Järjestä:"
+      },
       "time_selection": "Ajan valinta",
-      "trigger_options": "Laukaise, kun muuttuja on:",
-      "value_settings": "Arvon asetukset:",
+      "trigger_options": {
+        "0": "Luotu",
+        "1": "Arvoa on muutettu",
+        "2": "Poistettu",
+        "title": "Laukaise, kun muuttuja on:"
+      },
+      "value_settings": {
+        "initial_value": "Alkuarvo:",
+        "override_existing": "Korvaa olemassa oleva muuttuja",
+        "select_by_value": "Valitse arvon mukaan",
+        "title": "Arvon asetukset:"
+      },
       "variable_name": "Muuttujan nimi:",
       "variable_output": "Muuttuja ulostuloon:",
       "variable_ref_selection": "Viitemuuttuja:",
-      "variable_selection": "Valitse muuttuja:"
+      "variable_selection": {
+        "tooltip": {
+          "context": "Valitse kontekstimuuttuja",
+          "title": "Valitse muuttuja"
+        },
+        "title": "Valitse muuttuja:"
+      }
     },
     "whatissaid": "Mitä sanotaan?:",
     "whisper": "Kuiskaa"

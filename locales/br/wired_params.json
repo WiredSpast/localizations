@@ -67,7 +67,30 @@
       "shared_var_own_room": "Você só pode definir variáveis como compartilhadas em seu próprio quarto."
     }
   },
-  "help": "Ajuda de Mobis Wired",
+  "help": {
+    "1": {
+      "img": "wf_help_1",
+      "text": "Mobis Wired lhe darão infinitas funções ao juntar Ativadores, Efeitos e opcionalmente Condições. Cada Ativador, Efeito e Condição poderá ser montado individualmente, e todos podem trabalhar juntos. Continue lendo mais sobre Ativadores, Efeitos e Condições.",
+      "title": "Ajuda Wired"
+    },
+    "2": {
+      "img": "wf_help_2",
+      "text": "Ativadores lhe permitirão definir o que precisa acontecer para o Efeito funcionar. Você sempre precisará juntar um Efeito e um Ativador para fazer funcionar.",
+      "title": "Ativadores"
+    },
+    "3": {
+      "img": "wf_help_3",
+      "text": "Efeitos são coisas que acontecem quando você liga um Ativador. Você sempre precisará juntar um Ativador e um Efeito para fazê-los funcionar.",
+      "title": "Efeitos"
+    },
+    "4": {
+      "img": "wf_help_4",
+      "text": "Condições são ações específicas que precisam ser feitas para o Ativador funcionar. Para uma Condição funcionar, você precisará juntá-la com um Ativador e um Efeito.",
+      "title": "Condições"
+    },
+    "link": "Ajuda Wired",
+    "title": "Ajuda de Mobis Wired"
+  },
   "kickaction": {
     "exception": {
       "message": {
@@ -142,7 +165,12 @@
     "allowbefore2": "Ativar antes de:",
     "allowbefore": "O Ativador está ligado por {{seconds}} segundos",
     "anyavatar": "Qualquer Habbo",
-    "area_selection": "Seleção de Área",
+    "area_selection": {
+      "clear": "Limpar",
+      "info": "Para escolher uma área, basta clicar no botão \"Selecionar área\" e pressionar e arrastar o cursor para marcar a área desejada dentro do quarto.",
+      "select": "Selecione a área",
+      "title": "Seleção de Área"
+    },
     "bot": {
       "name": "Nome do Bot",
       "usage": "Dar item de mão usando um Bot"
@@ -151,7 +179,11 @@
       "figure": "Copiar os meus visuais",
       "handitem": "Copiar meu item de mão"
     },
-    "carry_mode": "Usuários são carregados quando:",
+    "carry_mode": {
+      "0": "estão de pé diretamente sobre o mobi em movimento",
+      "1": "estão de pé no mesmo piso que o mobi em movimento",
+      "title": "Usuários são carregados quando:"
+    },
     "certainavatar": "Especificar Habbo",
     "chat": {
       "hide": "Ocultar a mensagem do gatilho",
@@ -160,7 +192,14 @@
     "chatcontains": "Contém palavra-chave",
     "chattriggertype": "Escolha o tipo:",
     "choose_type": "Escolha o tipo:",
-    "clock_control": "Selecione a Opção",
+    "clock_control": {
+      "0": "Começar",
+      "1": "Parar",
+      "2": "Reset",
+      "3": "Pausa",
+      "4": "Reiniciar",
+      "title": "Selecione a Opção"
+    },
     "clock_minutes": "{{minutes}} minutos",
     "clock_minutes_elapsed": "Passaram {{minutes}} minutos",
     "clock_seconds": "{{seconds}} segundos",
@@ -191,9 +230,24 @@
     "enteravatarname": "Digite o nome do Habbo",
     "enterawordorphrase": "Digite uma palavra ou uma frase:",
     "entermessage": "Digite uma mensagem",
-    "eval_mode": "Condições que precisam coincidir:",
+    "eval_mode": {
+      "0": "Todas",
+      "1": "Pelo menos uma",
+      "2": "Não todas",
+      "3": "Nenhuma",
+      "cmp": {
+        "0": "Menos de:",
+        "1": "Exatamente:",
+        "2": "Mais de:"
+      },
+      "title": "Condições que precisam coincidir:"
+    },
     "exactmatch": "Combinação exata",
-    "formation": "Pick formation",
+    "formation": {
+      "0": "Row",
+      "1": "Column",
+      "title": "Pick formation"
+    },
     "freeze": {
       "cancel_on_teleport": "Descongelar ao teletransportar",
       "effect": {
@@ -216,7 +270,11 @@
     },
     "level_selection": "Set level: {{level}}",
     "message": "Mensagem:",
-    "movefurni": "Mover Mobi:",
+    "movefurni": {
+      "0": "Nenhum movimento",
+      "1": "Mover aleatoriamente",
+      "title": "Mover Mobi:"
+    },
     "movement": {
       "horizontal": {
         "distance": "Mover {{distance}} quadrados na direção",
@@ -235,7 +293,13 @@
     },
     "moveuser": "Mover usuário:",
     "neighborhood_selection": "Selecionar Pisos Vizinhos",
-    "not_requireall": "Defina a condição:",
+    "not_requireall": {
+      "0": "Se um ou mais mobis selecionados NÃO têm mobis em cima.",
+      "1": "Todos os mobis selecionados NÃO têm outros mobis em cima",
+      "2": "Se um dos mobis selecionados não possui nenhum avatar nele",
+      "3": "Se todos os mobis selecionados não possuem avatares neles",
+      "title": "Defina a condição:"
+    },
     "onfurni": {
       "0": "Mobis acima de Mobis",
       "1": "Mobis sob Mobis",
@@ -257,7 +321,11 @@
     },
     "placement_selection": "Posicionamento:",
     "placetodirection": "Place Furnis in this direction",
-    "points_operation": "Tipo de efeito:",
+    "points_operation": {
+      "0": "Adicionar pontos",
+      "1": "Remover pontos",
+      "title": "Tipo de efeito:"
+    },
     "prizelimit": "Prêmio: {{amount}}",
     "quantifier": {
       "furni": {
@@ -287,12 +355,33 @@
     },
     "quantifier_selection": "Condição de correspondência se:",
     "remote_selection": {
-      "filter": "Filtrar as pilhas de Wired",
-      "type": "Tipo de seleção:"
+      "filter": {
+        "0": "Usar todas as pilhas de Wireds",
+        "1": "Escolher um valor aleatório:",
+        "title": "Filtrar as pilhas de Wired"
+      },
+      "type": {
+        "0": "União",
+        "1": "Intersecção",
+        "info": "Selecione o comportamento quando vários Wired são selecionados",
+        "title": "Tipo de seleção:"
+      }
     },
-    "requireall": "Permite ativação se:",
+    "requireall": {
+      "0": "Se um dos Mobis selecionados tem Mobi em cima",
+      "1": "Todos os Mobis selecionados têm Mobi em cima",
+      "2": "Se um dos mobis selecionados possui um avatar nele",
+      "3": "Se todos os mobis selecionados possuem avatares neles",
+      "title": "Permite ativação se:"
+    },
     "requiredformationsize": "At least {{furnis}} Furnis match state/ location",
-    "rotatefurni": "Girar Mobi:",
+    "rotatefurni": {
+      "0": "Nenhuma rotação",
+      "1": "Rotacionar no sentido horário",
+      "2": "Rotacionar no sentido anti horário",
+      "3": "Para direções aleatórias",
+      "title": "Girar Mobi:"
+    },
     "rotateuser": "Girar usuário:",
     "seconds": "{{seconds}} segundos",
     "select_options": "Selecione as opções:",
@@ -339,11 +428,40 @@
         "200": "Usar mobis do seletor",
         "201": "Usar mobis do sinal",
         "900": "Todos os mobis do quarto",
-        "title": "Selecione a fonte do Mobi:"
+        "title": {
+          "match": {
+            "0": "Os mobis para combinar:",
+            "1": "Mobis para comparar com:"
+          },
+          "mv": {
+            "0": "Os móveis em movimento:",
+            "1": "Os mobis alvo:"
+          },
+          "mv_user2": "O usuário em movimento:",
+          "mv_user": "O usuário alvo:",
+          "physics": {
+            "0": "Mover através dos mobis:",
+            "1": "Bloqueado por mobis:"
+          },
+          "signal_antenna": "Antenas:",
+          "signal_forward": "Mobis para enviar:",
+          "snapshot": {
+            "0": "Estado a verificar:",
+            "1": "Estado/posição a verificar:",
+            "2": "Estado/posição a definir:"
+          },
+          "title": "Selecione a fonte do Mobi:"
+        }
       },
       "global": "Variáveis globais",
       "merged": {
-        "title": "Selecione a fonte:"
+        "title": {
+          "neighborhood": "Perto de:",
+          "variables": "Origem da variável:",
+          "variables_destination": "Variável de destino:",
+          "variables_reference": "Variável referência:",
+          "title": "Selecione a fonte:"
+        }
       },
       "users": {
         "0": "Use o usuário acionador",
@@ -352,7 +470,19 @@
         "200": "Usar usuários do seletor",
         "201": "Usar usuários do Sinal",
         "900": "Todos os usuários no quarto",
-        "title": "Selecionar usuários fonte:"
+        "title": {
+          "bots": "Selecione Bot fonte:",
+          "carry": "Permitir transporte para:",
+          "match": {
+            "0": "Os usuários a coincidir:",
+            "1": "Usuários para comparar com:"
+          },
+          "physics": {
+            "0": "Mover através dos usuários:"
+          },
+          "signal_forward": "Habbos para enviar:",
+          "title": "Selecionar usuários fonte:"
+        }
       }
     },
     "sourcetype": {
@@ -375,22 +505,48 @@
       "following": "Parar de seguir"
     },
     "talk": "Conversar",
-    "team": "Escolha um time",
+    "team": {
+      "1": "Vermelho",
+      "2": "Verde",
+      "3": "Azul",
+      "4": "Amarelo",
+      "any": "Qualquer Equipe",
+      "triggerer": "Ativador da equipe",
+      "title": "Escolha um time"
+    },
     "team_type": {
       "0": "Wired",
       "1": "Battle Banzai",
       "2": "Freeze"
     },
     "teleport": {
-      "options": "Opções de Tele:"
+      "options": {
+        "0": "Teletransporte rápido",
+        "title": "Opções de Tele:"
+      }
     },
     "texts": {
       "capturer_name": "Nome gravado:",
       "placeholder_name": "Nome do Espaço:",
-      "placeholder_preview": "Use-o digitando <font color",
-      "placeholder_type": "Tipo de Espaço:",
+      "placeholder_preview": "Use-o digitando {{placeholder}} no texto wired.",
+      "placeholder_type": {
+        "1": "Único",
+        "2": "Múltiple",
+        "user": {
+          "1": "Usuário único",
+          "2": "Múltiplos usuários"
+        },
+        "title": "Tipo de Espaço:"
+      },
       "select_delimiter": "Selecionar delimitador:",
-      "variable_display_type": "Tipo de exibição variável:",
+      "variable_display_type": {
+        "1": "Numérica",
+        "2": {
+          "info": "Em combinação com \"Extra Variável: COnector de Texto\"",
+          "title": "Textual"
+        },
+        "title": "Tipo de exibição variável:"
+      },
       "variable_input_type": "Tipo de entrada variável:",
       "variable_output": "Saída variável:"
     },
@@ -441,38 +597,140 @@
       "user": "Habbo"
     },
     "triggerer_choice": "Aplicar Efeito WIRED em:",
-    "turn": "Quando o movimento é bloqueado",
-    "user_collide": "Ao colidir com o usuário",
+    "turn": {
+      "0": "Esperar",
+      "1": "Girar à direita 45 graus",
+      "2": "Girar à direita 90 graus",
+      "3": "Girar à esquerda 45 graus",
+      "4": "Girar à esquerda 90 graus",
+      "5": "Voltar para trás",
+      "6": "Girar em direção aleatória",
+      "title": "Quando o movimento é bloqueado"
+    },
+    "user_collide": {
+      "0": "Bloquear movimentos de mobis",
+      "title": "Ao colidir com o usuário"
+    },
     "user_move": {
-      "walkmode": "Se o usuário estivesse andando:"
+      "walkmode": {
+        "0": "Continuar andando se for movido para junto do alvo",
+        "1": "Continuar andando",
+        "2": "Parar de andar",
+        "title": "Se o usuário estivesse andando:"
+      }
     },
     "usercountmax": "Não mais de {{value}} pessoas",
     "usercountmin": "Ao menos {{value}} pessoas",
-    "usertype": "Tipo de Usuário:",
+    "usertype": {
+      "1": "Habbo",
+      "2": "Macote",
+      "4": "Bot",
+      "title": "Tipo de Usuário:"
+    },
     "variables": {
-      "availability": "Opções de disponibilidade:",
-      "compare_value": "Comparar valor:",
+      "availability": {
+        "0": "Enquanto o usuário está no quarto",
+        "1": "Enquanto o quarto está ativo",
+        "10": "Permanente",
+        "11": "Permanente, compartilhado entre quartos",
+        "title": "Opções de disponibilidade:"
+      },
+      "compare_value": {
+        "0": "Data de criação",
+        "1": "Data da última modificação",
+        "title": "Comparar valor:"
+      },
       "connect_text": {
-        "caption": "0",
+        "caption": "0=text0\\n1=text1\\n2=...",
         "title": "Conectar texto a variável:"
       },
-      "duration": "Duração:",
-      "inspection": "Checar variável",
-      "operation": "Operação:",
+      "duration": {
+        "0": "Milissegundos",
+        "1": "Segundos",
+        "2": "Minutos",
+        "3": "Horas",
+        "4": "Dias",
+        "5": "Semanas",
+        "6": "Meses",
+        "7": "Anos",
+        "title": "Duração:"
+      },
+      "inspection": {
+        "current_value": "Valor atual: {{value}}",
+        "title": "Checar variável"
+      },
+      "operation": {
+        "0": "Atribuir",
+        "1": "Somar",
+        "2": "Subtrair",
+        "3": "Multiplicar",
+        "4": "Dividir",
+        "5": "Potência",
+        "6": "Módulo",
+        "40": "Configurar mínimo",
+        "41": "Configurar máximo",
+        "50": "Aleatório com limite superior",
+        "60": "Valor absoluto",
+        "100": "Bitwise AND",
+        "101": "Bitwise OR",
+        "102": "Bitwise XOR",
+        "103": "Bitwise NOT",
+        "104": "Deslocamento à esquerda (<<)",
+        "105": "Deslocamento à direita (>>)",
+        "advanced": "... mostrar avançado",
+        "tooltip": "Escolha uma operação",
+        "title": "Operação:"
+      },
       "quest_chain_name": "Quest chain code:",
       "quest_name": "Quest code:",
-      "reference_value": "Valor referência",
-      "room_selection": "Selecione um quarto:",
-      "settings": "Configurações da variável:",
+      "reference_value": {
+        "from_variable": "A partir da variável:",
+        "set_value": "Definir valor:",
+        "title": "Valor referência"
+      },
+      "room_selection": {
+        "tooltip": "Escolha um quarto",
+        "title": "Selecione um quarto:"
+      },
+      "settings": {
+        "has_value": "Tem valor",
+        "read_only": "Somente leitura",
+        "title": "Configurações da variável:"
+      },
       "show_internal": "... mostrar variáveis internas",
-      "sort_by": "Ordenar por:",
+      "sort_by": {
+        "0": "Maior valor",
+        "1": "Menor valor",
+        "2": "Data de criação mais antiga",
+        "3": "Data de criação mais recente",
+        "4": "Data de modificação mais antiga",
+        "5": "Data de modificação mais recente",
+        "caption": "Selecione o tipo de ordenação",
+        "title": "Ordenar por:"
+      },
       "time_selection": "Selecionar tempo",
-      "trigger_options": "Ativar quando a variável for:",
-      "value_settings": "Opções de valor",
+      "trigger_options": {
+        "0": "Criada",
+        "1": "Mudança de valor",
+        "2": "Apagada",
+        "title": "Ativar quando a variável for:"
+      },
+      "value_settings": {
+        "initial_value": "Valor inicial:",
+        "override_existing": "Substituir variável existente",
+        "select_by_value": "Selecionar por valor",
+        "title": "Opções de valor"
+      },
       "variable_name": "Nome da variável:",
       "variable_output": "Saída variável:",
       "variable_ref_selection": "Variável de referência:",
-      "variable_selection": "Selecione uma variável:"
+      "variable_selection": {
+        "tooltip": {
+          "context": "Escolha uma variável de contexto:",
+          "title": "Escolha uma variável"
+        },
+        "title": "Selecione uma variável:"
+      }
     },
     "whatissaid": "O que é dito:",
     "whisper": "Sussurrar"

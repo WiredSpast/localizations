@@ -66,7 +66,26 @@
       "shared_var_own_room": "Paylaşılan değişkenleri yalnızca kendi odanızda ayarlayabilirsiniz."
     }
   },
-  "help": "Düzenekli Mobi yardımı",
+  "help": {
+    "1": {
+      "text": "Düzenekli; Tetikleyici, Efekt ve (isteğe bağlı) Koşullar katarak Mobinize sınırsız yeni işlevler verir. Her Tetikleyici, Etki ve Koşulu ayrı ayrı ayarlanabilir ve üst üste geldiğinde beraber çalışırlar! Tetikleyici, Etki ve Koşullar hakkında daha fazlasını öğrenmek için okumaya devam et.",
+      "title": "Düzenekleri Yardımı"
+    },
+    "2": {
+      "text": "Tetikleyiciler, bir Etkin meydana gelmeden önce gerekeni tanımlamanı sağlar. Çalışabilmesi için bir Efekti her zaman Tetikleyiciyle beraber tutmalısın.",
+      "title": "Tetikleyiciler"
+    },
+    "3": {
+      "text": "Efektler, bir Tetikleyiciyi etkinleştirmenin ardından olanlardır. Çalışabilmesi için bir Tetikleyiciyi her zaman Etkiyle beraber tutmalısın.",
+      "title": "Efektler"
+    },
+    "4": {
+      "text": "Koşullar, bir Tetikleyici çalışmadan önce sağlanması gereken belirli şeylerdir. Eğer bir Koşul kullanıyorsan onu bir Tetik ve Etkinin üzerine koyman gerekir.",
+      "title": "Koşullar"
+    },
+    "link": "Düzenekleri Yardımı",
+    "title": "Düzenekli Mobi yardımı"
+  },
   "kickaction": {
     "exception": {
       "message": {
@@ -141,7 +160,12 @@
     "allowbefore2": "Şundan önce aktif:",
     "allowbefore": "Tetikleme: {{seconds}} saniye",
     "anyavatar": "Herhangi bir kullanıcı",
-    "area_selection": "Alan Seçimi",
+    "area_selection": {
+      "clear": "Temizle",
+      "info": "Bir alan seçmek için, \"Alan Seç\" butonuna tıkla ve oda içinde istenen alanı işaretlemek için imleci basılı tutup sürükle.",
+      "select": "Alan Seç",
+      "title": "Alan Seçimi"
+    },
     "bot": {
       "name": "Bot Adı",
       "usage": "Bot kullanarak el eşyası ver"
@@ -150,7 +174,11 @@
       "figure": "Görünüşümü kopyala",
       "handitem": "El eşyamı kopyala"
     },
-    "carry_mode": "Kullanıcılar şu durumlarda taşınır:",
+    "carry_mode": {
+      "0": "Hareket eden mobinin direkt üzerinde duruyor",
+      "1": "Hareket eden mobiyle aynı karoda duruyor",
+      "title": "Kullanıcılar şu durumlarda taşınır:"
+    },
     "certainavatar": "Belirli bir kullanıcı",
     "chat": {
       "hide": "Tetikleyicinin mesajını gizle",
@@ -159,7 +187,14 @@
     "chatcontains": "Anahtar kelime içerir",
     "chattriggertype": "Tür seç:",
     "choose_type": "Tür seç:",
-    "clock_control": "Seçenekler",
+    "clock_control": {
+      "0": "Başla",
+      "1": "Dur",
+      "2": "Sıfırla",
+      "3": "Duraklat",
+      "4": "Sürdür",
+      "title": "Seçenekler"
+    },
     "clock_minutes": "{{minutes}} dakika",
     "clock_minutes_elapsed": "{{minutes}} dakika geçti",
     "clock_seconds": "{{seconds}} saniye",
@@ -190,9 +225,24 @@
     "enteravatarname": "Kullanıcı adını gir",
     "enterawordorphrase": "Bir sözcük veya sözcük grubu gir",
     "entermessage": "Bir mesaj gir",
-    "eval_mode": "Eşleşmesi gereken koşullar:",
+    "eval_mode": {
+      "0": "Hepsi",
+      "1": "En az bir",
+      "2": "Hepsi değil",
+      "3": "Hiçbiri",
+      "cmp": {
+        "0": "Bundan daha az:",
+        "1": "Tamamen:",
+        "2": "Bundan daha fazla:"
+      },
+      "title": "Eşleşmesi gereken koşullar:"
+    },
     "exactmatch": "Tam eşleşme",
-    "formation": "Bilgi al",
+    "formation": {
+      "0": "Sıra",
+      "1": "Sütun",
+      "title": "Bilgi al"
+    },
     "freeze": {
       "cancel_on_teleport": "Işınlanırken donmayı çöz",
       "effect": {
@@ -215,7 +265,11 @@
     },
     "level_selection": "Set level: {{level}}",
     "message": "Mesaj:",
-    "movefurni": "Mobi taşı:",
+    "movefurni": {
+      "0": "Hareket yok",
+      "1": "Rastgele taşı",
+      "title": "Mobi taşı:"
+    },
     "movement": {
       "horizontal": {
         "distance": "Yönde {{distance}} karo hareket ettir",
@@ -234,7 +288,13 @@
     },
     "moveuser": "Kullanıcıyı taşı:",
     "neighborhood_selection": "Komşu Zeminleri Seç",
-    "not_requireall": "Düzenekli Tetikleyici koşullu:",
+    "not_requireall": {
+      "0": "Eğer bir veya birden fazla seçili mobi üzerinde başka mobi YOKSA",
+      "1": "Seçili bütün mobilerin üzerinde başka mobi yok",
+      "2": "Seçilen mobilerden birinin üzerinde avatar yoksa",
+      "3": "Seçilen tüm mobilerin üzerinde avatar yoksa",
+      "title": "Düzenekli Tetikleyici koşullu:"
+    },
     "onfurni": {
       "0": "Mobi üstündeki mobiler",
       "1": "Mobi altındaki mobiler",
@@ -256,7 +316,11 @@
     },
     "placement_selection": "Yerleştirme:",
     "placetodirection": "Mobileri bu yöne yerleştir",
-    "points_operation": "Etki türü:",
+    "points_operation": {
+      "0": "Puan ekle",
+      "1": "Puan çıkar",
+      "title": "Etki türü:"
+    },
     "prizelimit": "Toplam ödül sınırı: {{amount}}",
     "quantifier": {
       "furni": {
@@ -286,12 +350,33 @@
     },
     "quantifier_selection": "Koşulu eşleştir, eğer:",
     "remote_selection": {
-      "filter": "Yığınları filtrele",
-      "type": "Seçim türü:"
+      "filter": {
+        "0": "Seçilen tüm Düzeneklileri kullan",
+        "1": "Rastgele miktar seç:",
+        "title": "Yığınları filtrele"
+      },
+      "type": {
+        "0": "Birlik",
+        "1": "Bağlantı noktası",
+        "info": "Birden fazla Düzenekli yığını seçildiğinde davranışı seç",
+        "title": "Seçim türü:"
+      }
     },
-    "requireall": "Şu durumda tetiklemeye izin ver:",
+    "requireall": {
+      "0": "Seçili Mobilerden birinin üzerinde başka bir Mobi varsa",
+      "1": "Seçili tüm Mobilerin üzerinde Mobi varsa",
+      "2": "Seçilen mobileden birinin üzerinde avatar varsa",
+      "3": "Seçilen tüm mobilerin üzerinde avatar varsa",
+      "title": "Şu durumda tetiklemeye izin ver:"
+    },
     "requiredformationsize": "En az {{furnis}} Mobinin durumu / konumu uygunsa",
-    "rotatefurni": "Mobiyi döndür",
+    "rotatefurni": {
+      "0": "Döndürme yok",
+      "1": "Saat yönünde döndür",
+      "2": "Saat yönünün tersine döndür",
+      "3": "Rastgele döndür",
+      "title": "Mobiyi döndür"
+    },
     "rotateuser": "Kullanıcıyı döndür:",
     "seconds": "{{seconds}} saniye",
     "select_options": "Seçenekleri belirle:",
@@ -338,11 +423,40 @@
         "200": "Seçiciden mobi kullan",
         "201": "Sinyalden mobi kullan",
         "900": "Odadaki tüm mobiler",
-        "title": "Mobi kaynağını seç:"
+        "title": {
+          "match": {
+            "0": "Eşleşecek mobi:",
+            "1": "Karşılaştırmak için mobi:"
+          },
+          "mv": {
+            "0": "Hareket eden mobi:",
+            "1": "Hedef mobi:"
+          },
+          "mv_user2": "Hareket eden kullanıcı:",
+          "mv_user": "Hedef kullanıcı:",
+          "physics": {
+            "0": "Mobiler arası hareket et:",
+            "1": "Mobi tarafından engellendi:"
+          },
+          "signal_antenna": "Antenler:",
+          "signal_forward": "İletmek için mobi:",
+          "snapshot": {
+            "0": "Kontrol edilecek durum:",
+            "1": "Kontrol edilecek durum/konum:",
+            "2": "Ayarlanacak durum/konum:"
+          },
+          "title": "Mobi kaynağını seç:"
+        }
       },
       "global": "Küresel değişkenleri",
       "merged": {
-        "title": "Kaynak seç:"
+        "title": {
+          "neighborhood": "Komşusunda:",
+          "variables": "Değişken kaynağı:",
+          "variables_destination": "Değişken hedefi:",
+          "variables_reference": "Değişken referansı:",
+          "title": "Kaynak seç:"
+        }
       },
       "users": {
         "0": "Tetikleyen kullanıcıyı kullan",
@@ -351,7 +465,19 @@
         "200": "Seçicideki kullanıcıları kullan",
         "201": "Sinyaldeki kullanıcıları kullan",
         "900": "Odadaki tüm kullanıcılar",
-        "title": "Kullanıcı kaynağını seç:"
+        "title": {
+          "bots": "Bot kaynağı seç:",
+          "carry": "Şunun için taşımaya izin ver:",
+          "match": {
+            "0": "Eşleşecek kullanıcılar:",
+            "1": "Karşılaştırılacak kullanıcılar:"
+          },
+          "physics": {
+            "0": "Kullanıcılar arası hareket et:"
+          },
+          "signal_forward": "İletmek için kullanıcılar:",
+          "title": "Kullanıcı kaynağını seç:"
+        }
       }
     },
     "sourcetype": {
@@ -374,22 +500,48 @@
       "following": "Takip etmeyi bırak"
     },
     "talk": "Konuş",
-    "team": "Takım seç",
+    "team": {
+      "1": "Kırmızı",
+      "2": "Yeşil",
+      "3": "Mavi",
+      "4": "Sarı",
+      "any": "Herhangi bir takım",
+      "triggerer": "Tetikleyicinin takımı",
+      "title": "Takım seç"
+    },
     "team_type": {
       "0": "Düzenekli",
       "1": "Battle Banzai",
       "2": "Freeze"
     },
     "teleport": {
-      "options": "Işınlayıcı seçenekleri:"
+      "options": {
+        "0": "Hızlı ışınlanma",
+        "title": "Işınlayıcı seçenekleri:"
+      }
     },
     "texts": {
       "capturer_name": "Yakalama adı:",
       "placeholder_name": "Yer tutucu adı:",
-      "placeholder_preview": "Düzenekli metinlere <font color",
-      "placeholder_type": "Yer tutucu türü:",
+      "placeholder_preview": "Düzenekli metinlere {{placeholder}} yazarak bunu kullan.",
+      "placeholder_type": {
+        "1": "Tek",
+        "2": "Çoklu",
+        "user": {
+          "1": "Tek kullanıcı",
+          "2": "Birden fazla kullanıcı"
+        },
+        "title": "Yer tutucu türü:"
+      },
       "select_delimiter": "Sınırlayıcıyı seçin:",
-      "variable_display_type": "Değişken gösterme tipi:",
+      "variable_display_type": {
+        "1": "Sayısal",
+        "2": {
+          "info": "\"Değişken Eklenti: Metin Bağlayıcı\" ile birlikte",
+          "title": "Metinsel"
+        },
+        "title": "Değişken gösterme tipi:"
+      },
       "variable_input_type": "Değişken giriş türü:",
       "variable_output": "Değişken çıkış:"
     },
@@ -440,38 +592,140 @@
       "user": "Kullanıcı"
     },
     "triggerer_choice": "DÜZENEKLİ Efektlerini uygula:",
-    "turn": "Hareket engellendiğinde",
-    "user_collide": "Kullanıcı ile çarpışırken",
+    "turn": {
+      "0": "Bekle",
+      "1": "45 derece sağa dön",
+      "2": "90 derece sağa dön",
+      "3": "45 derece sola dön",
+      "4": "90 derece sola dön",
+      "5": "Geriye dön",
+      "6": "Rastgele bir yöne dön",
+      "title": "Hareket engellendiğinde"
+    },
+    "user_collide": {
+      "0": "Mobilyaların hareket etmesini engelle",
+      "title": "Kullanıcı ile çarpışırken"
+    },
     "user_move": {
-      "walkmode": "Eğer kullanıcı yürüyorsa:"
+      "walkmode": {
+        "0": "Hedefe yaklaşılırsa yürümeye devam et",
+        "1": "Yürümeye devam et",
+        "2": "Yürümeyi durdur",
+        "title": "Eğer kullanıcı yürüyorsa:"
+      }
     },
     "usercountmax": "En fazla {{value}} kullanıcı",
     "usercountmin": "En az {{value}} kullanıcı",
-    "usertype": "Kullanıcı tipi:",
+    "usertype": {
+      "1": "Habbo",
+      "2": "Evcil hayvan",
+      "4": "Bot",
+      "title": "Kullanıcı tipi:"
+    },
     "variables": {
-      "availability": "Kullanılabilirlik seçenekleri:",
-      "compare_value": "Değişkeni karşılaştır:",
+      "availability": {
+        "0": "Kullanıcı odadayken",
+        "1": "Oda aktifken",
+        "10": "Kalıcı",
+        "11": "Kalıcı, odalar arasında paylaşılan",
+        "title": "Kullanılabilirlik seçenekleri:"
+      },
+      "compare_value": {
+        "0": "Oluşturma zamanı",
+        "1": "Son güncelleme zamanı",
+        "title": "Değişkeni karşılaştır:"
+      },
       "connect_text": {
-        "caption": "0",
+        "caption": "0=text0\\n1=text1\\n2=...",
         "title": "Metni değişkene bağla:"
       },
-      "duration": "Süre:",
-      "inspection": "Değişken kontrol",
-      "operation": "Operasyon:",
+      "duration": {
+        "0": "Milisaniye",
+        "1": "Saniye",
+        "2": "Dakika",
+        "3": "Saat",
+        "4": "Gün",
+        "5": "Hafta",
+        "6": "Ay",
+        "7": "Yıl",
+        "title": "Süre:"
+      },
+      "inspection": {
+        "current_value": "Mevcut değer: {{value}}",
+        "title": "Değişken kontrol"
+      },
+      "operation": {
+        "0": "Ata",
+        "1": "Ekle",
+        "2": "Çıkar",
+        "3": "Çarp",
+        "4": "Böl",
+        "5": "Kuvvet",
+        "6": "Modül",
+        "40": "Minimumu ayarla",
+        "41": "Maksimumu ayarla",
+        "50": "Üst sınırla rastgele",
+        "60": "Mutlak değer",
+        "100": "Bitsel VE",
+        "101": "Bitsel VEYA",
+        "102": "Bitsel DIŞLAMALI VEYA",
+        "103": "Bitsel DEĞİL",
+        "104": "Sola kaydırma (<<)",
+        "105": "Sağa kaydırma (<<)",
+        "advanced": "...gelişmiş göster",
+        "tooltip": "Bir operasyon seç",
+        "title": "Operasyon:"
+      },
       "quest_chain_name": "Görev zinciri kodu:",
       "quest_name": "Görev kodu:",
-      "reference_value": "Referans değeri",
-      "room_selection": "Oda seç:",
-      "settings": "Değişken seçenekleri:",
+      "reference_value": {
+        "from_variable": "Değişkenden:",
+        "set_value": "Değeri ayarla:",
+        "title": "Referans değeri"
+      },
+      "room_selection": {
+        "tooltip": "Bir oda seç",
+        "title": "Oda seç:"
+      },
+      "settings": {
+        "has_value": "Değeri",
+        "read_only": "Sadece oku",
+        "title": "Değişken seçenekleri:"
+      },
       "show_internal": "... dahili değişkenleri göster",
-      "sort_by": "Sıralama:",
+      "sort_by": {
+        "0": "En yüksek değer",
+        "1": "En düşük değer",
+        "2": "En eski oluşturma",
+        "3": "En yeni oluşturma",
+        "4": "En eski güncelleme",
+        "5": "En yeni güncelleme",
+        "caption": "Sıralama tarzını seç",
+        "title": "Sıralama:"
+      },
       "time_selection": "Zaman seç",
-      "trigger_options": "Değişken bu olduğunda tetikle:",
-      "value_settings": "Değer seçenekleri",
+      "trigger_options": {
+        "0": "Oluşturuldu",
+        "1": "Değer değiştirildi",
+        "2": "Silindi",
+        "title": "Değişken bu olduğunda tetikle:"
+      },
+      "value_settings": {
+        "initial_value": "Başlangıç değeri:",
+        "override_existing": "Mevcut değişkeni geçersiz kıl",
+        "select_by_value": "Değere göre seç",
+        "title": "Değer seçenekleri"
+      },
       "variable_name": "Değişken ismi:",
       "variable_output": "Değişken çıkış:",
       "variable_ref_selection": "Referans değişkeni:",
-      "variable_selection": "Değişken seç:"
+      "variable_selection": {
+        "tooltip": {
+          "context": "Bir bağlam değişkeni seç",
+          "title": "Değişken seç"
+        },
+        "title": "Değişken seç:"
+      }
     },
     "whatissaid": "Ne söylendi:",
     "whisper": "Fısılda"

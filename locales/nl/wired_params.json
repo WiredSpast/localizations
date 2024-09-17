@@ -66,7 +66,30 @@
       "shared_var_own_room": "Je kan enkel gedeelde variabelen in je eigen kamer instellen."
     }
   },
-  "help": "Wired Meubi Hulp",
+  "help": {
+    "1": {
+      "img": "wf_help_1",
+      "text": "Dit is het Wired Meubi Hulpsysteem met uitleg over Wired. Bekijk ook de FAQ voor uitgebreidere hulp.",
+      "title": "Wired Meubi Hulpsysteem"
+    },
+    "2": {
+      "img": "wf_help_2",
+      "text": "Je programmeert een 'Actie' door de 'Actie' te kopen, in je kamer te zetten, te dubbelklikken en hem in te stellen. Pas als je hem stapelt met een 'Reactie' (die je ook programmeert) werkt hij.",
+      "title": "Acties"
+    },
+    "3": {
+      "img": "wf_help_3",
+      "text": "Je programmeert een 'Reactie' door de 'Reactie' te kopen, in je kamer te zetten, te dubbelklikken en hem in te stellen. Pas als je hem stapelt met een 'Actie' (die je ook programmeert) werkt hij.",
+      "title": "Reacties"
+    },
+    "4": {
+      "img": "wf_help_4",
+      "text": "'Voorwaarden' zijn bepaalde eisen die je instelt om te bepalen onder welke omstandigheden je 'Actie' werkt. Als je een 'Voorwaarde' wilt gebruiken moet je hem stapelen met een Actie en een Reactie.",
+      "title": "Voorwaarden"
+    },
+    "link": "Wired Meubi Hulp",
+    "title": "Wired Meubi Hulp"
+  },
   "kickaction": {
     "exception": {
       "message": {
@@ -141,7 +164,12 @@
     "allowbefore2": "Actief  voor:",
     "allowbefore": "Laat toe binnen {{seconds}} seconden",
     "anyavatar": "Een willekeurige Habbo",
-    "area_selection": "Geselecteerd Gebied",
+    "area_selection": {
+      "clear": "Wis",
+      "info": "Om een gebied te kiezen, klik je op de knop \"Gebied selecteren\" en sleep je je cursor om het gewenste gebied in de kamer te markeren.",
+      "select": "Gebied Selecteren",
+      "title": "Geselecteerd Gebied"
+    },
     "bot": {
       "name": "Bot Naam",
       "usage": "Geef hand item met behulp van bot"
@@ -150,7 +178,11 @@
       "figure": "Kopieer mijn look",
       "handitem": "Kopieer mijn hand item"
     },
-    "carry_mode": "Spelers worden gedragen wanneer:",
+    "carry_mode": {
+      "0": "ze direct op het bewegende meubi staan",
+      "1": "ze op dezelfde tegel staan als de bewegende meubi",
+      "title": "Spelers worden gedragen wanneer:"
+    },
     "certainavatar": "Bepaalde Habbo",
     "chat": {
       "hide": "Verberg triggers bericht",
@@ -159,7 +191,14 @@
     "chatcontains": "Bevat sleutelwoord",
     "chattriggertype": "Kies type:",
     "choose_type": "Selecteer type:",
-    "clock_control": "Selecteer een optie",
+    "clock_control": {
+      "0": "Start",
+      "1": "Stop",
+      "2": "Reset",
+      "3": "Pauze",
+      "4": "Hervat",
+      "title": "Selecteer een optie"
+    },
     "clock_minutes": "{{minutes}} minuten",
     "clock_minutes_elapsed": "{{minutes}} minuten verstreken",
     "clock_seconds": "{{seconds}} seconden",
@@ -190,9 +229,24 @@
     "enteravatarname": "Type Habbonaam",
     "enterawordorphrase": "Geef een woord of zin",
     "entermessage": "Type een woord",
-    "eval_mode": "Voorwaarden die moeten overeenkomen:",
+    "eval_mode": {
+      "0": "Alle",
+      "1": "Minstens één",
+      "2": "Niet alle",
+      "3": "Geen",
+      "cmp": {
+        "0": "Minder dan:",
+        "1": "Exact:",
+        "2": "Meer dan:"
+      },
+      "title": "Voorwaarden die moeten overeenkomen:"
+    },
     "exactmatch": "Exacte overeenkomst",
-    "formation": "Kies formatie",
+    "formation": {
+      "0": "Rij",
+      "1": "Kolom",
+      "title": "Kies formatie"
+    },
     "freeze": {
       "cancel_on_teleport": "Unfreeze tijdens het teleporteren",
       "effect": {
@@ -215,7 +269,11 @@
     },
     "level_selection": "Set level: {{level}}",
     "message": "Wat is je bericht:",
-    "movefurni": "Verplaats meubi:",
+    "movefurni": {
+      "0": "Niet verplaatsen",
+      "1": "Verschuif willekeurig",
+      "title": "Verplaats meubi:"
+    },
     "movement": {
       "horizontal": {
         "distance": "Verplaats {{distance}} tegels in richting",
@@ -234,7 +292,13 @@
     },
     "moveuser": "Verplaats user:",
     "neighborhood_selection": "Selecteer Aangrenzende Tegels",
-    "not_requireall": "Trigger voorwaarde als:",
+    "not_requireall": {
+      "0": "Als er zich op een of meerdere geselecteerde Meubi GEEN andere Meubi bevindt.",
+      "1": "Er bevinden zich GEEN meubi op alle geselecteerd Meubi",
+      "2": "Als een van de geselecteerde furni geen avatar heeft",
+      "3": "Als alle geselecteerde furni geen avatars op hen hebben",
+      "title": "Trigger voorwaarde als:"
+    },
     "onfurni": {
       "0": "Meubi boven meubi",
       "1": "Meubi onder meubi",
@@ -256,7 +320,11 @@
     },
     "placement_selection": "Plaatsing:",
     "placetodirection": "Plaats Meubis in deze richting",
-    "points_operation": "Effect type:",
+    "points_operation": {
+      "0": "Voeg punten toe",
+      "1": "Verwijder punten",
+      "title": "Effect type:"
+    },
     "prizelimit": "Totale beloning limiet: {{amount}}",
     "quantifier": {
       "furni": {
@@ -286,12 +354,33 @@
     },
     "quantifier_selection": "Voorwaarde opties:",
     "remote_selection": {
-      "filter": "Filter de stapels",
-      "type": "Selectie type:"
+      "filter": {
+        "0": "Gebruik alle geselecteerde Wiredstapels",
+        "1": "Kies willekeurig aantal:",
+        "title": "Filter de stapels"
+      },
+      "type": {
+        "0": "Unie",
+        "1": "Doorsnede",
+        "info": "Kies het gedrag wanneer meerdere Wiredstapels zijn geselecteerd",
+        "title": "Selectie type:"
+      }
     },
-    "requireall": "Reacties werken alleen als...",
+    "requireall": {
+      "0": "...op één van de gekozen Meubi een ander Meubi staat.",
+      "1": "...op alle geselecteerde Meubi een ander Meubi staat.",
+      "2": "Als een van de geselecteerde furni een avatar heeft",
+      "3": "Als alle geselecteerde furni avatars op hen hebben",
+      "title": "Reacties werken alleen als..."
+    },
     "requiredformationsize": "Minstens {{furnis}} Meubis hebben een overeenkomende staat/locatie",
-    "rotatefurni": "Draai Meubi:",
+    "rotatefurni": {
+      "0": "Niet draaien",
+      "1": "Draai met linksom",
+      "2": "Draai rechtsom",
+      "3": "In willekeurige richting",
+      "title": "Draai Meubi:"
+    },
     "rotateuser": "Draai user:",
     "seconds": "{{seconds}} seconden",
     "select_options": "Selecteer opties:",
@@ -338,11 +427,40 @@
         "200": "Gebruik meubi van de Selector",
         "201": "Gebruik meubi van Signal",
         "900": "Alle meubi in de kamer",
-        "title": "Selecteer meubi bron:"
+        "title": {
+          "match": {
+            "0": "De bijpassende meubi:",
+            "1": "Meubi om mee te vergelijken:"
+          },
+          "mv": {
+            "0": "De bewegende meubi:",
+            "1": "Het meubi doel:"
+          },
+          "mv_user2": "De verplaatsende user:",
+          "mv_user": "De doelgebruiker:",
+          "physics": {
+            "0": "Beweeg door meubi",
+            "1": "Geblokkeerd door meubi:"
+          },
+          "signal_antenna": "Antennes:",
+          "signal_forward": "Meubi in het signaal:",
+          "snapshot": {
+            "0": "Status conroleren:",
+            "1": "Status/positie controleren:",
+            "2": "Stel status/positie in:"
+          },
+          "title": "Selecteer meubi bron:"
+        }
       },
       "global": "Globale variabelen",
       "merged": {
-        "title": "Selecteer bron:"
+        "title": {
+          "neighborhood": "Nabijheid van:",
+          "variables": "Variabele bron:",
+          "variables_destination": "Variabele bestemming:",
+          "variables_reference": "Variabele referentie:",
+          "title": "Selecteer bron:"
+        }
       },
       "users": {
         "0": "Gebruik de getriggerde speler",
@@ -351,7 +469,19 @@
         "200": "Gebruik spelers van de Selector",
         "201": "Gebruik spelers van het Signaal",
         "900": "Alle spelers in de kamer",
-        "title": "Selecteer de spelersbron:"
+        "title": {
+          "bots": "Selecteer de bot bron:",
+          "carry": "Sta dragen toe voor:",
+          "match": {
+            "0": "De speler overeen te komen:",
+            "1": "Spelers te vergelijken met:"
+          },
+          "physics": {
+            "0": "Beweeg door spelers:"
+          },
+          "signal_forward": "Spelers in het signaal:",
+          "title": "Selecteer de spelersbron:"
+        }
       }
     },
     "sourcetype": {
@@ -374,22 +504,48 @@
       "following": "Stop met volgen"
     },
     "talk": "Praat",
-    "team": "Kies team",
+    "team": {
+      "1": "Rood",
+      "2": "Groen",
+      "3": "Blauw",
+      "4": "Geel",
+      "any": "Elk team",
+      "triggerer": "Triggerer's team",
+      "title": "Kies team"
+    },
     "team_type": {
       "0": "Wired",
       "1": "Battle Banzai",
       "2": "Freeze"
     },
     "teleport": {
-      "options": "Teleport opties:"
+      "options": {
+        "0": "Snelle teleportatie",
+        "title": "Teleport opties:"
+      }
     },
     "texts": {
       "capturer_name": "Naam vastleggen:",
       "placeholder_name": "Naam Placeholder:",
-      "placeholder_preview": "Gebruik dit door <font color",
-      "placeholder_type": "Placeholder type:",
+      "placeholder_preview": "Gebruik dit door {{placeholder}} in te typen in Wired commando´s",
+      "placeholder_type": {
+        "1": "Enkel",
+        "2": "Meerdere",
+        "user": {
+          "1": "Één user",
+          "2": "Meerdere users"
+        },
+        "title": "Placeholder type:"
+      },
       "select_delimiter": "Kies scheidingsteken:",
-      "variable_display_type": "Variabele display type:",
+      "variable_display_type": {
+        "1": "Nummer",
+        "2": {
+          "info": "In combinatie met ¨Variabele Add-on: Link tekst¨",
+          "title": "Tekst"
+        },
+        "title": "Variabele display type:"
+      },
       "variable_input_type": "Variabele input type:",
       "variable_output": "Variabele output:"
     },
@@ -440,38 +596,140 @@
       "user": "Gebruiker"
     },
     "triggerer_choice": "WIRED Effecten toepassen op:",
-    "turn": "Als meubi worden geblokkerd",
-    "user_collide": "Bij botsing met gebruiker",
+    "turn": {
+      "0": "Wacht",
+      "1": "Draai 45 graden naar rechts",
+      "2": "Draai 90 graden naar rechts",
+      "3": "Draai 45 graden naar links",
+      "4": "Draai 90 graden naar links",
+      "5": "Ga terug",
+      "6": "Draaien in willekeurige richting",
+      "title": "Als meubi worden geblokkerd"
+    },
+    "user_collide": {
+      "0": "Blokkeer meubi bewegingen",
+      "title": "Bij botsing met gebruiker"
+    },
     "user_move": {
-      "walkmode": "Als de gebruiker aan het lopen was:"
+      "walkmode": {
+        "0": "Blijf lopen als je dichter bij het doel komt",
+        "1": "Loop door",
+        "2": "Stop met lopen",
+        "title": "Als de gebruiker aan het lopen was:"
+      }
     },
     "usercountmax": "No more than {{value}} users",
     "usercountmin": "At least {{value}} users",
-    "usertype": "User type:",
+    "usertype": {
+      "1": "Habbo",
+      "2": "Pet",
+      "4": "Bot",
+      "title": "User type:"
+    },
     "variables": {
-      "availability": "Beschikbaarheids opties:",
-      "compare_value": "Vergelijk waarde:",
+      "availability": {
+        "0": "Zolang de gebruiker in de kamer is",
+        "1": "Zolang de kamer actief is",
+        "10": "Permanent",
+        "11": "Permanent, gedeeld tussen kamers",
+        "title": "Beschikbaarheids opties:"
+      },
+      "compare_value": {
+        "0": "Aanmaak moment",
+        "1": "Laatste update moment",
+        "title": "Vergelijk waarde:"
+      },
       "connect_text": {
-        "caption": "0",
+        "caption": "0=tekst0\\n1=tekst1\\n2=...",
         "title": "Link tekst aan variabele:"
       },
-      "duration": "Duur:",
-      "inspection": "Variabele inspectie",
-      "operation": "Operatie:",
+      "duration": {
+        "0": "Milliseconden",
+        "1": "Seconden",
+        "2": "Minuten",
+        "3": "Uren",
+        "4": "Dagen",
+        "5": "Weken",
+        "6": "Maanden",
+        "7": "Jaren",
+        "title": "Duur:"
+      },
+      "inspection": {
+        "current_value": "Huidige waarde: {{value}}",
+        "title": "Variabele inspectie"
+      },
+      "operation": {
+        "0": "Toekennen",
+        "1": "Optellen",
+        "2": "Aftrekken",
+        "3": "Vermenigvuldigen",
+        "4": "Delen",
+        "5": "Macht",
+        "6": "Modulo",
+        "40": "Set minimum",
+        "41": "Set maximum",
+        "50": "Willekeurig met bovengrens",
+        "60": "Absolute waarde",
+        "100": "Bitsgewijze EN",
+        "101": "Bitsgewijze OF",
+        "102": "Bitsgewijze XOR",
+        "103": "Bitsgewijze NIET",
+        "104": "Linker shift (<<)",
+        "105": "Rechter shift (>>)",
+        "advanced": "...toon geavanceerd",
+        "tooltip": "Kies een operatie",
+        "title": "Operatie:"
+      },
       "quest_chain_name": "Quest Chain code:",
       "quest_name": "Quest code:",
-      "reference_value": "Referentie waarde",
-      "room_selection": "Selecteer kamer:",
-      "settings": "Variabele opties:",
+      "reference_value": {
+        "from_variable": "Van Variabele:",
+        "set_value": "Vaste waarde:",
+        "title": "Referentie waarde"
+      },
+      "room_selection": {
+        "tooltip": "Kies een kamer",
+        "title": "Selecteer kamer:"
+      },
+      "settings": {
+        "has_value": "Heeft waarde",
+        "read_only": "Read-only",
+        "title": "Variabele opties:"
+      },
       "show_internal": "... toon interne variabelen",
-      "sort_by": "Sorteer op:",
+      "sort_by": {
+        "0": "Hoogste waarde",
+        "1": "Laagste waarde",
+        "2": "Oudste aanmaak",
+        "3": "Nieuwste aanmaak",
+        "4": "Oudste update",
+        "5": "Nieuwste update",
+        "caption": "Selecteer sorteer type",
+        "title": "Sorteer op:"
+      },
       "time_selection": "Kies tijd",
-      "trigger_options": "Activeer als variabele is:",
-      "value_settings": "Waarde opties",
+      "trigger_options": {
+        "0": "Aangemaakt",
+        "1": "Van waarde veranderd",
+        "2": "Verwijderd",
+        "title": "Activeer als variabele is:"
+      },
+      "value_settings": {
+        "initial_value": "Initiële waarde:",
+        "override_existing": "Overschrijf bestaande variabele",
+        "select_by_value": "Kies waarde",
+        "title": "Waarde opties"
+      },
       "variable_name": "Variabele naam:",
       "variable_output": "Variabele output:",
       "variable_ref_selection": "Referentie variabele:",
-      "variable_selection": "Kies variabele:"
+      "variable_selection": {
+        "tooltip": {
+          "context": "Kies context variabele",
+          "title": "Kies een variabele"
+        },
+        "title": "Kies variabele:"
+      }
     },
     "whatissaid": "Wat gezegd is:",
     "whisper": "Fluister"

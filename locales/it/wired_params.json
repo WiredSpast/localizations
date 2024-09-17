@@ -66,7 +66,30 @@
       "shared_var_own_room": "Puoi impostare variabili condivise solo nella tua stanza."
     }
   },
-  "help": "Aiuto Furni Wired",
+  "help": {
+    "1": {
+      "img": "wiredfurni1",
+      "text": "Wired ti permette di creare infinite combinazioni con i tuoi Furni, impilando Inneschi, Effetti e (a scelta) Condizioni. Gli Inneschi, gli Effetti e le Condizioni possono essere impostati singolarmente e poi impilati per funzionare insieme. Continua a leggere per apprendere tutto sugli Inneschi, gli Effetti e le Condizioni.",
+      "title": "Aiuto Wired"
+    },
+    "2": {
+      "img": "wiredfurni2",
+      "text": "Gli Inneschi ti permettono di definire cosa deve accadere prima che un Effetto si attivi. Devi sempre impilare un Effetto all'Innesco per farlo funzionare.",
+      "title": "Inneschi"
+    },
+    "3": {
+      "img": "wiredfurni3",
+      "text": "Gli Effetti comportano un'azione dopo l'attivazione di un Innesco. Devi sempre impilare un Innesco con un Effetto per farlo funzionare.",
+      "title": "Effetti"
+    },
+    "4": {
+      "img": "wiredfurni4",
+      "text": "Le Condizioni aggiungono delle regole di attivazione agli Inneschi. Se vuoi utilizzare una Condizione, dovrai impilare anche un Effetto e un Innesco.",
+      "title": "Condizioni"
+    },
+    "link": "Aiuto Wired",
+    "title": "Aiuto Furni Wired"
+  },
   "kickaction": {
     "exception": {
       "message": {
@@ -141,7 +164,12 @@
     "allowbefore2": "Attivo prima:",
     "allowbefore": "L'Innesco rimarrà attivo per: {{seconds}} secondi",
     "anyavatar": "Qualsiasi Utente",
-    "area_selection": "Selezione Area",
+    "area_selection": {
+      "clear": "Cancella",
+      "info": "Per scegliere un'area, è sufficiente fare clic sul pulsante \"Seleziona area\" e trascinare il cursore per contrassegnare l'area desiderata all'interno della Stanza.",
+      "select": "Seleziona Area",
+      "title": "Selezione Area"
+    },
     "bot": {
       "name": "Nome Bot",
       "usage": "Dai oggetto usando il bot"
@@ -150,7 +178,11 @@
       "figure": "Copia il mio look",
       "handitem": "Copia oggetto"
     },
-    "carry_mode": "Gli utenti sono trasportati quando:",
+    "carry_mode": {
+      "0": "rimani fermo direttamente sul Furni in movimento",
+      "1": "rimani fermo sulla stessa casella del Furni in movimento",
+      "title": "Gli utenti sono trasportati quando:"
+    },
     "certainavatar": "Utente specifico",
     "chat": {
       "hide": "Nascondi il messaggio dell'innesco",
@@ -159,7 +191,14 @@
     "chatcontains": "Contiene parola chiave",
     "chattriggertype": "Scegli tipo:",
     "choose_type": "Scegli tipo:",
-    "clock_control": "Seleziona opzione",
+    "clock_control": {
+      "0": "Start",
+      "1": "Stop",
+      "2": "Reset",
+      "3": "Pausa",
+      "4": "Riprendi",
+      "title": "Seleziona opzione"
+    },
     "clock_minutes": "{{minutes}} minuti",
     "clock_minutes_elapsed": "{{minutes}} minuti trascorsi",
     "clock_seconds": "{{seconds}} secondi",
@@ -190,9 +229,24 @@
     "enteravatarname": "Inserisci il tuo nome Habbo",
     "enterawordorphrase": "Inserisci una parola o una frase",
     "entermessage": "Inserisci un messaggio",
-    "eval_mode": "Condizioni che devono corrispondere:",
+    "eval_mode": {
+      "0": "Tutte",
+      "1": "Almeno una",
+      "2": "Non tutte",
+      "3": "Nessuna",
+      "cmp": {
+        "0": "Meno di:",
+        "1": "Esattamente:",
+        "2": "Più di:"
+      },
+      "title": "Condizioni che devono corrispondere:"
+    },
     "exactmatch": "Corrispondenza esatta",
-    "formation": "Scegli la formazione",
+    "formation": {
+      "0": "Riga",
+      "1": "Colonna",
+      "title": "Scegli la formazione"
+    },
     "freeze": {
       "cancel_on_teleport": "Sblocca quando teletrasporti",
       "effect": {
@@ -215,7 +269,11 @@
     },
     "level_selection": "Set level: {{level}}",
     "message": "Messaggio:",
-    "movefurni": "Muovi Furni:",
+    "movefurni": {
+      "0": "Nessun movimento",
+      "1": "Muovi casualmente",
+      "title": "Muovi Furni:"
+    },
     "movement": {
       "horizontal": {
         "distance": "Muovi {{distance}} caselle in direzione",
@@ -234,7 +292,13 @@
     },
     "moveuser": "Sposta l'utente:",
     "neighborhood_selection": "Seleziona Caselle Vicine",
-    "not_requireall": "Innesca Condizione se:",
+    "not_requireall": {
+      "0": "Se uno o più dei Furni selezionati non ha NESSUN Furni in cima",
+      "1": "Tutti i Furni selezionati non hanno NESSUN Furni in cima",
+      "2": "Se uno dei furni selezionati non ha un avatar su di esso",
+      "3": "Se tutti i furni selezionati non hanno avatar su di loro",
+      "title": "Innesca Condizione se:"
+    },
     "onfurni": {
       "0": "Furni sopra Furni",
       "1": "Furni sotto Furni",
@@ -256,7 +320,11 @@
     },
     "placement_selection": "Posizione:",
     "placetodirection": "Place Furnis in this direction",
-    "points_operation": "Tipo di effetto:",
+    "points_operation": {
+      "0": "Aggiungi punti",
+      "1": "Rimuovi punti",
+      "title": "Tipo di effetto:"
+    },
     "prizelimit": "Totale premi disponibili: {{amount}}",
     "quantifier": {
       "furni": {
@@ -286,12 +354,33 @@
     },
     "quantifier_selection": "Abbina condizione se:",
     "remote_selection": {
-      "filter": "Filtra le pile",
-      "type": "Tipo di selezione:"
+      "filter": {
+        "0": "Usa tutte le pile di Wired selezionate",
+        "1": "Scegli un importo casuale:",
+        "title": "Filtra le pile"
+      },
+      "type": {
+        "0": "Unione",
+        "1": "Intersezione",
+        "info": "Seleziona il comportamento quando vengono selezionate più pile di Wired",
+        "title": "Tipo di selezione:"
+      }
     },
-    "requireall": "Gli inneschi funzionano solo se...",
+    "requireall": {
+      "0": "...uno dei Furni selezionati ha un altro Furni sopra.",
+      "1": "... tutti i Furni selezionati hanno un altro Furni sopra.",
+      "2": "Se uno dei furni selezionati ha un avatar su di esso",
+      "3": "Se tutti i furni selezionati hanno un avatar su di loro",
+      "title": "Gli inneschi funzionano solo se..."
+    },
     "requiredformationsize": "Almeno {{furnis}} Furni corrispondono allo stato/posizione",
-    "rotatefurni": "Ruota Furni:",
+    "rotatefurni": {
+      "0": "Nessuna rotazione",
+      "1": "Ruota in senso orario",
+      "2": "Ruota in senso antiorario",
+      "3": "Direzione casuale",
+      "title": "Ruota Furni:"
+    },
     "rotateuser": "Ruota l'utente:",
     "seconds": "{{seconds}} secondi",
     "select_options": "Seleziona opzioni:",
@@ -338,11 +427,40 @@
         "200": "Usa Furni da Selettore",
         "201": "Usa Furni da Segnale",
         "900": "Tutti i Furni nella Stanza",
-        "title": "Seleziona origine Furni:"
+        "title": {
+          "match": {
+            "0": "l Furni da abbinare:",
+            "1": "Furni da comparare con:"
+          },
+          "mv": {
+            "0": "Furni da muovere:",
+            "1": "Il Furni obiettivo:"
+          },
+          "mv_user2": "L'utente in movimento:",
+          "mv_user": "Utente obiettivo:",
+          "physics": {
+            "0": "Muovi attraverso Furni:",
+            "1": "Bloccato da Furni:"
+          },
+          "signal_antenna": "Antenne:",
+          "signal_forward": "Furni da mandare avanti:",
+          "snapshot": {
+            "0": "Stato da controllare:",
+            "1": "Stato/posizione da controllare:",
+            "2": "Stato/posizione da impostare:"
+          },
+          "title": "Seleziona origine Furni:"
+        }
       },
       "global": "Variabili globali",
       "merged": {
-        "title": "Seleziona origine:"
+        "title": {
+          "neighborhood": "Nella vicinanza di:",
+          "variables": "Fonte variabile:",
+          "variables_destination": "Destinazione variabile:",
+          "variables_reference": "Riferimento variabile:",
+          "title": "Seleziona origine:"
+        }
       },
       "users": {
         "0": "Usa l'utente che innesca",
@@ -351,7 +469,19 @@
         "200": "Usa utenti da Selettore",
         "201": "Usa utenti da Segnale",
         "900": "Tutti gli utenti nella Stanza",
-        "title": "Seleziona origine utenti:"
+        "title": {
+          "bots": "Seleziona l'origine dei bot:",
+          "carry": "Consentire il trasporto per:",
+          "match": {
+            "0": "Gli utenti da abbinare:",
+            "1": "Utenti da comparare con:"
+          },
+          "physics": {
+            "0": "Muovi attraverso gli utenti:"
+          },
+          "signal_forward": "Utenti da mandare avanti:",
+          "title": "Seleziona origine utenti:"
+        }
       }
     },
     "sourcetype": {
@@ -374,22 +504,48 @@
       "following": "Stop inseguimento"
     },
     "talk": "Parla",
-    "team": "Scegli una squadra",
+    "team": {
+      "1": "Rossa",
+      "2": "Verde",
+      "3": "Blu",
+      "4": "Gialla",
+      "any": "Qualsiasi squadra",
+      "triggerer": "Squadra dell'innescatore",
+      "title": "Scegli una squadra"
+    },
     "team_type": {
       "0": "Wired",
       "1": "Battle Banzai",
       "2": "Freeze"
     },
     "teleport": {
-      "options": "Opzioni di teletrasporto:"
+      "options": {
+        "0": "Teletrasporto veloce",
+        "title": "Opzioni di teletrasporto:"
+      }
     },
     "texts": {
       "capturer_name": "Nome della cattura:",
       "placeholder_name": "Nome del segnaposto:",
-      "placeholder_preview": "Usalo digitando <font color",
-      "placeholder_type": "Tipo di segnaposto:",
+      "placeholder_preview": "Usalo digitando {{placeholder}} nei testi dei Wired.",
+      "placeholder_type": {
+        "1": "Singolo",
+        "2": "Multiplo",
+        "user": {
+          "1": "Utente singolo",
+          "2": "Utenti multipli"
+        },
+        "title": "Tipo di segnaposto:"
+      },
       "select_delimiter": "Seleziona il delimitatore:",
-      "variable_display_type": "Tipo di visualizzazione variabile:",
+      "variable_display_type": {
+        "1": "Numerico",
+        "2": {
+          "info": "Combinato con \"Componente aggiuntivo variabile: Connettore di Testo\"",
+          "title": "Testuale"
+        },
+        "title": "Tipo di visualizzazione variabile:"
+      },
       "variable_input_type": "Tipo di ingresso variabile:",
       "variable_output": "Uscita variabile:"
     },
@@ -440,38 +596,140 @@
       "user": "Utente"
     },
     "triggerer_choice": "Applica Effetti WIRED a:",
-    "turn": "Quando il passaggio è bloccato",
-    "user_collide": "In caso di scontro con l'utente",
+    "turn": {
+      "0": "Rimane fermo",
+      "1": "Gira a destra di 45 gradi",
+      "2": "Gira a destra di 90 gradi",
+      "3": "Gira a sinistra di 45 gradi",
+      "4": "Gira a sinistra di 90 gradi",
+      "5": "Gira all'indietro",
+      "6": "Gira in una direzione casuale",
+      "title": "Quando il passaggio è bloccato"
+    },
+    "user_collide": {
+      "0": "Blocca i movimenti di Furni",
+      "title": "In caso di scontro con l'utente"
+    },
     "user_move": {
-      "walkmode": "Se l'utente stava camminando:"
+      "walkmode": {
+        "0": "Continua a camminare se spostato più vicino all'obiettivo",
+        "1": "Continua a camminare",
+        "2": "Smetti di camminare",
+        "title": "Se l'utente stava camminando:"
+      }
     },
     "usercountmax": "Non più di {{value}} utenti",
     "usercountmin": "Almeno {{value}} utenti",
-    "usertype": "Tipo di utente:",
+    "usertype": {
+      "1": "Habbo",
+      "2": "Cucciolo",
+      "4": "Bot",
+      "title": "Tipo di utente:"
+    },
     "variables": {
-      "availability": "Opzioni di disponibilità:",
-      "compare_value": "Confronta il valore:",
+      "availability": {
+        "0": "Mentre l'utente è nella stanza",
+        "1": "Mentre la stanza è attiva",
+        "10": "Permanente",
+        "11": "Permanente, condiviso tra le stanze",
+        "title": "Opzioni di disponibilità:"
+      },
+      "compare_value": {
+        "0": "Tempo di creazione",
+        "1": "Tempo di aggiornamento",
+        "title": "Confronta il valore:"
+      },
       "connect_text": {
-        "caption": "0",
+        "caption": "0=text0\\n1=text1\\n2=...",
         "title": "Connetti il testo alla variabile:"
       },
-      "duration": "Durata:",
-      "inspection": "Ispezione variabile",
-      "operation": "Operazione",
+      "duration": {
+        "0": "Millisecondi",
+        "1": "Secondi:",
+        "2": "Minuti:",
+        "3": "Ore",
+        "4": "Giorni",
+        "5": "Settimane",
+        "6": "Mesi",
+        "7": "Anni",
+        "title": "Durata:"
+      },
+      "inspection": {
+        "current_value": "Valore attuale: {{value}}",
+        "title": "Ispezione variabile"
+      },
+      "operation": {
+        "0": "Assegnare",
+        "1": "Aggiungere",
+        "2": "Sottrarre",
+        "3": "Moltiplicare",
+        "4": "Dividere",
+        "5": "Potere",
+        "6": "Modulo",
+        "40": "Imposta il minimo",
+        "41": "Imposta il massimo",
+        "50": "Casuale con limite superiore",
+        "60": "Valore assoluto",
+        "100": "Bitwise E",
+        "101": "Bitwise O",
+        "102": "Bitwise XO",
+        "103": "Bitwise NON",
+        "104": "Spostamento a sinistra (<<)",
+        "105": "Spostamento a destra (<<)",
+        "advanced": "...mostra avanzato",
+        "tooltip": "Scegli un'operazione",
+        "title": "Operazione"
+      },
       "quest_chain_name": "Codice della catena della missione:",
       "quest_name": "Codice missione:",
-      "reference_value": "Valore di riferimento",
-      "room_selection": "Scegli la stanza:",
-      "settings": "Opzioni variabile:",
+      "reference_value": {
+        "from_variable": "Da Variabile:",
+        "set_value": "Imposta valore",
+        "title": "Valore di riferimento"
+      },
+      "room_selection": {
+        "tooltip": "Scegli una stanza",
+        "title": "Scegli la stanza:"
+      },
+      "settings": {
+        "has_value": "Ha valore",
+        "read_only": "Solo lettura",
+        "title": "Opzioni variabile:"
+      },
       "show_internal": "...mostra variabili interne",
-      "sort_by": "Ordina per:",
+      "sort_by": {
+        "0": "Valore più alto",
+        "1": "Valore più basso",
+        "2": "Creazione più vecchia",
+        "3": "Ultima creazione",
+        "4": "Aggiornamento più vecchio",
+        "5": "Ultimo aggiornamento",
+        "caption": "Seleziona il tipo di ordinamento",
+        "title": "Ordina per:"
+      },
       "time_selection": "Seleziona tempo",
-      "trigger_options": "Innesca quando la variabile è:",
-      "value_settings": "Opzioni di valore",
+      "trigger_options": {
+        "0": "Creato",
+        "1": "Valore modificato",
+        "2": "Eliminato",
+        "title": "Innesca quando la variabile è:"
+      },
+      "value_settings": {
+        "initial_value": "Valore iniziale:",
+        "override_existing": "Sovrascrivere una variabile esistente",
+        "select_by_value": "Seleziona per valore",
+        "title": "Opzioni di valore"
+      },
       "variable_name": "Nome variabile:",
       "variable_output": "Uscita variabile:",
       "variable_ref_selection": "Variabile di riferimento:",
-      "variable_selection": "Scegli la variabile:"
+      "variable_selection": {
+        "tooltip": {
+          "context": "Scegli una variabile di contesto",
+          "title": "Scegli una variabile"
+        },
+        "title": "Scegli la variabile:"
+      }
     },
     "whatissaid": "Cosa dire:",
     "whisper": "Sussurra"
