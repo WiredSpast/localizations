@@ -1,0 +1,13 @@
+{
+  "state_changed": {
+    "easy": "De schakelaar is geselecteerd in de <u>Meubi is gebruikt</u> wired en door te klikken op de schakelaar zal de bal bewegen."
+  },
+  "says_something": {
+    "secret": "geheim",
+    "easy": "Als de gebruiker het woord <u>geheim</u> zegt zal de actie activeren.",
+    "medium": {
+      "1": "Het lijkt niet te werken",
+      "2": "Ik zal het nog eens proberen te zeggen op het tapijt"
+    }
+  }
+}
